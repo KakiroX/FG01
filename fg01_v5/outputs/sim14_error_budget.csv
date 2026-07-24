@@ -1,0 +1,7 @@
+system,scenario,sigma_total_m,term_sigma_pos_m,term_vel_extrap_m,term_rel_accel_m,term_pointing_m,term_timing_m,R,tau,u,pointing,muzzle,bw,term_orbit_pred_m,term_pN_residual_m,orbit_pred,pointing_arcsec,R_km,pN_corrected
+FG01,optimistic,0.000503275,5.5e-05,3.09701e-09,4.28419e-09,0.0005,1.61551e-05,10,0.0001,1,5e-05,0.001,1e+09,,,,,,
+FG01,as_designed,0.00200727,5.5e-05,4.98321e-09,1.10918e-08,0.002,0.000161551,10,0.01,10,0.0002,0.001,1e+08,,,,,,
+FG01,degraded,0.0189997,5.5e-05,2.21305e-08,2.18759e-07,0.01,0.0161551,10,0.1,100,0.001,0.01,1e+06,,,,,,
+Laser,optimistic,0.242613,,,,0.242407,,,,,,,,0.01,0,0.01,0.1,500,True
+Laser,as_stated_requirement,1.57131,,,,1.21203,,,,,,,,1,0,1,0.5,500,True
+Laser,degraded_uncorrected,6.96451,,,,4.84814,,,,,,,,5,0.005,5,2,500,False

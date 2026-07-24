@@ -212,6 +212,37 @@ solved the Δv problem. `UNVALIDATED`
 
 ---
 
+## v7 addition — laser-ablation accuracy comparison
+
+### L26. SIM-14's laser-side inputs come from a secondary brief, not primary literature
+Every laser-specific number (orbit-prediction requirement, "sub-arcsecond"
+pointing, the p-N-omission residual) is taken from `laser accuracy comm.md`,
+an informal brief supplied for this comparison and not independently checked
+against primary sources in this study (CITATION_LOG key `laser_brief`,
+status E — same tier as this study's own engineering estimates, not the
+tier of a verified citation). The brief itself gives ranges and qualitative
+claims rather than point estimates for pointing, so this study's own
+0.1–2.0 arcsec envelope and its 500 km engagement range are assumptions
+layered on top of the brief, not sourced from it. `UNVALIDATED`
+
+### L27. SIM-14 is scoped to accuracy tolerance only, and says nothing about cost
+FG01 remains 3–4 orders of magnitude more expensive per object than
+ground-based laser ablation (SIM-9); SIM-14 does not reopen, revisit, or
+offset that finding. A reader should not infer overall superiority from a
+single-dimension result. `SCOPE, stated in sim14_conclusions.json`
+
+### L28. The laser is modelled as a fixed, binary-hit system; no defocus tradeoff
+A real laser could in principle spread its spot to trade peak fluence for
+aim tolerance, an analogue of FG01's own sigma-vs-mass tradeoff (SIM-3).
+This is not modelled — the brief's own comparison table frames the laser's
+failure mode as strictly binary ("miss entirely; no effect"), and SIM-14
+follows that framing rather than inventing an untested laser design
+freedom. If real systems do trade focus for tolerance, SIM-14's laser
+numbers understate its achievable tolerance to an unquantified degree.
+`UNVALIDATED`
+
+---
+
 ## What would most change the answer
 
 *(L1 and L2 below were written against the v5 results; v6's ECO-1 supplied the

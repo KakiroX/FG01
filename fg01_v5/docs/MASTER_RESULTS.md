@@ -59,7 +59,12 @@ envelope. **The concept is not physics-limited; it is limited by the cost of
 keeping hardware in orbit and by how many objects one platform can service.**
 Against ground-based laser ablation — the only competitor that genuinely
 addresses this size class — FG01 remains 3–4 orders of magnitude more expensive
-per object, and no part of the v5 pivot addresses that gap.
+per object, and no part of the v5 pivot addresses that gap. On the single
+dimension of terminal-pointing tolerance, the comparison runs the other way
+(SIM-14): a space-based laser's binary point-hit requirement over hundreds of
+km of stand-off range makes it far more sensitive to aiming/prediction error
+than FG01's short-range areal-capture engagement — but that is a geometry
+consequence, not a cost offset, and it does not change the SIM-9 verdict above.
 
 **Rhenium is not justified.** Momentum is density-independent, so the founding
 rationale is void. Tungsten is 73–243× cheaper, 1,037× more available, and its
@@ -674,7 +679,84 @@ Stated in the same place as the successes:
 
 ---
 
-## 16. Reproduction
+## 16. SIM-14 — Terminal-accuracy comparison against space-based laser ablation
+
+**Scope, stated up front.** This section compares exactly one dimension:
+tolerance of the terminal engagement to pointing and orbit-prediction error.
+It does not reopen SIM-9's cost comparison — FG01 remains **3–4 orders of
+magnitude more expensive per object than ground-based laser ablation**, and
+nothing below changes that.
+
+**Sources.** FG01-side numbers reuse SIM-4's already-validated M3 error
+budget at points inside its tested grid — nothing is re-derived. Laser-side
+numbers are taken as stated from `laser accuracy comm.md`, an informal brief
+not independently verified against primary literature (`CITATION_LOG` key
+`laser_brief`, status **E**); the engagement range (fixed at 500 km) and the
+exact figure within its stated "sub-arcsecond" pointing claim are this
+study's own representative assumptions, not sourced from the brief.
+
+**Method.** Three scenarios per system (optimistic / as-designed-or-as-
+stated / degraded), holding each system's engagement range fixed across its
+own three scenarios so that only GNC-quality terms vary — see SIM-14's
+source comments for why mixing range changes into a "degraded GNC" scenario
+would be an unfair comparison. Both systems are held to a **fixed, already-
+engineered design** (FG01's shot pattern σ = 8.76 mm, the SIM-4/13 design
+value; the laser's spot is not allowed to defocus for tolerance), so neither
+gets an adaptive-resizing advantage the other lacks.
+
+| Scenario | FG01 σ_total | Laser σ_total |
+|---|---|---|
+| Optimistic | 0.50 mm | 242.6 mm |
+| As-designed / as-stated | 2.01 mm | 1,571 mm |
+| Degraded | 19.0 mm | 6,965 mm |
+
+**Expected fraction of intended effect delivered per shot, 1 cm target:**
+
+| Scenario | FG01 | Laser |
+|---|---|---|
+| Optimistic | 0.731 | 2.1×10⁻⁴ |
+| As-designed / as-stated | 0.609 | 5.1×10⁻⁶ |
+| Degraded | 0.033 | ~0 |
+
+**Why the gap, honestly.** Not better sensors. FG01's budget is dominated by
+mechanical/optical terms at a **~10 m** engagement range, so even a
+comparatively loose 200 µrad pointing spec gives a millimetre-scale linear
+miss. The laser's sub-arcsecond spec is far tighter in *angle*, but at a
+**500 km** stand-off range the same angular budget maps to a metre-scale
+linear miss — consistent with the brief's own statement that orbit
+prediction must independently reach the metre level. **The asymmetry is a
+consequence of engagement geometry (stand-off range), not a claim that FG01
+hardware is more precise.**
+
+**The structural difference the brief itself identifies.** FG01's areal-
+capture model (SIM-3) degrades the delivered fraction smoothly as error
+grows; the brief's own comparison table states the laser's failure mode is
+binary — a miss beyond the target radius delivers nothing. This is the
+single largest structural difference between the two systems on this one
+dimension, and it is the brief's own framing, not an assumption introduced
+here.
+
+**Sustained-tracking compounding.** Laser ablation needs a hit sustained
+across multiple pulses to accumulate useful Δv. Single-pulse P_hit for a
+1 cm target is already so small in every scenario tested (2×10⁻⁴ optimistic
+down to ~3×10⁻⁷ degraded) that P(N consecutive hits) = P_hit^N underflows
+double precision well before N=100. FG01's design point needs exactly **one**
+kick per object (SIM-13 design card); no analogous compounding penalty
+applies to it.
+
+**What this section does not claim.** Not that FG01 is cheaper (SIM-9 says
+the opposite), not that the laser numbers are precise (the brief gives
+ranges, not point estimates, for pointing), not that a real fielded laser
+system couldn't correct for the degraded scenario, and not that a laser
+couldn't trade focus for tolerance the way FG01 trades mass for tolerance —
+that tradeoff is unmodelled here because the source brief itself treats the
+laser as a fixed, binary hit/miss system (see `LIMITATIONS.md` L26–L28).
+
+Figures: `sim14_miss_budget`, `sim14_fraction_vs_size`, `sim14_pulse_compounding`.
+
+---
+
+## 17. Reproduction
 
 ```bash
 pip install -r requirements.txt

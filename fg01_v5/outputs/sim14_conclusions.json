@@ -1,0 +1,21 @@
+{
+  "scope": "Pointing/prediction error tolerance only. Cost is not reopened; SIM-9's finding that FG01 is 3-4 orders of magnitude more expensive per object than ground-based laser ablation stands unchanged.",
+  "laser_source": "All laser-side figures are taken as stated in laser_accuracy_comm.md, an informal brief not independently verified against primary literature in this study (CITATION_LOG key `laser_brief`, status E). Engagement range (fixed at 500 km, the middle of a 100-1000 km representative grid) and the exact pointing figure within 'sub-arcsecond' are this study's own representative assumptions, not sourced from the brief.",
+  "fg01_source": "All FG01-side figures reuse SIM-4's already-validated M3 error-budget model at points inside its tested grid; nothing is re-derived or extrapolated here.",
+  "headline_1cm_target": {
+    "FG01 expected fraction delivered": {
+      "optimistic": 0.7306,
+      "as_designed": 0.6091,
+      "degraded": 0.0332
+    },
+    "Laser expected fraction delivered (=P_hit)": {
+      "optimistic": 0.000212,
+      "as_stated_requirement": 5e-06,
+      "degraded_uncorrected": 0.0
+    }
+  },
+  "structural_asymmetry": "FG01's areal-capture model gives a smoothly degrading delivered fraction as error grows (SIM-3's non-central-chi-square model); the brief's own comparison table states the laser's failure mode is binary -- a miss beyond the target radius delivers nothing. This is the single largest structural difference between the two systems on this one dimension.",
+  "why_fg01_tolerates_more_absolute_angular_error": "Not better sensors: FG01's terminal budget is dominated by mechanical/optical terms at a ~10 m engagement range (SIM-4), so even a comparatively loose 200 microrad pointing spec gives a millimetre-scale linear miss. The laser's sub-arcsecond spec is far tighter in angle, but at a 100-1000 km stand-off range the same angular budget maps to metre-scale linear miss -- which is why the brief frames orbit prediction and pointing as both needing to reach the metre level. The asymmetry is a consequence of engagement geometry (stand-off range), not a claim that FG01 hardware is more precise.",
+  "pulse_compounding": "Single-pulse P_hit for a 1 cm target is already so small in every scenario tested (2e-4 optimistic, 5e-6 as-stated, 3e-7 degraded) that P(N consecutive hits)=P_hit^N underflows float64 well before N=100 -- i.e. requiring even a modest number of sustained hits on cm-scale debris is not just unlikely but numerically indistinguishable from impossible under these parameters. FG01 requires exactly one kick per object at its design point (SIM-13 design card), so no analogous compounding penalty applies to it.",
+  "not_claimed": "This sim does not claim FG01 is cheaper, that the laser numbers are precise (the brief itself gives ranges, not point estimates, for pointing), or that a real space-based laser system could not correct for the degraded scenario. The degraded scenario is a what-if built from the brief's own stated risk factors (orbit-prediction drift, uncorrected p-N terms), not a claim about any specific fielded system. It also does not model a laser trading focus for tolerance (a defocused beam would spread ablation fluence over a larger spot, an analogue of FG01's own sigma-vs-mass tradeoff in SIM-3) -- the brief's own comparison table treats the laser as a fixed, binary hit/miss system, and that framing is followed here rather than adding an untested laser design freedom. FG01's own shot pattern is likewise held FIXED across scenarios (sigma=8.76 mm, the as-designed value) rather than re-optimised per scenario, so neither system is given an adaptive-resizing advantage the other lacks."
+}

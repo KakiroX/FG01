@@ -152,6 +152,21 @@ mechanical result.
 
 ---
 
+## v7 addition — laser-ablation accuracy comparison (SIM-14)
+
+| Quantity | Value | Source | Status |
+|---|---|---|---|
+| Debris relative speed | up to 15 km/s | `laser accuracy comm.md` (informal brief provided for this study; not independently verified against primary literature) | **E** |
+| Orbit-prediction requirement | "better than 1 m" | same | **E** |
+| Orbit-prediction optimistic claim | "<1 cm within 10 s of detection" | same, attributed by the brief to unnamed "research" | **E** |
+| Pointing requirement | "sub-arcsecond" (no exact figure given) | same | **E** — this study assigns a 0.1–2.0 arcsec envelope, its own estimate |
+| p-N correction, if omitted | bias "on the order of the size of the debris objects themselves" | same | **E** — implemented literally as a residual equal to target radius |
+| Engagement stand-off range | 500 km (fixed across all SIM-14 scenarios) | **not given in the brief**; this study's own representative assumption for a space-based laser-ablation concept | **E** |
+
+**Key caveat, stated plainly:** `laser_accuracy_comm.md` is a secondary brief, not a peer-reviewed source, and gives ranges/qualitative claims rather than point estimates for several quantities (pointing, in particular). SIM-14 uses its stated claims at face value and flags every figure this study had to supply itself (range, exact pointing value) as its own assumption, not the brief's. SIM-14's scope is pointing/prediction error tolerance only; it does not reopen SIM-9's cost comparison, where FG01 remains 3–4 orders of magnitude more expensive per object than ground-based laser ablation.
+
+---
+
 ## Summary for a reviewer
 
 - **Verified in-session (V):** the 40 J/g threshold and its regime definitions;

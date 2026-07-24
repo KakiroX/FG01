@@ -147,6 +147,28 @@ LIDAR_BW_HZ = 1.0e6                 # Hz        DESIGN
 LIDAR_SNR = 10.0                    # -         DESIGN
 
 # --------------------------------------------------------------------------
+# Laser-ablation competitor -- accuracy inputs (SIM-14)
+# Source: `laser accuracy comm.md`, an informal secondary brief, NOT
+# independently verified against primary literature in this study.
+# See docs/CITATION_LOG.md (key `laser_brief`, status E).
+# --------------------------------------------------------------------------
+LASER_VREL_KM_S = 15.0                       # km/s      SOURCED [laser_brief]
+LASER_ORBIT_PRED_CLAIM_M = 0.01              # m         SOURCED [laser_brief] "<1cm within 10s" (optimistic)
+LASER_ORBIT_PRED_REQUIREMENT_M = 1.0         # m         SOURCED [laser_brief] "better than 1m" (stated requirement)
+LASER_ORBIT_PRED_DEGRADED_M = 5.0            # m         UNVALIDATED (this study's what-if, motivated by the
+                                              #           brief's own "coupled ablation-estimation problem")
+LASER_POINTING_ARCSEC_RANGE = (0.1, 0.5, 2.0)  # arcsec  UNVALIDATED -- brief says only "sub-arcsecond",
+                                                #         no exact figure given; envelope is this study's estimate
+LASER_STANDOFF_RANGE_KM = (100.0, 300.0, 500.0, 1000.0)  # km   UNVALIDATED -- representative engagement range
+                                                          #      for space-based laser ablation; not given in
+                                                          #      the brief, which addresses angular/temporal
+                                                          #      accuracy only, not range
+LASER_PN_RESIDUAL_NOTE = ("If p-N corrections are omitted, the brief states the "
+                          "resulting bias is 'on the order of the size of the "
+                          "debris objects themselves' -- implemented as a residual "
+                          "equal to the target radius.")
+
+# --------------------------------------------------------------------------
 # Output paths
 # --------------------------------------------------------------------------
 import pathlib
