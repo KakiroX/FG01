@@ -1,0 +1,5 @@
+engagement_range_m,space_laser_pointing_urad,fg01_pointing_urad,fg01_advantage,laser_spot_cm
+100,1.68116,876,521.069,0.0336232
+1000,1.68116,876,521.069,0.336232
+10000,1.68116,876,521.069,3.36232
+100000,1.68116,876,521.069,33.6232

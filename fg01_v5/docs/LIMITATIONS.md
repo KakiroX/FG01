@@ -210,13 +210,24 @@ Not load-bearing at the realised counts, because the tour is Δv-limited before
 it is cadence-limited. It would become load-bearing in any architecture that
 solved the Δv problem. `UNVALIDATED`
 
-### L26. Space-based lasers are not modelled — the largest gap in LAS-1…3
-The laser comparison covers ground-based ablation only. A space-based laser
-removes the atmosphere, the terminator window and the airmass/elevation tension,
-which would narrow the accuracy asymmetry substantially. It would also inherit
-FG01's transportation problem *and* have to carry its own power supply, so the
-economics would not obviously improve — but this is asserted, not computed.
-Anyone attacking the FG01 accuracy case will attack here first. `UNVALIDATED`
+### L26. Space-based lasers — **CLOSED by LAS-4**
+Now computed rather than asserted, and the anticipation was only half right. A
+space laser **does** escape the optics problem completely (444 W average power
+against the ground laser's 93 kW — the 46× technology gap vanishes), and it
+**beats FG01 outright on consumables** (infinite magazine vs. 21.4 kg of tungsten
+for 10⁴ engagements). It does **not** escape the recoil geometry — ablation
+pushes along the line of sight, so the illuminator must lead the target, forcing
+co-orbital geometry — and therefore does **not** escape ECO-1's Δv invariant,
+servicing the same ~24 objects per platform-decade. Of the FG01 accuracy case,
+only **pointing (521×) and readiness** survive against a space laser.
+`DERIVED`
+
+### L26b. LAS-4 omits the space laser's thermal and power system
+444 W of average optical output at ~20% wall-plug implies ~1.8 kW of continuous
+waste heat during an engagement, on a platform that must simultaneously
+station-keep and slew. This is the most likely place the space-laser case
+degrades and it is not modelled — so LAS-4's treatment is, if anything, generous
+to the space laser. `UNVALIDATED`
 
 ### L27. The ablation coupling coefficient is a single literature value
 C_m = 10⁻⁴ N·s/J sets the laser's pulse count and hence its average-power

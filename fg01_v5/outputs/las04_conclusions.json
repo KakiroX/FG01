@@ -1,0 +1,19 @@
+{
+  "question_1_optics": {
+    "verdict": "the space laser WINS this outright",
+    "detail": "In vacuum a 1 m aperture at 10 km puts a 3.4 cm spot on a 1 cm target, needing 44.4 J per pulse and 444 W of average power -- against 9.3 kJ and 93 kW for the ground version. The 46x technology gap of LAS-3 disappears entirely: this is a space-qualifiable laser, not a national-facility one. The elevation tension, airmass, turbulence, adaptive optics and terminator window all vanish with it. Any argument for FG01 that rests on the ground laser's optics problem does NOT survive this."
+  },
+  "question_2_geometry": {
+    "verdict": "the space laser does NOT escape",
+    "detail": "Ablation recoil is directed along the line of sight, so a retrograde push requires the illuminator to lie ahead of the target along its own velocity vector. An illuminator directly above, below or abeam produces a purely radial or cross-track impulse with ZERO useful retrograde component. The efficient geometry for a laser is therefore the same co-orbital leading geometry INT-0 derived for a kinetic impactor -- the two methods are constrained identically, because the constraint comes from the direction the momentum must point, not from how it is delivered."
+  },
+  "question_3_economics": {
+    "verdict": "the space laser does NOT escape",
+    "dv_per_engagement_m_s": 106.86540012554093,
+    "detail": "Because it must be co-orbital to push retrograde, it must visit its targets, so ECO-1's invariant applies unchanged: 107 m/s per engagement, 1,070 km/s for 10,000 engagements. A space laser services the same ~24 objects per platform-decade as FG01. The ground laser is the only architecture that escapes the invariant, and it does so only because Earth's rotation carries targets past it for free -- which is also why it is stuck with the elevation tension and the 46x technology gap. There is no configuration that escapes both."
+  },
+  "where_the_space_laser_beats_FG01": "Consumables, decisively. A laser converts sunlight and has an effectively infinite magazine; FG01 carries tungsten and runs out. At 10,000 engagements FG01 needs 21.4 kg of tungsten launched to the operating orbit, while the laser needs 8.3 s of solar charging per object and nothing else. If the Delta-v problem were ever solved, the space laser would be the better architecture and FG01's magazine would become its binding limit.",
+  "where_FG01_still_wins": "Pointing, by roughly two orders of magnitude at matched range, and technology readiness. FG01's effective 'spot' is a physical cloud that can be sized to the expected miss distance; the laser's is set by diffraction and cannot be widened without losing fluence. FG01 also keeps the graceful-degradation property and needs one aiming solution rather than tens of consecutive ones.",
+  "the_unifying_result": "Momentum must point retrograde. Anything that delivers retrograde momentum must approach from ahead along the velocity vector, which forces co-orbital geometry, which forces the Delta-v invariant. Ablation, kinetic impact and a tug are all subject to it. The only escape is to stay on the ground and let Earth's rotation do the transporting -- and that escape costs a 46x technology gap and an unavoidable geometry penalty. This is a statement about small-debris remediation in general, not about FG01.",
+  "effect_on_the_FG01_accuracy_argument": "It narrows it. Against a GROUND laser the accuracy case is strong on every axis. Against a SPACE laser only the pointing and readiness axes survive, and the consumables axis reverses. The argument should therefore be made against the ground laser, which is the system the published $100-500/kg figure actually describes -- and it should concede the space-laser case explicitly rather than be caught by it."
+}

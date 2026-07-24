@@ -1,0 +1,4 @@
+architecture,must_visit_targets,dv_per_engagement_m_s,engagements_per_2000_m_s,dv_for_10000_engagements_km_s,note
+FG01 kinetic kick,True,106.865,18.7151,1068.65,inherits ECO-1 invariant unchanged
+"Space laser, co-orbital",True,106.865,18.7151,1068.65,inherits ECO-1 invariant unchanged
+Ground laser,False,0,inf,0,Earth's rotation brings targets to it -- no transport cost

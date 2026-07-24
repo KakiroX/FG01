@@ -908,5 +908,45 @@
   "las03_readiness": {
     "kind": "figure",
     "caption": "Left: average laser power required to clear the ablation threshold, against the highest demonstrated repetitive nanosecond laser. Right: each concept's prime hardware measured against demonstrated capability \u2014 FG01's coilgun sits far inside the envelope, the laser far outside it."
+  },
+  "las04_vacuum_optics": {
+    "kind": "table",
+    "rows": 40,
+    "caption": "Space-based laser: spot size, pulse energy and pointing tolerance in vacuum. Without atmosphere the beam is diffraction-limited and the spot falls below the target size at short range, so essentially all energy lands.",
+    "tags": {
+      "vacuum optics": "DERIVED",
+      "C_m": "SOURCED"
+    }
+  },
+  "las04_recoil_geometry": {
+    "kind": "table",
+    "rows": 7,
+    "caption": "Useful retrograde fraction of ablation recoil as a function of where the illuminator sits relative to the target. Recoil is along the line of sight, so only an illuminator AHEAD of the target along its velocity vector produces a retrograde push.",
+    "tags": {}
+  },
+  "las04_dv_invariant": {
+    "kind": "table",
+    "rows": 3,
+    "caption": "Whether each architecture must transport itself to its targets. This, not the beam physics, is what decides small-debris economics.",
+    "tags": {}
+  },
+  "las04_consumables": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Consumable comparison. A laser's magazine is effectively infinite: it converts sunlight. FG01 carries finite mass and must be resupplied.",
+    "tags": {}
+  },
+  "las04_pointing": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Pointing tolerance of a space-based laser against FG01's, at matched engagement range. FG01 keeps a large advantage because its 'spot' is a physical cloud sized to the miss distance, while the laser's is set by diffraction.",
+    "tags": {}
+  },
+  "las04_conclusions": {
+    "kind": "json"
+  },
+  "las04_spaceborne": {
+    "kind": "figure",
+    "caption": "Left: in vacuum a modest aperture drives the spot below the target size at short range, eliminating the ground laser's energy and technology problem. Right: but any architecture that must push retrograde must be co-orbital, and therefore pays the same \u00ce\u201dv per engagement \u00e2\u20ac\u201d only the ground station escapes, by letting Earth's rotation do the transporting."
   }
 }

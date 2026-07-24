@@ -45,6 +45,7 @@ MODULES = [
     ("las01_engagement", "LAS-1  laser engagement and the elevation tension"),
     ("las02_accuracy", "LAS-2  accuracy head-to-head"),
     ("las03_verdict", "LAS-3  readiness, corrected economics, verdict"),
+    ("las04_spaceborne", "LAS-4  the space-based laser"),
 ]
 
 

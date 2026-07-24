@@ -1,0 +1,5 @@
+n_engagements,fg01_tungsten_kg,fg01_consumable_usd,fg01_magazine_limited,laser_energy_per_object_J,laser_total_electrical_MJ,laser_solar_charge_time_per_object_s,laser_consumable_usd
+24,0.05136,159.216,False,8279.89,0.993587,8.27989,0
+100,0.214,663.4,False,8279.89,4.13995,8.27989,0
+1000,2.14,6634,False,8279.89,41.3995,8.27989,0
+10000,21.4,66340,False,8279.89,413.995,8.27989,0

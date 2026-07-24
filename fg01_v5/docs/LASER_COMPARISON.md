@@ -270,6 +270,107 @@ buildable than a laser and cheaper than a tug.
 
 ---
 
+## LAS-4 — The space-based laser: the strongest counterargument, answered
+
+The obvious rebuttal to everything above is: **put the laser in orbit.** No
+atmosphere, no airmass, no turbulence, no adaptive optics, no terminator window,
+no elevation tension. This was flagged as the largest gap in the comparison
+(L26). It is now closed, and the answer is **not** the one that flatters FG01
+most — it must be conceded on one axis and it is decisive on two others.
+
+### 1. Does it escape the optics problem? **Yes, completely.**
+
+| range | spot (1 m aperture, 1.06 µm) | on target | pulse energy | pulses | average power |
+|---|---|---|---|---|---|
+| 100 m | 0.34 mm | **100%** | 0.004 J | 164,971 | 0.04 W |
+| 1 km | 3.4 mm | **100%** | 0.44 J | 1,650 | 4.4 W |
+| **10 km** | **3.4 cm** | 8.8% | 44 J | **187** | **444 W** |
+| 100 km | 34 cm | 0.09% | 4.4 kJ | 187 | 44 kW |
+
+At short range the spot falls **below the target size** and all the energy
+lands. A 1 m aperture at 10 km needs **444 W of average power** against the
+ground laser's **93 kW** — the 46× technology gap **disappears entirely**. This
+is a space-qualifiable laser, not a national-facility one.
+
+**Any argument for FG01 that rests on the ground laser's optics problem does not
+survive this.** Concede it explicitly rather than be caught by it.
+
+### 2. Does it escape the delivery geometry? **No.**
+
+Ablation recoil points **along the line of sight, away from the illuminator**.
+So the illuminator must lie *ahead of the target along its own velocity vector*:
+
+| illuminator position relative to target | useful retrograde fraction | effect |
+|---|---|---|
+| **directly ahead (co-orbital, leading)** | **1.000** | retrograde — lowers orbit |
+| ahead, 10° above | 0.985 | retrograde |
+| ahead, 45° above | 0.707 | retrograde |
+| directly above / below | **0.000** | no along-track component at all |
+| abeam (different plane) | **0.000** | no along-track component at all |
+| directly behind (trailing) | −1.000 | **prograde — RAISES the orbit** |
+
+A laser in a higher orbit, a lower orbit, or a different plane delivers **zero**
+useful impulse. The efficient geometry for an orbiting laser is **exactly the
+co-orbital leading geometry INT-0 derived for a kinetic impactor** — the two
+methods are constrained identically, because the constraint comes from *which
+way the momentum must point*, not from how it is delivered.
+
+### 3. Does it escape the economics? **No.**
+
+| architecture | must visit targets? | Δv per engagement | Δv for 10⁴ engagements |
+|---|---|---|---|
+| FG01 kinetic kick | yes | **106.9 m/s** | 1,069 km/s |
+| **Space laser, co-orbital** | **yes** | **106.9 m/s** | **1,069 km/s** |
+| Ground laser | **no** | **0** | 0 — Earth's rotation delivers the targets |
+
+Because it must be co-orbital to push retrograde, it must visit its targets, and
+ECO-1's invariant applies **unchanged**. A space laser services the same **~24
+objects per platform-decade** as FG01.
+
+### Where the space laser genuinely beats FG01: consumables
+
+| engagements | FG01 tungsten | FG01 consumable cost | laser consumable |
+|---|---|---|---|
+| 24 | 51 g | $159 | **$0** |
+| 1,000 | 2.1 kg | $6,634 | **$0** |
+| 10,000 | **21.4 kg** | $66,340 | **$0** |
+
+A laser converts sunlight and has an **effectively infinite magazine** — 8.3 s
+of solar charging per object at 5 kW. FG01 carries tungsten and runs out.
+**If the Δv problem were ever solved, the space laser would be the better
+architecture and FG01's magazine would become its binding limit.**
+
+### Where FG01 still wins
+
+**Pointing, by 521×** — and this holds at *every* range, because the laser's spot
+and its range scale together, fixing its angular tolerance at **1.68 µrad**
+regardless of standoff, against FG01's **876 µrad**. FG01's effective "spot" is a
+physical cloud that can be *sized to the expected miss distance*; the laser's is
+set by diffraction and cannot be widened without losing fluence. FG01 also keeps
+graceful degradation and one aiming solution instead of hundreds.
+
+### The unifying result
+
+> **Momentum must point retrograde. Anything that delivers retrograde momentum
+> must approach from ahead along the velocity vector. That forces co-orbital
+> geometry, which forces the Δv invariant.**
+
+Ablation, kinetic impact and a tug are all subject to it. **The only escape is to
+stay on the ground and let Earth's rotation do the transporting** — and that
+escape costs a 46× technology gap and an unavoidable geometry penalty. **No
+configuration escapes both.** This is a statement about small-debris remediation
+in general, not about FG01.
+
+### Effect on the argument
+
+It **narrows** it. Against a *ground* laser the accuracy case is strong on every
+axis. Against a *space* laser only **pointing and readiness** survive, and the
+**consumables axis reverses**. Make the argument against the ground laser — which
+is the system the published $100–500/kg figure actually describes — and concede
+the space-laser case openly.
+
+---
+
 ## Caveats
 
 - **C_m = 10⁻⁴ N·s/J** is the standard peak coupling for ns pulses on metals; a
@@ -284,8 +385,13 @@ buildable than a laser and cheaper than a tug.
   `DERIVED`
 - **Facility costs** ($157M–1.5B) and **throughput** (terminator window, weather,
   overhead) are parametric. `UNVALIDATED`
-- **Space-based lasers** are not modelled. They remove the atmosphere and the
-  terminator constraint but inherit FG01's transportation problem *and* must
-  carry their own power — the accuracy asymmetry versus FG01 would narrow, the
-  economics would not obviously improve. This is the most significant gap in the
-  comparison.
+- **Space-based lasers** are now modelled in LAS-4, and the anticipation above
+  was half right: they do inherit the transportation problem and the economics
+  do not improve, but the accuracy asymmetry narrows further than expected —
+  the optics advantage passes entirely to the laser, and the consumables axis
+  reverses. Only pointing (521×) and readiness survive.
+- **LAS-4 does not model the space laser's thermal or power system.** 444 W of
+  average optical output at ~20% wall-plug means ~1.8 kW of waste heat to
+  radiate continuously during an engagement, on a platform that must also
+  station-keep. This is the most likely place the space-laser case degrades,
+  and it is not computed here. `UNVALIDATED`

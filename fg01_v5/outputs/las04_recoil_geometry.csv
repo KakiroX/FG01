@@ -1,0 +1,8 @@
+illuminator_position,useful_retrograde_fraction,energy_penalty_for_same_kick,direction,usable
+"directly ahead (co-orbital, leading)",1,1,retrograde (lowers orbit),True
+ahead and 10 deg above,0.984808,1.01543,retrograde (lowers orbit),True
+ahead and 45 deg above,0.707107,1.41421,retrograde (lowers orbit),True
+"directly above (higher orbit, same plane)",0,inf,no along-track component,False
+directly below,0,inf,no along-track component,False
+"abeam (cross-track, different plane)",0,inf,no along-track component,False
+directly behind (trailing),-1,inf,prograde (RAISES orbit),False
