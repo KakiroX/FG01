@@ -1,0 +1,3 @@
+system,range_m,linear_tolerance_m,angular_tolerance_rad,angular_tolerance_urad,sensor_aperture_m,diffraction_limit_urad,margin_over_diffraction,design_pointing_urad,achieved_miss_m
+FG01 (co-orbital kick),10,0.00876,0.000876,876,0.1,6.71,130.551,200,0.005775
+Ground laser ablation,1.186e+06,0.2525,2.12901e-07,0.212901,5,0.129808,1.64012,0.0709668,

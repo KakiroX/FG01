@@ -1,0 +1,6 @@
+**las03_catalogue_dependency** — Both systems depend on an external catalogue that does not yet exist for the 1 cm population. They depend on it to very different degrees.
+
+| system       | needs_position_to_m | at_range_km | population_tracked_at_all | population_ge_1cm | frac_tracked | can_self_acquire | note                                                                                                    |
+|--------------|---------------------|-------------|---------------------------|-------------------|--------------|------------------|---------------------------------------------------------------------------------------------------------|
+| Ground laser | 0.2525              | 1186        | 40000                     | 1.2e+06           | 0.03333      | no               | Must be handed a 0.25 m solution; cannot improve on it. No catalogue provides this for 1 cm objects.    |
+| FG01         | 1000                | 50          | 40000                     | 1.2e+06           | 0.03333      | yes              | Needs km-level cueing only; its own sensor closes the loop from 100 m inward at 10^11 photoelectrons/s. |

@@ -1,0 +1,6 @@
+target_diameter_cm,target_mass_g,laser_pulses_per_object,laser_engagement_time_s,laser_beam_fraction_on_target,fg01_areal_penalty,fg01_launched_mass_g
+1,1.41372,294.248,29.4248,0.000513516,3.62626,0.357339
+3,38.1704,882.744,88.2744,0.00462165,1,2.66063
+10,1413.72,2942.48,294.248,0.0513516,1,98.542
+30,38170.4,8827.44,882.744,0.462165,1,2660.63
+100,1.41372e+06,151101,15110.1,1,1,98542

@@ -1,0 +1,21 @@
+{
+  "engagement_geometry": {
+    "optimum_elevation_deg": 46.03073048934167,
+    "slant_range_km": 1185.5584398244698,
+    "retrograde_fraction": 0.608335827816396,
+    "zenith_retrograde_fraction": 0.0,
+    "statement": "Ablation recoil is directed along the line of sight, so only -R_E sin(phi)/R of it opposes the target's velocity. That fraction is exactly zero at zenith -- the point of best range, lowest airmass and smallest spot -- and rises toward the horizon, where the range is 2-3x longer, the airmass 3-6x higher and the spot correspondingly larger. The laser cannot have good optics and useful geometry at the same time. This is the laser's exact analogue of INT-0's finding for FG01, and unlike FG01 it has no co-orbital escape: a ground station cannot fly alongside the target."
+  },
+  "beam_waste": {
+    "spot_diameter_m": 0.5049963728764578,
+    "target_diameter_m": 0.01,
+    "fraction_intercepted": 0.00039212405254405433,
+    "areal_penalty": 2550.2133661837847,
+    "statement": "The spot is 50x wider than the target, so 99.961% of every pulse misses. The laser pays the same areal penalty FG01 pays -- 2,550x against FG01's 22x -- but pays it in photons, which are cheap, rather than in tungsten, which must be launched. That is the laser's real advantage, and it is an advantage about *consumables*, not about accuracy."
+  },
+  "pulses_per_object": 240.74334927247045,
+  "engagement_time_s": 24.074334927247044,
+  "laser_energy_MJ": 4.8148669854494095,
+  "electricity_cost_usd": 0.6687315257568623,
+  "threshold_is_a_cliff": "Ablation is a threshold process: below F_th the surface is heated and nothing is ejected, so the impulse is exactly zero. A laser whose spot grows past the point where fluence falls below threshold does not deliver a smaller kick -- it delivers none. Quantified in LAS-2."
+}

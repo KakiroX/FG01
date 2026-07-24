@@ -1,0 +1,26 @@
+{
+  "headline": "FG01's accuracy advantage is real and is best stated as headroom against the physical limit of its own optics: FG01's pointing requirement sits 131x above the diffraction limit of its 10 cm sensor, while the ground laser's sits 1.64x above the diffraction limit of a 5 m telescope. The laser must work essentially at the physical limit of its aperture; FG01 has two orders of magnitude of margin.",
+  "angular_vs_linear": {
+    "angular_ratio_laser_harder": 4114.598019801981,
+    "linear_ratio_fg01_harder": 28.82420091324201,
+    "note": "Both are true and they point opposite ways. In linear terms FG01 is the tighter requirement (9 mm against 25 cm). The angular framing is the operative one because pointing hardware, diffraction and atmospheric turbulence all act on angles, not on metres. Any argument for FG01 that quotes the linear number is wrong and will be caught."
+  },
+  "resolved_target": {
+    "fg01_resolved_ratio": 149.03129657228018,
+    "laser_resolved_ratio": 0.0628293830405903,
+    "statement": "FG01 sees the target as an extended object resolved across 149 diffraction widths, with ~10^11 photoelectrons per second. The ground telescope sees an unresolved point source 16x below its own resolution at magnitude 17.6. Detection is feasible -- this is not the objection sometimes made -- but every position measurement is a centroid of a point source rather than a direct measurement of an extended one."
+  },
+  "cueing_ratio": 3960.39603960396,
+  "graceful_vs_cliff": {
+    "fg01_delivered_at_2x_error": 0.4488604707958628,
+    "laser_zero_beyond_multiple": 1.0137731303428743,
+    "statement": "At twice its nominal aiming error FG01 still delivers 44.9% of nominal momentum; the laser delivers exactly zero beyond 1.01x its tolerance, because fluence crosses the ablation threshold. The failure modes differ in kind, not degree."
+  },
+  "honest_counterpoint": "The cliff is per-pulse, and the laser fires hundreds of pulses per object, so it averages over its own threshold: at 1x pointing sigma the pulse hit rate is 0.40 and the engagement simply takes longer. The cliff therefore degrades throughput rather than causing outright mission failure, and any argument that treats a laser miss as total loss overstates the case. What does NOT average out is the tracking requirement: FG01 needs ONE aiming solution, the laser needs 241 consecutive ones.",
+  "ablation_feedback": {
+    "dv_per_pulse_m_s": 0.21496467557672566,
+    "pulses_before_target_lost": 10,
+    "statement": "Each pulse changes the target's velocity by 215 mm/s, so an estimator that does not model the effect of its own shots walks off the target within 10 pulses (1.0 s). The laser must therefore solve a coupled ablation-and-estimation problem in real time for the whole engagement. FG01 fires once and has no such coupling."
+  },
+  "summary_of_the_asymmetry": "FG01: one aiming solution, 200 urad, on a resolved target 10 m away, in vacuum, with graceful degradation and no feedback loop. Ground laser: 241 consecutive aiming solutions, 0.21 urad, on an unresolved point source 1,186 km away, through turbulent atmosphere, with a hard threshold and a self-perturbing target. That is the accuracy case for FG01, and it is a strong one -- but it is a case about engineering risk, not about cost, and LAS-3 shows why that distinction matters."
+}

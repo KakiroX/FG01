@@ -17,7 +17,8 @@ python run_all.py
 
 | Document | Contents |
 |---|---|
-| **[docs/V6_RESULTS.md](docs/V6_RESULTS.md)** | **Start here.** Interaction model (INT-0…5) + engagement economics (ECO-1…4), and the final verdict |
+| **[docs/V6_RESULTS.md](docs/V6_RESULTS.md)** | **Start here.** Interaction model (INT-0…5) + engagement economics (ECO-1…5), and the final verdict |
+| **[docs/LASER_COMPARISON.md](docs/LASER_COMPARISON.md)** | LAS-1…3: the laser benchmark rebuilt from physics — accuracy, technology readiness, corrected cost |
 | [docs/MASTER_RESULTS.md](docs/MASTER_RESULTS.md) | v5 results, SIM-0 … SIM-13, with the design card and the failure envelope |
 | [docs/RQ_RESULTS.md](docs/RQ_RESULTS.md) | Results ordered by the *FG01 techs.md* research questions |
 | [docs/CITATION_LOG.md](docs/CITATION_LOG.md) | Every external number, with verified / inherited / estimated status |

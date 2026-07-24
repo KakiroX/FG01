@@ -1,0 +1,4 @@
+sensor,range_m,aperture_m,target_angular_size_urad,diffraction_limit_urad,resolved_ratio,resolved,apparent_magnitude,photoelectrons_per_s,photoelectrons_per_10ms,snr_10ms
+FG01 terminal sensor,10,0.1,1000,6.71,149.031,True,-7.73485,2.36769e+11,2.36769e+09,48658.9
+Ground telescope,1.186e+06,5,0.0084317,0.1342,0.0628294,False,17.6356,42081.8,420.818,18.4396
+"Ground telescope, 10 m",1.186e+06,10,0.0084317,0.0671,0.125659,False,17.6356,168327,1683.27,39.8608

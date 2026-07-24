@@ -1,0 +1,3 @@
+system,required_position_knowledge_m,cue_used_at_range_m,angular_equivalent_urad,loop_closed_onboard
+FG01: close to optical acquisition range,1000,50000,20000,True
+Ground laser: place spot on target,0.2525,1.186e+06,0.212901,False

@@ -792,5 +792,121 @@
   "eco05_efficiency": {
     "kind": "figure",
     "caption": "Left: cost per object against target mass for FG01 versus an electric tug of equal platform cost. Right: the kick's effective specific impulse against real propulsion systems. FG01 must launch 14% of the target's mass as tungsten, which is negligible for grams and decisive for tonnes."
+  },
+  "las01_elevation_tension": {
+    "kind": "figure",
+    "caption": "Ablation recoil points away from the illuminator, so the useful retrograde component vanishes at zenith where the optics are best, and peaks near the horizon where range, airmass and spot size are worst. The product has a shallow optimum that achieves neither."
+  },
+  "las01_aperture_scaling": {
+    "kind": "table",
+    "rows": 28,
+    "caption": "Aperture and pulse energy needed to clear the ablation threshold at the optimum engagement geometry (7 deg past the meridian, ~46 deg elevation, 1150 km).",
+    "tags": {}
+  },
+  "las01_conclusions": {
+    "kind": "json"
+  },
+  "las02_angular_requirement": {
+    "kind": "table",
+    "rows": 2,
+    "caption": "Pointing requirement measured against the diffraction limit of each system's own sensing aperture. The margin column is the meaningful comparison: it is the headroom each system has against the physics of its own optics.",
+    "tags": {
+      "all": "DERIVED"
+    }
+  },
+  "las02_detection": {
+    "kind": "table",
+    "rows": 3,
+    "caption": "Detection geometry and photon budget for a 1 cm, albedo-0.1 sphere. 'resolved_ratio' is target angular size divided by the diffraction limit: above 1 the target is an extended object whose centroid is directly measurable; below 1 it is an unresolved point source.",
+    "tags": {
+      "photometry": "DERIVED",
+      "albedo 0.1": "UNVALIDATED"
+    }
+  },
+  "las02_cueing": {
+    "kind": "table",
+    "rows": 2,
+    "caption": "External orbit knowledge each system needs before an engagement can start. FG01 uses external cueing only to get within range of its own sensor, which then closes the loop; the laser must be handed a solution accurate to its spot radius at 1,186 km because it has no way to improve on it.",
+    "tags": {}
+  },
+  "las02_degradation": {
+    "kind": "table",
+    "rows": 220,
+    "caption": "Delivered momentum as each system's aiming error grows, normalised to its own nominal tolerance. FG01 decays smoothly; the laser holds up and then goes to exactly zero when the fluence crosses the ablation threshold.",
+    "tags": {}
+  },
+  "las02_repetition_counterpoint": {
+    "kind": "table",
+    "rows": 5,
+    "caption": "The honest counterpoint to the cliff argument: a laser firing hundreds of pulses averages over its own threshold, so the cliff degrades throughput rather than causing outright failure -- until the pointing error grows enough that the engagement no longer fits inside a pass.",
+    "tags": {}
+  },
+  "las02_ablation_feedback": {
+    "kind": "table",
+    "rows": 5,
+    "caption": "The coupled ablation-and-estimation problem: each pulse changes the target's velocity, so an estimator that does not model its own effect walks off the target.",
+    "tags": {}
+  },
+  "las02_point_ahead": {
+    "kind": "table",
+    "rows": 2,
+    "caption": "Point-ahead angle and the fractional accuracy with which it must be computed. The laser's lead is small but its tolerance is smaller; FG01's lead is large but its tolerance is larger.",
+    "tags": {}
+  },
+  "las02_conclusions": {
+    "kind": "json"
+  },
+  "las02_accuracy": {
+    "kind": "figure",
+    "caption": "Left: delivered momentum against aiming error. FG01 decays smoothly because a partially-missed cloud still deposits mass; the laser goes to exactly zero once fluence drops below the ablation threshold. Right: each system's pointing requirement against the diffraction limit of its own aperture \u2014 FG01 works with two orders of magnitude of margin, the laser at the limit."
+  },
+  "las03_laser_benchmarks": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "High-energy repetitive nanosecond lasers. Only demonstrated systems set the benchmark (AM-9).",
+    "tags": {}
+  },
+  "las03_technology_readiness": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Laser aperture and average power required to clear the ablation threshold on a 1 cm target at 900 km, against the highest demonstrated average power for repetitive nanosecond lasers.",
+    "tags": {
+      "benchmarks": "SOURCED (demonstrated systems)",
+      "requirement": "DERIVED (LAS-1)"
+    }
+  },
+  "las03_facility_throughput": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Ground-laser facility cost and throughput. Throughput is limited by the terminator window (the target must be sunlit while the site is dark for the tracking camera to work), by weather, and by acquisition overhead.",
+    "tags": {
+      "facility cost": "UNVALIDATED (parametric)",
+      "twilight/weather": "SOURCED (site statistics)"
+    }
+  },
+  "las03_catalogue_dependency": {
+    "kind": "table",
+    "rows": 2,
+    "caption": "Both systems depend on an external catalogue that does not yet exist for the 1 cm population. They depend on it to very different degrees.",
+    "tags": {}
+  },
+  "las03_head_to_head": {
+    "kind": "table",
+    "rows": 13,
+    "caption": "Corrected head-to-head. The laser retains a large cost advantage; every accuracy and readiness metric favours FG01.",
+    "tags": {}
+  },
+  "las03_conclusions": {
+    "kind": "json"
+  },
+  "las03_target_size_scaling": {
+    "kind": "table",
+    "rows": 5,
+    "caption": "How the comparison scales with target size. FG01's mass penalty falls as 1/A_target and reaches 1; the laser's engagement time grows because a larger target needs proportionally more total impulse while the fluence per unit area is unchanged.",
+    "tags": {}
+  },
+  "las03_readiness": {
+    "kind": "figure",
+    "caption": "Left: average laser power required to clear the ablation threshold, against the highest demonstrated repetitive nanosecond laser. Right: each concept's prime hardware measured against demonstrated capability \u2014 FG01's coilgun sits far inside the envelope, the laser far outside it."
   }
 }

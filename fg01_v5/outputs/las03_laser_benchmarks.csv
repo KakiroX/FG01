@@ -1,0 +1,5 @@
+system,pulse_J,prf_hz,average_power_kW,demonstrated,note
+LLNL Mercury,100,10,1,True,"diode-pumped ns, demonstrated"
+DiPOLE-100 (STFC),100,10,1,True,"diode-pumped ns, demonstrated"
+HAPLS / ELI-Beamlines,200,10,2,True,demonstrated
+kJ-class repetitive concept,1000,10,10,False,development only

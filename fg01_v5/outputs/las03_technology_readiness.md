@@ -1,0 +1,12 @@
+**las03_technology_readiness** — Laser aperture and average power required to clear the ablation threshold on a 1 cm target at 900 km, against the highest demonstrated average power for repetitive nanosecond lasers.
+
+Traceability: `benchmarks`=SOURCED (demonstrated systems), `requirement`=DERIVED (LAS-1)
+
+| aperture_m | ao_strehl | spot_diameter_m | pulse_energy_required_J | average_power_required_kW | demonstrated_avg_power_kW | gap_beyond_demonstrated | gap_beyond_development_concepts | fluence_J_cm2 | pulses_per_object | engagement_time_s | laser_energy_per_object_MJ |
+|------------|-----------|-----------------|-------------------------|---------------------------|---------------------------|-------------------------|---------------------------------|---------------|-------------------|-------------------|----------------------------|
+| 3          | 0.8079    | 0.7666          | 2.867e+04               | 286.7                     | 2                         | 143.4                   | 28.67                           | 5             | 294.2             | 29.42             | 8.437                      |
+| 5          | 0.6156    | 0.5269          | 1.355e+04               | 135.5                     | 2                         | 67.73                   | 13.55                           | 5             | 294.2             | 29.42             | 3.986                      |
+| 8          | 0.3503    | 0.4366          | 9299                    | 92.99                     | 2                         | 46.5                    | 9.299                           | 5             | 294.2             | 29.42             | 2.736                      |
+| 10         | 0.2194    | 0.4413          | 9500                    | 95                        | 2                         | 47.5                    | 9.5                             | 5             | 294.2             | 29.42             | 2.795                      |
+| 15         | 0.05127   | 0.6086          | 1.807e+04               | 180.7                     | 2                         | 90.36                   | 18.07                           | 5             | 294.2             | 29.42             | 5.318                      |
+| 20         | 0.0083    | 1.135           | 6.28e+04                | 628                       | 2                         | 314                     | 62.8                            | 5             | 294.2             | 29.42             | 18.48                      |

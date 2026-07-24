@@ -210,6 +210,33 @@ Not load-bearing at the realised counts, because the tour is Δv-limited before
 it is cadence-limited. It would become load-bearing in any architecture that
 solved the Δv problem. `UNVALIDATED`
 
+### L26. Space-based lasers are not modelled — the largest gap in LAS-1…3
+The laser comparison covers ground-based ablation only. A space-based laser
+removes the atmosphere, the terminator window and the airmass/elevation tension,
+which would narrow the accuracy asymmetry substantially. It would also inherit
+FG01's transportation problem *and* have to carry its own power supply, so the
+economics would not obviously improve — but this is asserted, not computed.
+Anyone attacking the FG01 accuracy case will attack here first. `UNVALIDATED`
+
+### L27. The ablation coupling coefficient is a single literature value
+C_m = 10⁻⁴ N·s/J sets the laser's pulse count and hence its average-power
+requirement linearly. A factor-2 error moves the 46× technology gap to 23× or
+92×. The *sign* of the readiness conclusion is robust across that range; the
+magnitude is not. `SOURCED, single value`
+
+### L28. The laser model is deliberately parameterised in the laser's favour
+Generous AO (1,000 actuators, fitting-error-only budget), a good astronomical
+site, optimum-coupling fluence, and the best aperture across the sweep. This was
+done so the comparison could not be accused of strawmanning, which means the
+46× gap and the 536–8,031× cost correction are **lower bounds** on the laser's
+difficulty — but it also means the laser's *achievable* performance is not
+bracketed from below. `DERIVED, one-sided`
+
+### L29. Laser facility cost and throughput are parametric
+$157M–1.5B capital and 265k–412k objects per decade both carry wide
+uncertainty, and cost per object is their ratio. The 158–11,000× cost advantage
+the laser retains is therefore a broad band, not a number. `UNVALIDATED`
+
 ---
 
 ## What would most change the answer

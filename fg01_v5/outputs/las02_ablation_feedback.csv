@@ -1,0 +1,6 @@
+pulses_without_feedback,elapsed_s,unmodelled_displacement_m,fraction_of_spot_radius,target_lost
+1,0.1,0.0107482,0.0425673,False
+3,0.3,0.0967341,0.383105,False
+10,1,1.07482,4.25673,True
+30,3,9.67341,38.3105,True
+100,10,107.482,425.673,True

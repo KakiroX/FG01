@@ -41,6 +41,10 @@ MODULES = [
     ("eco03_platform", "ECO-3  platform cost and consumables"),
     ("eco04_optimize", "ECO-4  economic optimisation and verdict"),
     ("eco05_large_objects", "ECO-5  impulse efficiency vs. target mass"),
+    # --- laser comparison, built on the same footing ----------------------
+    ("las01_engagement", "LAS-1  laser engagement and the elevation tension"),
+    ("las02_accuracy", "LAS-2  accuracy head-to-head"),
+    ("las03_verdict", "LAS-3  readiness, corrected economics, verdict"),
 ]
 
 

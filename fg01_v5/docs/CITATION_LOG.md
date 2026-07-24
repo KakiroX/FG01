@@ -152,6 +152,38 @@ mechanical result.
 
 ---
 
+## Laser comparison (LAS-1…3)
+
+| Quantity | Value | Source | Status |
+|---|---|---|---|
+| Momentum coupling C_m, peak, ns pulses on metal | 1×10⁻⁴ N·s/J | Phipps CR et al., laser-propulsion / ORION literature | **P** |
+| Ablation threshold fluence, Al | 1 J/cm² (range 0.5–5) | laser-ablation literature | **P** — the cliff's *position* moves with it, its *existence* does not |
+| Optimum-coupling fluence | 5 J/cm² | same | **P** |
+| C_m roll-off above optimum | ∝ Φ^(−1/2) | same | **P** |
+| Spot diameter, 2.44·λ·R/D | — | standard diffraction | **DERIVED** |
+| Kasten–Young airmass | — | standard | **P** |
+| Fried parameter r₀, zenith, 500 nm | 15 cm (good site) | standard site statistics | **P** |
+| r₀ airmass scaling, X^(−3/5); λ^1.2 | — | standard turbulence theory | **P** |
+| AO fitting error 0.34(d_act/r₀)^(5/3) | — | standard AO error budget | **P** |
+| Actuator count | 1,000 across the aperture | facility-class AO benchmark | **E** — chosen *generously* to the laser |
+| Atmospheric extinction τ | 0.15 at zenith | good astronomical site | **P** |
+| LLNL Mercury | 100 J @ 10 Hz | demonstrated | **P** |
+| DiPOLE-100 (STFC) | 100 J @ 10 Hz | demonstrated | **P** |
+| HAPLS / ELI-Beamlines | 200 J @ 10 Hz | demonstrated | **P** |
+| **Demonstrated max average power, repetitive ns** | **2 kW** | the three above | **P** — sets the readiness benchmark (AM-9) |
+| Solar constant / solar V magnitude | 1361 W/m² / −26.74 | standard | **P** |
+| Debris albedo | 0.1 | conventional assumption | **E** |
+| Laser facility cost | $157M–1.5B | parametric (telescope + $50/W laser) | **E** |
+| Terminator window / weather | 3–4 h/night, 60–70% clear | site statistics | **P** |
+| Published laser cost being corrected | $100–500/kg | v5 plan §1.5 | **P** — shown here to be a marginal-energy figure omitting the facility |
+
+The laser model was parameterised **in the laser's favour** wherever a choice
+existed (generous AO actuator count, good site, optimum-coupling fluence,
+best-case aperture). The 46× technology gap and the 536–8,031× cost correction
+are therefore lower bounds on the laser's difficulty.
+
+---
+
 ## Summary for a reviewer
 
 - **Verified in-session (V):** the 40 J/g threshold and its regime definitions;
