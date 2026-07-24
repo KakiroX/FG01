@@ -1,0 +1,89 @@
+{
+  "n_samples": 1000000,
+  "seed": 20260723,
+  "best_cell": {
+    "d_debris_cm": 0.5,
+    "h_km": 900.0,
+    "P_viable_design": 0.0,
+    "P_viable_plan": 0.0
+  },
+  "P_viable_design_max": 0.38342108815984877,
+  "P_viable_plan_max": 0.18374510598082894,
+  "P_viable_objcost_max": 0.5817469960847846,
+  "cost_metric_note": "P(viable) is zero for sub-2 cm debris under the plan's $100,000/kg criterion, and this is a property of the metric, not of the design: a 1 cm aluminium sphere masses 1.414 g, so the bar is $141 per object. No orbital system can service an object for $141. Under a $50,000-per-object criterion the same physics gives a materially different picture, reported in the P_viable_objcost columns. Both are shown; neither is privileged here.",
+  "binding_constraint_by_cell": {
+    "0.5cm@400km": "cost_per_object",
+    "0.5cm@500km": "cost_per_object",
+    "0.5cm@600km": "cost_per_object",
+    "0.5cm@700km": "cost_per_object",
+    "0.5cm@800km": "cost_per_object",
+    "0.5cm@900km": "cost_per_object",
+    "0.5cm@1000km": "decay_25yr",
+    "0.5cm@1100km": "decay_25yr",
+    "0.5cm@1200km": "decay_25yr",
+    "1cm@400km": "cost_per_object",
+    "1cm@500km": "cost_per_object",
+    "1cm@600km": "cost_per_object",
+    "1cm@700km": "cost_per_object",
+    "1cm@800km": "cost_per_object",
+    "1cm@900km": "cost_per_object",
+    "1cm@1000km": "decay_25yr",
+    "1cm@1100km": "decay_25yr",
+    "1cm@1200km": "decay_25yr",
+    "2cm@400km": "cost_per_object",
+    "2cm@500km": "cost_per_object",
+    "2cm@600km": "cost_per_object",
+    "2cm@700km": "cost_per_object",
+    "2cm@800km": "cost_per_object",
+    "2cm@900km": "decay_25yr",
+    "2cm@1000km": "decay_25yr",
+    "2cm@1100km": "decay_25yr",
+    "2cm@1200km": "decay_25yr",
+    "5cm@400km": "cost_per_object",
+    "5cm@500km": "cost_per_object",
+    "5cm@600km": "cost_per_object",
+    "5cm@700km": "cost_per_object",
+    "5cm@800km": "decay_25yr",
+    "5cm@900km": "decay_25yr",
+    "5cm@1000km": "decay_25yr",
+    "5cm@1100km": "decay_25yr",
+    "5cm@1200km": "decay_25yr",
+    "10cm@400km": "cost_per_object",
+    "10cm@500km": "cost_per_object",
+    "10cm@600km": "shot_mass",
+    "10cm@700km": "shot_mass",
+    "10cm@800km": "decay_25yr",
+    "10cm@900km": "decay_25yr",
+    "10cm@1000km": "decay_25yr",
+    "10cm@1100km": "decay_25yr",
+    "10cm@1200km": "decay_25yr"
+  },
+  "sobol_top": [
+    {
+      "parameter": "n_eng",
+      "S1": 0.22338395780989376,
+      "ST": 0.5193933193343574
+    },
+    {
+      "parameter": "h_km",
+      "S1": 0.24029145920376188,
+      "ST": 0.49659380987898977
+    },
+    {
+      "parameter": "c_platform",
+      "S1": 0.021774812401193774,
+      "ST": 0.17663215471321303
+    },
+    {
+      "parameter": "beta",
+      "S1": 0.017163675657411562,
+      "ST": 0.16907501393868107
+    },
+    {
+      "parameter": "v_rel",
+      "S1": 0.01204019038654244,
+      "ST": 0.15306412246721504
+    }
+  ],
+  "guidance_definition_effect": "Replacing the v4 Bernoulli hit criterion with the delivered-momentum sizing rule is worth the difference between the P_viable_plan and P_viable_design columns. Under the plan-form criterion the concept is throttled by control latency exactly as in v4; under the design-form criterion latency is not a binding constraint anywhere in the sampled space, and the binding constraint moves to cost and decay."
+}

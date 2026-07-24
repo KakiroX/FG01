@@ -1,0 +1,7 @@
+method,status,usd_per_kg_low,usd_per_kg_high,usd_per_1cm_object_low,usd_per_1cm_object_high,targets_1_to_10cm_class
+Ground-based laser ablation,theoretical,100,500,0.141372,0.706858,True
+Electrodynamic tether,demonstrated (sub-scale),1000,5000,1.41372,7.06858,False
+Aerogel / foam capture,concept,5000,20000,7.06858,28.2743,False
+ADR tug (robotic capture),demonstrated (large targets),10000,100000,14.1372,141.372,False
+"FG01 (this study, Re)",concept,3.54848e+06,4.44238e+07,5009.35,62802.6,True
+"FG01 (this study, W substituted)",concept,3.54339e+06,3.98695e+07,5009.35,56364.1,True

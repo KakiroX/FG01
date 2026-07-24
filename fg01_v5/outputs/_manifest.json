@@ -1,0 +1,796 @@
+{
+  "sim00_validation": {
+    "kind": "json"
+  },
+  "sim00_boundary_full": {
+    "kind": "table",
+    "rows": 324,
+    "caption": "SIM-0 disruption boundary: dv_shift, design specific energy, safe intercept-velocity ceiling and the self-disposal floor, for every (h, dh, beta, Es_c).",
+    "tags": {
+      "dv_shift": "DERIVED",
+      "Es_c": "SOURCED(johnson2001)",
+      "beta": "UNVALIDATED",
+      "gamma": "DERIVED"
+    }
+  },
+  "sim00_headline": {
+    "kind": "table",
+    "rows": 9,
+    "caption": "Design point at beta=1.5, gamma=2, Es_c=40 kJ/kg, dh=200 km, v_rel=619 m/s (plan Part 1.4 layout, recomputed).",
+    "tags": {}
+  },
+  "sim00_conclusions": {
+    "kind": "json"
+  },
+  "sim00_vmax_safe": {
+    "kind": "figure",
+    "caption": "Safe intercept-velocity ceiling vs altitude. Everything below a solid line is sub-catastrophic; below the dashed line it stays sub-catastrophic with the \u03b3=2 mass margin. The dotted line is the minimum v_rel that guarantees missed projectile mass is on an immediate-reentry trajectory."
+  },
+  "sim00_pivot_headline": {
+    "kind": "figure",
+    "caption": "Design-point specific energy for direct reentry (v4) versus the 200 km accelerated-reentry shift (v5) at a common intercept velocity. The v5 design point is sub-catastrophic at every altitude and for every \u03b2 in the envelope."
+  },
+  "sim01_mass_scaling_full": {
+    "kind": "table",
+    "rows": 720,
+    "caption": "Momentum-balance projectile mass on target, f(h), and the consistency check E_s < E_s,c, over (h, beta, v_rel, d_debris).",
+    "tags": {
+      "m_p": "DERIVED",
+      "beta": "UNVALIDATED",
+      "rho_Al": "SOURCED",
+      "limitation": "AM-15/AM-16"
+    }
+  },
+  "sim01_design_point": {
+    "kind": "table",
+    "rows": 36,
+    "caption": "1 cm Al-6061 sphere (AM-2), v_rel = 619 m/s, dh = 200 km, gamma = 2.",
+    "tags": {}
+  },
+  "sim01_conclusions": {
+    "kind": "json"
+  },
+  "sim01_f_of_h": {
+    "kind": "figure",
+    "caption": "Required projectile mass on target per unit debris mass. Bands span the unvalidated \u03b2 envelope. v5 needs 1.5\u20136\u00d7 less mass than v4 at the same intercept velocity, and the advantage grows with altitude because dv_shift falls while dv_direct rises."
+  },
+  "sim01_grain_size": {
+    "kind": "figure",
+    "caption": "Diameter of a single compact projectile carrying the full design mass. Rhenium's 9% density advantage over tungsten changes the diameter by only 3%."
+  },
+  "sim02_validation": {
+    "kind": "json"
+  },
+  "sim02_decay_full": {
+    "kind": "table",
+    "rows": 405,
+    "caption": "Pre- and post-kick orbital lifetime for solid Al-6061 spheres, orbit-averaged Gauss propagation on real NRLMSISE-00 density.",
+    "tags": {
+      "rho": "SOURCED(NRLMSISE-00)",
+      "C_D": "SOURCED",
+      "inclination": "85.0 deg (representative)"
+    }
+  },
+  "sim02_altitude_ceilings": {
+    "kind": "table",
+    "rows": 45,
+    "caption": "Highest starting altitude at which a single Delta-h kick puts the object inside the 25-yr and 5-yr disposal rules.",
+    "tags": {}
+  },
+  "sim02_staged_kicks": {
+    "kind": "figure",
+    "caption": "Number of successive sub-catastrophic 200 km kicks needed to bring an object inside the 25-yr rule. The single-kick altitude ceiling is where this first exceeds one."
+  },
+  "sim02_missed_mass_fate": {
+    "kind": "table",
+    "rows": 225,
+    "caption": "Fate of projectile mass that misses. A retrograde intercept at v_rel > dv_direct leaves the missed mass on a sub-orbital trajectory that reenters on its first perigee pass; the counterfactual column is the v4 assumption of a grain left on the original circular orbit.",
+    "tags": {}
+  },
+  "sim02_conclusions": {
+    "kind": "json"
+  },
+  "sim02_lifetime_vs_altitude": {
+    "kind": "figure",
+    "caption": "Post-kick orbital lifetime against pre-kick altitude for five debris sizes and three solar activity cases. Crossings of the 25-yr and 5-yr lines are the altitude ceilings."
+  },
+  "sim03_cw_vs_ballistic": {
+    "kind": "table",
+    "rows": 360,
+    "caption": "Exact Clohessy-Wiltshire cloud spreading versus straight-line ballistic spreading at engagement times-of-flight.",
+    "tags": {
+      "CW": "DERIVED",
+      "dv_T": "DESIGN (launcher dispersion)"
+    }
+  },
+  "sim03_cw_long_timescale": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "CW evolution of a 10 mm/s dispersion at 800 km over release-to-intercept times from 1 s to one orbit (context: shows where CW departs from ballistic, and that the engagement does not operate there).",
+    "tags": {}
+  },
+  "sim03_sigma_cloud_export": {
+    "kind": "table",
+    "rows": 270,
+    "caption": "MANDATED EXPORT to SIM-4: cloud cross-section sigma_cloud at the exact times-of-flight used for R = 1, 5, 10, 50, 100 m, with the delivered-mass fraction for a perfectly centred shot.",
+    "tags": {
+      "sigma_cloud": "DERIVED from dv_T (DESIGN)"
+    }
+  },
+  "sim03_pareto_mass_penalty": {
+    "kind": "table",
+    "rows": 40,
+    "caption": "Launched-mass penalty versus tolerated miss distance for a 1 cm target, with the optimal cloud sigma. The closed-form column is the small-target limit  pi*e*d_miss^2/A_t.",
+    "tags": {}
+  },
+  "sim03_grain_mode": {
+    "kind": "table",
+    "rows": 24,
+    "caption": "Grain-size selection: number of grains striking a 1 cm target, Poisson variability of the delivered momentum, and per-impact specific energy. Design mass on target 0.161 g (800 km, beta=1.5, v_rel=619 m/s).",
+    "tags": {
+      "per_impact_Es": "DERIVED",
+      "swarm equivalence": "AM-15/16 UNVALIDATED"
+    }
+  },
+  "sim03_conclusions": {
+    "kind": "json"
+  },
+  "sim03_mass_penalty": {
+    "kind": "figure",
+    "caption": "Launched-mass penalty as a function of the miss distance the shot pattern must tolerate. The penalty is quadratic in miss distance and inversely proportional to target cross-section, which is why cost per object rises steeply for the smallest debris."
+  },
+  "sim03_sigma_cloud": {
+    "kind": "figure",
+    "caption": "Cloud cross-section at intercept. Because time-of-flight is R/v_rel, the pattern size is set by the ratio of transverse dispersion to intercept velocity times range \u2014 a launcher design choice, tunable to match the achievable miss distance."
+  },
+  "sim04_error_budget_full": {
+    "kind": "table",
+    "rows": 2160,
+    "caption": "Terminal error budget under three miss models, with the launched-mass penalty each implies at 90% delivery confidence. p_hit_plan_* columns apply the plan's Bernoulli model at the v4 cloud size (sigma=0.38 m) for direct comparability.",
+    "tags": {
+      "sigma_pos": "DERIVED (diffraction)",
+      "pointing": "UNVALIDATED (engineering estimate)",
+      "muzzle_frac": "UNVALIDATED (engineering estimate)",
+      "u": "DESIGN (engagement geometry)"
+    }
+  },
+  "sim04_validation": {
+    "kind": "json"
+  },
+  "sim04_headline_design_case": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "R = 10 m, u = 10 m/s, pointing 200 urad, muzzle dispersion 0.1%, 100 MHz ranging, v_rel = 619 m/s, 1 cm target.",
+    "tags": {}
+  },
+  "sim04_conclusions": {
+    "kind": "json"
+  },
+  "sim04_miss_vs_tau": {
+    "kind": "figure",
+    "caption": "Miss distance against control-loop latency. Under the v4 model the miss grows as v_rel*tau and passes metres by 10 ms. Under the co-orbital extrapolating budget the lag term is u*tau at most and the total is dominated by lag-independent launcher pointing."
+  },
+  "sim04_mass_vs_range": {
+    "kind": "figure",
+    "caption": "Launched mass per engagement at 90% delivery confidence. Because the dominant miss term is proportional to range, closing to short range is worth more than any improvement in control latency."
+  },
+  "sim05_fragmentation_full": {
+    "kind": "table",
+    "rows": 486,
+    "caption": "Fragment production under the NASA SBM (regime-selected effective mass, AM-13) and under an energy-based cratering bound, across altitude, beta, intercept velocity and the catastrophic-threshold range.",
+    "tags": {
+      "SBM": "SOURCED(johnson2001)",
+      "Y_Al": "UNVALIDATED",
+      "calibration": "SBM extrapolated below its fit velocity"
+    }
+  },
+  "sim05_swarm_per_impact": {
+    "kind": "table",
+    "rows": 10,
+    "caption": "AM-16: per-impact specific energy for the swarm. Reported ALWAYS alongside the bulk figure, never instead of it. The bulk (single-impactor) energy at the v5 design point is already sub-catastrophic, so this branch is a robustness reserve, not a load-bearing assumption.",
+    "tags": {
+      "swarm equivalence": "UNVALIDATED (AM-15/AM-16)"
+    }
+  },
+  "sim05_net_debris_ledger": {
+    "kind": "table",
+    "rows": 18,
+    "caption": "Net debris per engagement at 800 km. 'SBM branch' applies the mandated model verbatim; 'physical' recognises that a sub-catastrophic impact cannot liberate a fragment larger than the target it did not disrupt.",
+    "tags": {}
+  },
+  "sim05_conclusions": {
+    "kind": "json"
+  },
+  "sim05_es_vs_vrel": {
+    "kind": "figure",
+    "caption": "Bulk specific energy against intercept velocity. The design point sits at roughly half the catastrophic threshold; the margin closes at high v_rel and low beta, which is what sets the velocity ceiling used in SIM-13."
+  },
+  "sim06_demonstrated_benchmarks": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Demonstrated electromagnetic-launch benchmarks (AM-9: no aspirational systems).",
+    "tags": {}
+  },
+  "sim06_coilgun_designs": {
+    "kind": "table",
+    "rows": 144,
+    "caption": "Coilgun sizing across the projectile mass/velocity grid: barrel length at a 10,000 g acceleration limit, stage count, stored electrical energy, capacitor and copper mass.",
+    "tags": {
+      "eta": "SOURCED range 0.30-0.50",
+      "cap energy density": "UNVALIDATED (1.5 J/g)"
+    }
+  },
+  "sim06_gap_analysis": {
+    "kind": "table",
+    "rows": 3,
+    "caption": "Required muzzle energy versus the largest demonstrated electromagnetic launch.",
+    "tags": {}
+  },
+  "sim06_conclusions": {
+    "kind": "json"
+  },
+  "sim06_envelope": {
+    "kind": "figure",
+    "caption": "Required launcher operating point against demonstrated electromagnetic launches. The v5 requirement sits far inside hardware that already exists, which is a direct consequence of the reduced Delta-v and the low intercept velocity the energy gate prefers."
+  },
+  "sim07_material_comparison": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Material comparison on the metrics that actually differentiate: momentum per unit mass (identical), delivered cost, supply, missed-grain area-to-mass, ablation energy, oxide behaviour.",
+    "tags": {
+      "prices": "SOURCED, dated",
+      "H_abl": "SOURCED range"
+    }
+  },
+  "sim07_supply_ceiling": {
+    "kind": "table",
+    "rows": 8,
+    "caption": "Engagements per year supportable at 1% of world production.",
+    "tags": {}
+  },
+  "sim07_weighted_ranking": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Weighted ranking. Weights stated explicitly: delivered cost 0.35, supply 0.25, missed-grain persistence 0.20, environmental 0.20, momentum 0.00 (identical across materials).",
+    "tags": {}
+  },
+  "sim07_conclusions": {
+    "kind": "json"
+  },
+  "sim07_material_trade": {
+    "kind": "figure",
+    "caption": "Material cost and supply. Because momentum transfer is density-independent, these are the axes that actually discriminate, and rhenium loses both."
+  },
+  "sim08_ablation": {
+    "kind": "figure",
+    "caption": "Ablated mass fraction against particle size. Small grains survive because they decelerate high and radiate efficiently; they are nonetheless harmless, carrying microjoules of impact energy at terminal velocity."
+  },
+  "sim08_thermal_sensitivity": {
+    "kind": "table",
+    "rows": 36,
+    "caption": "Sensitivity of the ablated fraction to the two UNVALIDATED thermal inputs: effective heat of ablation (3.5-5.5 MJ/kg) and surface emissivity (0.2-0.6), for rhenium grains.",
+    "tags": {}
+  },
+  "sim08_casualty": {
+    "kind": "table",
+    "rows": 90,
+    "caption": "Ground-casualty expectation per surviving fragment. The 15 J kinetic-energy threshold is the conventional serious-injury criterion used in NASA/FAA debris-casualty analysis; 0.36 m^2 is the standard mean human projected area.",
+    "tags": {}
+  },
+  "sim08_deposition": {
+    "kind": "table",
+    "rows": 12,
+    "caption": "Annual metal deposition from the programme versus the natural cosmic-dust influx (~40,000 t/yr).",
+    "tags": {}
+  },
+  "sim08_conclusions": {
+    "kind": "json"
+  },
+  "sim09_cost_full": {
+    "kind": "table",
+    "rows": 11664,
+    "caption": "Full cost model: per-object and per-kg cost across debris size, altitude, beta, guidance budget, material, launch price, platform cost and engagement count.",
+    "tags": {
+      "prices": "SOURCED dated",
+      "platform": "UNVALIDATED",
+      "n_engagements": "DESIGN"
+    }
+  },
+  "sim09_cost_breakdown": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Cost breakdown per 1 cm object removed at 800 km, design guidance budget, rhenium at 2026 spot, $3000/kg launch, $50M platform amortised over 10,000 engagements.",
+    "tags": {}
+  },
+  "sim09_competitors": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Side-by-side with published competitor costs. Per-object columns convert the per-kg figures using a 1 cm Al sphere (1.414 g) so the two conventions can be compared directly.",
+    "tags": {}
+  },
+  "sim09_engagement_sensitivity": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Cost per object versus the number of engagements a platform completes in its life. Because consumables are ~$31 per object and platform amortisation is everything else, the engagement count is the single dominant economic variable -- and it is the one this study does not model (SIM-11 caveat, R10).",
+    "tags": {}
+  },
+  "sim09_conclusions": {
+    "kind": "json"
+  },
+  "sim09_cost": {
+    "kind": "figure",
+    "caption": "Cost per kg and per object removed. The mass penalty scales as sigma_miss^2/A_target, so cost per object falls with better guidance and cost per kg falls steeply with target size."
+  },
+  "sim10_compliance_matrix": {
+    "kind": "table",
+    "rows": 135,
+    "caption": "Compliance matrix per altitude, debris size and solar case. Released-material tests are the binding licence conditions; target-lifetime tests are mission-effectiveness benchmarks.",
+    "tags": {
+      "FCC": "SOURCED(47 CFR 25.283)",
+      "ODMSP": "SOURCED",
+      "IADC": "SOURCED"
+    }
+  },
+  "sim10_transient_hazard": {
+    "kind": "table",
+    "rows": 72,
+    "caption": "Transient conjunction hazard of released material during its single descending pass through LEO, before reentry.",
+    "tags": {
+      "spatial density": "UNVALIDATED order-of-magnitude profile"
+    }
+  },
+  "sim10_aviation": {
+    "kind": "table",
+    "rows": 9,
+    "caption": "Reentry timing and footprint for released material, and the resulting aviation hazard.",
+    "tags": {}
+  },
+  "sim10_conclusions": {
+    "kind": "json"
+  },
+  "sim11_mass_budget": {
+    "kind": "table",
+    "rows": 9,
+    "caption": "FG01 mass budget. Power at 5 kW and 30 W/kg; structure 20% of subtotal; payload is the rhenium magazine.",
+    "tags": {
+      "subsystem fractions": "UNVALIDATED (parametric)"
+    }
+  },
+  "sim11_recoil": {
+    "kind": "table",
+    "rows": 12,
+    "caption": "Recoil impulse from firing and the propellant needed to hold the operating orbit. Each shot pushes FG01 prograde because the projectile is fired retrograde.",
+    "tags": {}
+  },
+  "sim11_plane_access": {
+    "kind": "figure",
+    "caption": "Time to change orbital plane using differential nodal regression instead of propellant. Near-polar inclinations precess slowly, so plane access is slowest exactly where sun-synchronous debris concentrates."
+  },
+  "sim11_end_of_life": {
+    "kind": "table",
+    "rows": 36,
+    "caption": "End-of-life options: controlled deorbit versus return to a 400 km reload hub.",
+    "tags": {}
+  },
+  "sim11_conclusions": {
+    "kind": "json"
+  },
+  "sim12_viability": {
+    "kind": "table",
+    "rows": 135,
+    "caption": "P(viable) and per-constraint satisfaction probability by altitude, debris size and solar case, under both the plan-form and design-form guidance constraints.",
+    "tags": {
+      "samples": "1000000",
+      "seed": "20260723"
+    }
+  },
+  "sim12_convergence": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Monte-Carlo convergence at the highest-probability cell (0.5 cm debris, 900 km, nominal solar).",
+    "tags": {}
+  },
+  "sim12_sobol": {
+    "kind": "table",
+    "rows": 14,
+    "caption": "Sobol indices for the design-form viability indicator at 0.5 cm, nominal solar (altitude sampled).",
+    "tags": {}
+  },
+  "sim12_posteriors": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Posterior 5th/50th/95th percentiles at the best cell (0.5 cm, 900 km, nominal solar).",
+    "tags": {}
+  },
+  "sim12_conclusions": {
+    "kind": "json"
+  },
+  "sim12_p_viable": {
+    "kind": "figure",
+    "caption": "Joint probability that all five viability constraints hold. The two panels differ only in how the guidance constraint is defined, which is the single largest modelling choice in the study."
+  },
+  "sim12_binding_constraints": {
+    "kind": "figure",
+    "caption": "Per-constraint satisfaction probability against altitude. The lowest curve at each altitude is the binding constraint."
+  },
+  "sim13_operating_grid": {
+    "kind": "table",
+    "rows": 2025,
+    "caption": "Full design grid with epistemic-only Monte Carlo. Design variables fixed at R=10 m, 200 urad pointing, u=10 m/s, tau=10 ms, 0.1% muzzle dispersion.",
+    "tags": {
+      "design vars": "CHOSEN",
+      "sampled": "epistemic only"
+    }
+  },
+  "sim13_top_operating_points": {
+    "kind": "table",
+    "rows": 30,
+    "caption": "Top 30 operating points ranked by P(viable) at nominal solar activity, with the solar-min and solar-max values alongside.",
+    "tags": {}
+  },
+  "sim13_design_card": {
+    "kind": "json"
+  },
+  "sim13_binding_constraints": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Binding-constraint ledger at the optimum. The lowest probability is the concept's true weak point.",
+    "tags": {}
+  },
+  "sim13_engagement_conditional": {
+    "kind": "figure",
+    "caption": "P(viable) against the number of objects one platform services in its life. This single quantity, which the study does not derive from first principles, carries the largest share of the residual uncertainty."
+  },
+  "sim13_robustness": {
+    "kind": "table",
+    "rows": 23,
+    "caption": "Degradation of P(viable) as each design variable drifts from its chosen value, all else held.",
+    "tags": {}
+  },
+  "sim13_conclusions": {
+    "kind": "json"
+  },
+  "sim13_operating_point": {
+    "kind": "figure",
+    "caption": "Viability at the selected design configuration. The star marks the optimum. Viability falls above ~900 km because the decay gate fails, and below because nothing changes but cost keeps accruing."
+  },
+  "int00_validation_3d": {
+    "kind": "table",
+    "rows": 5,
+    "caption": "Closed-form |w| and retrograde efficiency checked against explicit 3-D inertial states at a common node.",
+    "tags": {}
+  },
+  "int00_kinematics": {
+    "kind": "figure",
+    "caption": "Retrograde efficiency and disruption cost versus approach geometry. A crossing engagement wastes all but sin(\u03b8/2) of its relative velocity on a useless cross-track impulse while paying the full |w|\u00b2 in specific energy, so it exceeds the catastrophic threshold at every plane angle."
+  },
+  "int00_crossing_energy_cost": {
+    "kind": "table",
+    "rows": 10,
+    "caption": "Projectile mass and specific energy required to deliver the SAME 51.8 m/s retrograde kick to a 1 cm target, as a function of approach geometry.",
+    "tags": {}
+  },
+  "int00_combined_geometry": {
+    "kind": "table",
+    "rows": 33,
+    "caption": "The operational case: a nearly-co-orbital platform whose plane differs from the target's by theta. Specific energy for a fixed retrograde kick grows as 1 + (v_geom/v_launch)^2.",
+    "tags": {
+      "combined geometry": "DERIVED"
+    }
+  },
+  "int00_guidance_sweep": {
+    "kind": "table",
+    "rows": 240,
+    "caption": "Miss distance vs. approach geometry, engagement range and control latency, under a no-lead and a lead-computing aim law.",
+    "tags": {
+      "sigma_pos": "DERIVED (diffraction/SNR)"
+    }
+  },
+  "int00_timeline": {
+    "kind": "table",
+    "rows": 30,
+    "caption": "Engagement window: how long a target of a given transverse rate remains inside tracking range.",
+    "tags": {}
+  },
+  "int00_no_lead_cone": {
+    "kind": "table",
+    "rows": 24,
+    "caption": "The honest boundary: maximum transverse rate (and equivalent plane angle) for which a NON-extrapolating aim law still lands inside a 1 cm target.",
+    "tags": {}
+  },
+  "int00_conclusions": {
+    "kind": "json"
+  },
+  "int00_miss_vs_transverse": {
+    "kind": "figure",
+    "caption": "Miss distance under a non-extrapolating aim law against target transverse rate. In the co-orbital regime the miss stays inside the target at every latency tested; the latency term only bites for geometries that INT-0 Part A has already excluded."
+  },
+  "int01_validation_montecarlo": {
+    "kind": "table",
+    "rows": 24,
+    "caption": "Closed-form mass efficiency (non-central chi-square) against a grain-by-grain Monte-Carlo overlap count. Sample size is scaled per case so each MC estimate has >=2000 expected hits; the 'sigmas_from_mc' column is the discrepancy in units of the MC's own standard error, which is the meaningful test.",
+    "tags": {}
+  },
+  "int01_areal_density": {
+    "kind": "figure",
+    "caption": "Mass efficiency and grain count on target versus cloud diameter. A wider cloud is more forgiving of aim error but wastes mass as the square of its diameter; the 100-grain floor sets the largest usable grain size."
+  },
+  "int01_conclusions": {
+    "kind": "json"
+  },
+  "int02_beta_vs_velocity": {
+    "kind": "table",
+    "rows": 10,
+    "caption": "Momentum enhancement from crater-ejecta scaling. beta_low/high span mu in [0.40, 0.55] and k in [0.2, 0.5]. The oblique column applies <cos i> = 2/3 for a parallel beam on a curved target.",
+    "tags": {
+      "model": "SOURCED (Housen-Holsapple 2011 scaling)",
+      "application to this regime": "DERIVED, UNVALIDATED"
+    }
+  },
+  "int02_mass_impact": {
+    "kind": "table",
+    "rows": 6,
+    "caption": "Consequence of the corrected beta for the mass budget at the SIM-13 optimum (1 cm target, 900 km, v_rel = 619 m/s).",
+    "tags": {}
+  },
+  "int02_penetration": {
+    "kind": "table",
+    "rows": 30,
+    "caption": "Grain penetration depth (Poncelet form), crater volume and ejecta mass per grain. 'Perforates' compares against a 1 cm solid target.",
+    "tags": {
+      "Poncelet": "SOURCED form",
+      "A=1.5": "UNVALIDATED"
+    }
+  },
+  "int02_conclusions": {
+    "kind": "json"
+  },
+  "int02_validation": {
+    "kind": "json"
+  },
+  "int02_beta": {
+    "kind": "figure",
+    "caption": "Momentum enhancement from crater-ejecta scaling. Below roughly three times the target's strength velocity almost nothing is ejected fast enough to add momentum, so \u03b2 approaches its physical floor of 1. The v5 envelope, drawn from hypervelocity data, was too generous for this regime."
+  },
+  "int03_launch_mass": {
+    "kind": "table",
+    "rows": 324,
+    "caption": "Launched mass, incident mass, bulk and per-grain specific energy across altitude, intercept velocity, cloud diameter and the INT-2 beta cases.",
+    "tags": {
+      "beta": "DERIVED (INT-2)",
+      "eps": "DERIVED (INT-1)"
+    }
+  },
+  "int03_am16_bulk_vs_pergrain": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "AM-16 discharged: bulk specific energy and per-grain specific energy reported together. The swarm split is now computed from the resolved cloud, not assumed.",
+    "tags": {}
+  },
+  "int03_dv_distribution": {
+    "kind": "table",
+    "rows": 3,
+    "caption": "Distribution of imparted Delta-v across shots, including aim scatter and Poisson swarm lumpiness. Replaces the deterministic single value used in v5 SIM-2.",
+    "tags": {}
+  },
+  "int04_aim_tolerance": {
+    "kind": "figure",
+    "caption": "Launched mass versus cloud diameter at fixed shot reliability, showing the interior optimum, and the resulting mass penalty against aim error compared with the v5 closed form."
+  },
+  "int03_velocity_ceiling": {
+    "kind": "table",
+    "rows": 81,
+    "caption": "Velocity ceiling recomputed with the INT-2 beta. The v6 plan's proposed 1000-1100 m/s operating point is evaluated here.",
+    "tags": {}
+  },
+  "int03_conclusions": {
+    "kind": "json"
+  },
+  "int05_ejecta": {
+    "kind": "figure",
+    "caption": "Cumulative ejecta size distribution per engagement. Production terminates at the crater diameter (0.4 mm), an order of magnitude below the 1 cm trackable threshold, so the engagement cannot create a trackable fragment through cratering."
+  },
+  "int05_ejecta_decay": {
+    "kind": "table",
+    "rows": 5,
+    "caption": "Orbital lifetime of crater ejecta on the post-kick orbit (900 x 700 km), against the parent 1 cm fragment.",
+    "tags": {}
+  },
+  "int05_net_debris": {
+    "kind": "table",
+    "rows": 8,
+    "caption": "Net-debris ledger at the 5 cm-cloud design point, separated by size threshold. The >1 cm line is the regulatory metric; the >1 mm line is reported for completeness and is not netted against the removal because sub-mm particles are not tracked objects and decay within two years.",
+    "tags": {}
+  },
+  "int05_conclusions": {
+    "kind": "json"
+  },
+  "int06_size_scaling": {
+    "kind": "table",
+    "rows": 180,
+    "caption": "Interception efficiency, launched mass and the figure of merit (kg removed per kg launched) against target size.",
+    "tags": {
+      "eps": "DERIVED",
+      "beta": "DERIVED (INT-2)"
+    }
+  },
+  "int06_drag_vs_size": {
+    "kind": "table",
+    "rows": 8,
+    "caption": "Drag force versus drag deceleration against target size. Decay is governed by the latter, which falls as 1/diameter.",
+    "tags": {}
+  },
+  "int06_ballistic_coefficient": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Effect of the engagement on the target's own ballistic coefficient: embedded rhenium adds mass, crater ejecta removes it. Net effect on post-kick lifetime.",
+    "tags": {
+      "ejecta mass": "DERIVED (energy/strength crater model)"
+    }
+  },
+  "int06_staged_large_objects": {
+    "kind": "table",
+    "rows": 8,
+    "caption": "Kicks needed to bring an object at 900 km inside the 25-yr rule, and the resulting total projectile mass as a fraction of target mass. The '14% law' applies to ONE kick; large objects need several because their area-to-mass is far lower.",
+    "tags": {}
+  },
+  "int06_conclusions": {
+    "kind": "json"
+  },
+  "int06_target_size": {
+    "kind": "figure",
+    "caption": "Interception efficiency, the mass figure of merit, and drag scaling against target size. Interception rises and saturates at a few centimetres; the figure of merit caps at \u03b2v_rel/(\u03b3\u0394v); drag deceleration falls as 1/diameter, so large objects decay more slowly."
+  },
+  "eco02_cloud_spread": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "How far each real breakup cloud has spread under differential J2 nodal regression since its event.",
+    "tags": {
+      "SBM dv": "SOURCED",
+      "ages": "SOURCED"
+    }
+  },
+  "eco02_engageable": {
+    "kind": "table",
+    "rows": 16,
+    "caption": "Instantaneously engageable >=1 cm members per cluster, inside the INT-0 plane cone and an altitude band.",
+    "tags": {
+      "n_ge_1cm": "UNVALIDATED (modelled, not catalogued)"
+    }
+  },
+  "eco02_flux": {
+    "kind": "table",
+    "rows": 16,
+    "caption": "Engagement opportunities over a mission: members already in the plane cone plus those whose differential nodal drift sweeps them through it.",
+    "tags": {}
+  },
+  "eco02_decay_benefit": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Does a 200 km kick change the compliance status of a 1 cm member of each cluster? (v5 R2 tension applied per cluster.)",
+    "tags": {}
+  },
+  "eco02_viability_number": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "THE viability-defining number: engagement opportunities that are both reachable and worth taking, per platform per decade.",
+    "tags": {}
+  },
+  "eco02_conclusions": {
+    "kind": "json"
+  },
+  "eco02_clusters": {
+    "kind": "figure",
+    "caption": "Modelled \u22651 cm membership of each major breakup cloud against the number one platform can actually reach in a decade, and whether a 200 km kick changes the compliance status of members at that altitude."
+  },
+  "eco01_structural_tension": {
+    "kind": "table",
+    "rows": 7,
+    "caption": "The flux-versus-cost tension: fragments only drift into the firing cone if their altitude differs from the platform's, and that same difference is what makes them expensive to reach. The last column is constant -- see the invariant below.",
+    "tags": {}
+  },
+  "eco01_dv_invariant": {
+    "kind": "table",
+    "rows": 12,
+    "caption": "Closed form: Delta-v per engagement = pi*v/(3.5*Omega_dot*T). Independent of the altitude band, so it cannot be tuned away. Validated against the structural table (107 m/s at Fengyun-1C, 10 yr) and against the tour simulation.",
+    "tags": {}
+  },
+  "eco01_tour": {
+    "kind": "table",
+    "rows": 45,
+    "caption": "Simulated 10-year tour: engagements achieved against the Delta-v budget and the time each engagement takes.",
+    "tags": {
+      "t_engage": "UNVALIDATED (rendezvous cadence assumption)"
+    }
+  },
+  "eco01_propellant": {
+    "kind": "table",
+    "rows": 30,
+    "caption": "Propellant required for the tour Delta-v budget.",
+    "tags": {}
+  },
+  "eco01_conclusions": {
+    "kind": "json"
+  },
+  "eco01_cadence": {
+    "kind": "figure",
+    "caption": "Left: opportunities and cost are driven by the same altitude offset. Right: engagements achieved against \u0394v budget for a 10-year tour, with the niche threshold marked."
+  },
+  "eco03_platform_cost": {
+    "kind": "table",
+    "rows": 54,
+    "caption": "Platform cost across dry mass, build cost per kg, launch price and fleet size (85% learning curve).",
+    "tags": {
+      "build_usd_per_kg": "UNVALIDATED (smallsat benchmark range)"
+    }
+  },
+  "eco03_consumables": {
+    "kind": "table",
+    "rows": 16,
+    "caption": "Consumable mass and cost at the engagement counts ECO-1 actually delivers, against the counts the plan assumed.",
+    "tags": {}
+  },
+  "eco03_conclusions": {
+    "kind": "json"
+  },
+  "eco04_architectures": {
+    "kind": "table",
+    "rows": 38,
+    "caption": "Cost per object for the small-debris tour (A) and the large-tracked-object variant (B), using the same kick physics.",
+    "tags": {
+      "n_engagements A": "DERIVED (ECO-1)",
+      "platform cost": "UNVALIDATED"
+    }
+  },
+  "eco04_value_model": {
+    "kind": "table",
+    "rows": 12,
+    "caption": "Avoided-collision value of removing one >=1 cm object, swept over the shell-overlap factor and the asset-value mix. The 'implied_losses_per_year' column is the model's own reality check: values far above ~1 conflict with the observed record of essentially zero confirmed >=1 cm debris losses, so the low overlap rows are the credible ones.",
+    "tags": {
+      "value model": "UNVALIDATED (parametric)"
+    }
+  },
+  "eco04_fleet_scaling": {
+    "kind": "table",
+    "rows": 4,
+    "caption": "Fleet scaling of architecture A with an 85% learning curve. Cost per object falls only as the learning curve allows, because engagements scale linearly with platforms.",
+    "tags": {}
+  },
+  "eco04_conclusions": {
+    "kind": "json"
+  },
+  "eco04_economics": {
+    "kind": "figure",
+    "caption": "Cost per object for the small-debris tour against the large-object variant, and the \u00ce\u201dv-per-engagement invariant that drives both. Sun-synchronous orbits, where the most valuable debris sits, have the slowest nodal regression and are therefore the most expensive to tour."
+  },
+  "eco05_impulse_efficiency": {
+    "kind": "table",
+    "rows": 28,
+    "caption": "Mass that must be launched to deliver the same 51.8 m/s kick: FG01 projectile versus tug propellant. The tug figure includes accelerating the tug's own mass.",
+    "tags": {
+      "v_eff": "DERIVED",
+      "Isp values": "SOURCED (standard)"
+    }
+  },
+  "eco05_mission_scaled": {
+    "kind": "table",
+    "rows": 9,
+    "caption": "Full mission accounting with the platform scaled to carry its magazine -- the step ECO-4 omitted. Recoil delta-v is included: firing the magazine retrograde pushes the platform prograde.",
+    "tags": {
+      "structure fraction": "UNVALIDATED (0.25)"
+    }
+  },
+  "eco05_crossover": {
+    "kind": "table",
+    "rows": 60,
+    "caption": "Cost per object for FG01 against an electric tug of equal platform cost servicing the same 10 objects, as target mass varies. Both carry the same tour Delta-v.",
+    "tags": {}
+  },
+  "eco05_conclusions": {
+    "kind": "json"
+  },
+  "eco05_efficiency": {
+    "kind": "figure",
+    "caption": "Left: cost per object against target mass for FG01 versus an electric tug of equal platform cost. Right: the kick's effective specific impulse against real propulsion systems. FG01 must launch 14% of the target's mass as tungsten, which is negligible for grams and decisive for tonnes."
+  }
+}

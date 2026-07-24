@@ -1,0 +1,24 @@
+{
+  "limitation": "AM-15/AM-16: treating N micro-grain impacts as one macroscopic impactor of equal total mass is UNVALIDATED at these scales. Every mass figure here is a momentum-balance result and is independent of how the mass is divided; the *disruption* consequence of that division is bounded both ways in SIM-5.",
+  "f_h_range_g_per_g_800km_619ms": [
+    0.0683771849270598,
+    0.1709429623176495
+  ],
+  "Re_on_target_g_per_kg_Al_800km_619ms": [
+    68.3771849270598,
+    170.9429623176495
+  ],
+  "v5_mass_advantage_vs_v4_direct": {
+    "400": 1.51,
+    "500": 2.04,
+    "600": 2.57,
+    "700": 3.11,
+    "800": 3.66,
+    "900": 4.22,
+    "1000": 4.79,
+    "1100": 5.37,
+    "1200": 5.95
+  },
+  "all_design_points_subcatastrophic_at_619": true,
+  "target_mass_independence_check": 0.0
+}

@@ -1,0 +1,5 @@
+v_rel_m_s,bulk_Es_max,per_grain_Es,per_grain_frac,bulk_subcat,bulk_subcat_worst
+400,21.7229,56.727,0.00141817,True,True
+619,29.7591,135.847,0.00339618,True,True
+800,35.7427,226.908,0.0056727,True,False
+1000,41.8784,354.544,0.00886359,False,False

@@ -1,0 +1,17 @@
+{
+  "cw_equals_ballistic_at_engagement": {
+    "max_abs_dev": 2.6750880843806613e-08,
+    "statement": "Over engagement times-of-flight (<=0.25 s for R<=100 m) the exact CW solution differs from straight-line ballistic spreading by <1e-6 relative. The cloud cross-section is therefore set by launcher transverse velocity dispersion, a design variable, not by orbital dynamics."
+  },
+  "sigma_opt_rule": "sigma* = d_miss / sqrt(2) (small-target limit)",
+  "mass_penalty_closed_form": "M_launch/m_on_target = pi*e*d_miss^2/A_target",
+  "mass_penalty_1cm_target": {
+    "1 cm miss": 10.9,
+    "3 cm miss": 98.5,
+    "10 cm miss": 1090.2,
+    "30 cm miss": 9851.4
+  },
+  "recommended_grain_mass_mg_max": 1.0,
+  "recommended_grain_diameter_Re_mm_max": 0.44963327308930295,
+  "mode_recommendation": "Discrete grains, not dust and not a single slug. Grain mass must be small enough that >=100 grains strike the target (Poisson CV <=10%); at a 10 cm miss tolerance that caps grain mass near 1 mg (~0.45 mm rhenium). Dust (0.01 mg) also satisfies the statistics but is harder to launch coherently and is more strongly perturbed by residual gas and charging; 0.1-1 mg is the recommended band."
+}

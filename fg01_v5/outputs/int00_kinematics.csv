@@ -1,0 +1,16 @@
+mode,theta_deg,w_m_s,cos_psi,useful_frac,Es_kJ_kg_at_design,useful_dv_per_Es,v_transverse_m_s
+co-orbital (launcher-supplied),0,400,1,1,18.0196,0.00575,
+co-orbital (launcher-supplied),0,619,1,1,27.8854,0.00371567,
+co-orbital (launcher-supplied),0,1000,1,1,45.0491,0.0023,
+crossing (geometry-supplied),0.01,1.29226,8.72665e-05,8.72665e-05,,0.00015532,1.29226
+crossing (geometry-supplied),0.05,6.46129,0.000436332,0.000436332,,0.00015532,6.46129
+crossing (geometry-supplied),0.1,12.9226,0.000872665,0.000872665,,0.00015532,12.9226
+crossing (geometry-supplied),0.5,64.6127,0.00436331,0.00436331,,0.00015532,64.6127
+crossing (geometry-supplied),1,129.224,0.00872654,0.00872654,,0.00015532,129.224
+crossing (geometry-supplied),2,258.438,0.0174524,0.0174524,,0.00015532,258.438
+crossing (geometry-supplied),5,645.924,0.0436194,0.0436194,,0.00015532,645.924
+crossing (geometry-supplied),8.5,1097.41,0.0741085,0.0741085,,0.00015532,1097.41
+crossing (geometry-supplied),15,1932.86,0.130526,0.130526,,0.00015532,1932.86
+crossing (geometry-supplied),30,3832.64,0.258819,0.258819,,0.00015532,3832.64
+crossing (geometry-supplied),45,5666.85,0.382683,0.382683,,0.00015532,5666.85
+crossing (geometry-supplied),90,10471,0.707107,0.707107,,0.00015532,10471

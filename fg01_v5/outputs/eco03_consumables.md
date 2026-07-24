@@ -1,0 +1,20 @@
+**eco03_consumables** — Consumable mass and cost at the engagement counts ECO-1 actually delivers, against the counts the plan assumed.
+
+| case                            | n_engagements | target                         | material | m_shot_kg | consumable_kg | material_cost_usd | launch_cost_usd | total_consumable_usd | frac_world_production |
+|---------------------------------|---------------|--------------------------------|----------|-----------|---------------|-------------------|-----------------|----------------------|-----------------------|
+| ECO-1 realised (2 km/s tour)    | 24            | 1 cm debris                    | Re       | 0.00214   | 0.05136       | 374.1             | 154.1           | 528.1                | 6.341e-07             |
+| ECO-1 realised (2 km/s tour)    | 24            | 1 cm debris                    | W        | 0.00214   | 0.05136       | 5.136             | 154.1           | 159.2                | 6.114e-10             |
+| ECO-1 realised (2 km/s tour)    | 24            | large tracked object, per shot | Re       | 1         | 24            | 1.748e+05         | 7.2e+04         | 2.468e+05            | 0.0002963             |
+| ECO-1 realised (2 km/s tour)    | 24            | large tracked object, per shot | W        | 1         | 24            | 2400              | 7.2e+04         | 7.44e+04             | 2.857e-07             |
+| ECO-1 realised (10 km/s tour)   | 55            | 1 cm debris                    | Re       | 0.00214   | 0.1177        | 857.2             | 353.1           | 1210                 | 1.453e-06             |
+| ECO-1 realised (10 km/s tour)   | 55            | 1 cm debris                    | W        | 0.00214   | 0.1177        | 11.77             | 353.1           | 364.9                | 1.401e-09             |
+| ECO-1 realised (10 km/s tour)   | 55            | large tracked object, per shot | Re       | 1         | 55            | 4.006e+05         | 1.65e+05        | 5.656e+05            | 0.000679              |
+| ECO-1 realised (10 km/s tour)   | 55            | large tracked object, per shot | W        | 1         | 55            | 5500              | 1.65e+05        | 1.705e+05            | 6.548e-07             |
+| plan's niche target             | 1e+04         | 1 cm debris                    | Re       | 0.00214   | 21.4          | 1.559e+05         | 6.42e+04        | 2.201e+05            | 0.0002642             |
+| plan's niche target             | 1e+04         | 1 cm debris                    | W        | 0.00214   | 21.4          | 2140              | 6.42e+04        | 6.634e+04            | 2.548e-07             |
+| plan's niche target             | 1e+04         | large tracked object, per shot | Re       | 1         | 1e+04         | 7.283e+07         | 3e+07           | 1.028e+08            | 0.1235                |
+| plan's niche target             | 1e+04         | large tracked object, per shot | W        | 1         | 1e+04         | 1e+06             | 3e+07           | 3.1e+07              | 0.000119              |
+| plan's laser-competitive target | 1e+05         | 1 cm debris                    | Re       | 0.00214   | 214           | 1.559e+06         | 6.42e+05        | 2.201e+06            | 0.002642              |
+| plan's laser-competitive target | 1e+05         | 1 cm debris                    | W        | 0.00214   | 214           | 2.14e+04          | 6.42e+05        | 6.634e+05            | 2.548e-06             |
+| plan's laser-competitive target | 1e+05         | large tracked object, per shot | Re       | 1         | 1e+05         | 7.283e+08         | 3e+08           | 1.028e+09            | 1.235                 |
+| plan's laser-competitive target | 1e+05         | large tracked object, per shot | W        | 1         | 1e+05         | 1e+07             | 3e+08           | 3.1e+08              | 0.00119               |

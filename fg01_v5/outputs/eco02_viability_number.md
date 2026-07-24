@@ -1,0 +1,8 @@
+**eco02_viability_number** — THE viability-defining number: engagement opportunities that are both reachable and worth taking, per platform per decade.
+
+| cluster     | dh_band_km | mission_yr | n_in_cone_at_start | n_passing_through_cone | n_total_opportunities | median_rel_nodal_rate_deg_day | remediation_value | T_natural_yr | T_post_kick_yr | useful_opportunities |
+|-------------|------------|------------|--------------------|------------------------|-----------------------|-------------------------------|-------------------|--------------|----------------|----------------------|
+| Fengyun-1C  | 100        | 10         | 232.5              | 8686                   | 8918                  | 0.02238                       | yes               | 43.33        | 11.45          | 8918                 |
+| Cosmos-2251 | 100        | 10         | 105.9              | 5643                   | 5748                  | 0.03259                       | no                | 19.87        | 4.457          | 0                    |
+| Iridium-33  | 100        | 10         | 50.1               | 1438                   | 1489                  | 0.0183                        | no                | 19.29        | 4.33           | 0                    |
+| Cosmos-1408 | 100        | 10         | 174.1              | 4684                   | 4858                  | 0.02537                       | no                | 0.2515       | 0.02649        | 0                    |

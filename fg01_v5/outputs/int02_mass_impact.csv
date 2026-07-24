@@ -1,0 +1,7 @@
+case,beta,m_on_target_mg,Es_kJ_kg,mass_vs_v5_nominal
+v5 assumption (envelope centre),1.75,135.222,18.3247,0.857143
+v5 nominal used in SIM-13,1.5,157.759,21.3788,1
+"INT-2 central, normal incidence",1.30103,181.886,24.6484,1.15293
+"INT-2 central, oblique on sphere",1.20069,197.086,26.7083,1.24929
+INT-2 pessimistic,1.16951,202.34,27.4202,1.28259
+pure embedding (no ejecta),1,236.639,32.0682,1.5

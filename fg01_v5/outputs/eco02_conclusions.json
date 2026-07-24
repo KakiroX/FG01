@@ -1,0 +1,29 @@
+{
+  "method": "Each real cloud synthesised from its parent orbit with the NASA SBM ejection-velocity distribution, aged under differential J2 nodal regression to 2026.6, then filtered by the INT-0 plane cone (1.5 deg) and an altitude band.",
+  "population_context": {
+    "MASTER_total_ge_1cm": 1200000.0,
+    "MASTER_total_ge_10cm": 54000,
+    "tracked": 40000,
+    "note": "Only ~3% of the >=1 cm population is tracked, so target acquisition cannot rely on the public catalogue -- this is v5 R10 restated as an architecture requirement, not a footnote."
+  },
+  "cloud_spread_finding": "Every cloud studied has spread to a full 360 deg in RAAN. Differential nodal regression, driven by the spread in semi-major axis and inclination the breakup itself imparts, turns a compact cloud into a complete shell within a few years. The 'cluster' the v6 plan hoped to service as a co-orbital group no longer exists as a group: what survives is a shared *inclination band*, not a shared plane.",
+  "engageable_instant": {
+    "Fengyun-1C": 180.49500415613494,
+    "Cosmos-2251": 86.13741859792903,
+    "Iridium-33": 38.68784436432896,
+    "Cosmos-1408": 183.0018728261839
+  },
+  "opportunities_per_decade": {
+    "Fengyun-1C": 8918.192008902532,
+    "Cosmos-2251": 5748.44315180195,
+    "Iridium-33": 1488.5085103245856,
+    "Cosmos-1408": 4858.364528192205
+  },
+  "best_cluster": "Fengyun-1C",
+  "best_useful_opportunities_per_decade": 8918.192008902532,
+  "verdict_vs_thresholds": {
+    "niche_threshold_1e4": false,
+    "laser_competitive_1e5": false
+  },
+  "R2_tension_per_cluster": "Cosmos-1408 at 480 km is the densest low cluster but its 1 cm members decay unaided well inside 25 years, so engaging them has no remediation value. Fengyun-1C at 865 km has real remediation value and is the largest cloud, which is the combination the architecture needs -- but it sits at the top of the altitude band where a single 200 km kick still complies."
+}

@@ -1,0 +1,19 @@
+{
+  "eps_closed_form": "eps = 1 - exp(-r_t^2 / 2 sigma^2)  (centred shot)",
+  "validation_max_rel_err": 0.028181165649518683,
+  "validation_max_sigmas": 2.164700952265315,
+  "cloud_diameter_convention": "d_cloud is the 95%-mass-containment diameter, so sigma = d_cloud / (2 x 2.4477). Stated explicitly because eps depends on it quadratically and the plan did not fix a convention.",
+  "eps_by_cloud_diameter_1cm_target": {
+    "2 cm cloud": 0.5271156441801059,
+    "5 cm cloud": 0.11292407764695755,
+    "10 cm cloud": 0.029511937151244432,
+    "20 cm cloud": 0.007461071095584857
+  },
+  "area_ratio_finding": "A Gaussian cloud is exactly 3x more mass-efficient than the naive uniform-disc area ratio the plan assumed. In the small-target limit eps = r_t^2/(2 sigma^2) = 2.995 (d_t/d_cloud)^2, versus (d_t/d_cloud)^2 for a uniform disc, because a Gaussian concentrates mass at the centre where the target is. Measured values for a 1 cm target at 2/5/10/20 cm cloud diameter are 0.527/0.113/0.0295/0.0075, against the plan's uniform-disc estimate of 0.25/0.04/0.01/0.0025. This is a factor-of-3 improvement in consumable mass over the plan's working assumption, and it holds only if the dispersion mechanism really produces a peaked rather than a top-hat profile -- which is the UNVALIDATED part.",
+  "grain_size_recommendation": {
+    "d_grain_um": 450,
+    "m_grain_mg": 1.0024488363385584,
+    "rationale": "At a 5 cm cloud on a 1 cm target (eps = 0.040) a 3 g shot puts 120 mg on target; at 450 um rhenium grains (0.45 mg each) that is 267 grains -- above the 100-grain floor for the Poisson CV to stay under 10%. Smaller grains improve the statistics but multiply the released-grain count and hence the transient conjunction exposure (v5 SIM-10); larger grains push per-impact energy up. 200-450 um is the band that satisfies all three."
+  },
+  "AM15_status": "The swarm is now modelled explicitly rather than assumed equivalent to a single impactor: the areal-density field, the grain count on target and the Poisson variability are all computed. What remains UNVALIDATED is the upstream step -- converting a solid slug into a controlled Gaussian swarm with the specified sigma. That is a launcher-mechanism question, not a physics question."
+}

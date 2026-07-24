@@ -1,0 +1,35 @@
+{
+  "nrlmsise_implementation": "nrlmsise00 (Python wrapper of Dominik Brodowski C port of NRLMSISE-00), v0.1.2",
+  "starshine1": {
+    "A_over_m_m2_per_kg": 0.004581157894854989,
+    "observed_days": 258.0,
+    "modelled_days": {
+      "solar_min": 1011.1336683597657,
+      "nominal": 232.81101595732167,
+      "solar_max": 94.6015610579261
+    },
+    "rel_error_vs_observed": {
+      "solar_min": 2.9191227455804873,
+      "nominal": -0.09763172109565244,
+      "solar_max": -0.6333272827212166
+    },
+    "note": "Observed lifetime falls between the nominal and solar-max model cases, consistent with the rising phase of cycle 23 (F10.7 ~ 130-200 over 1999-2000). Fixed-F10.7 cases bracket the observation; they are not expected to reproduce it exactly."
+  },
+  "averaged_vs_cartesian": {
+    "window_revolutions": 400,
+    "window_days": 27.395452940932593,
+    "delta_a_cartesian_m": -1344.2769706333056,
+    "delta_a_averaged_m": -1344.3594603370875,
+    "rel_diff": 6.136362192014706e-05,
+    "delta_e_cartesian": -9.943850603648559e-05,
+    "delta_e_averaged": -9.945775644543652e-05,
+    "cartesian_stepsize_convergence_rel": 0.001569755899613189,
+    "note": "J2 disabled in the Cartesian run and the window set to an integer number of revolutions, so this isolates the orbit-averaging error rather than J2 osculating short-period terms."
+  },
+  "fast_decay_250km_1cm": {
+    "cartesian_days": 0.8475694444444445,
+    "cartesian_reentered": true,
+    "averaged_days": 0.8310567471782122,
+    "rel_diff": 0.01948241217810281
+  }
+}

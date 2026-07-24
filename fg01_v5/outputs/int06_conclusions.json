@@ -1,0 +1,35 @@
+{
+  "Q1_more_collisions": {
+    "answer": "YES, and it is the dominant favourable scaling -- but it saturates.",
+    "eps_saturation_diameter_cm": 5.431137645156314,
+    "detail": "eps = 1 - exp(-r_t^2/2 sigma^2) rises steeply with target size and reaches 0.95 at a 5.4 cm target for a 5 cm cloud. Beyond that every grain is already being caught and further size buys nothing. The saturation point is set by the CLOUD size, which in turn is set by the aim error -- so with the 5.8 mm co-orbital miss the cloud can be shrunk and saturation reached at a few centimetres."
+  },
+  "Q2_more_momentum": {
+    "answer": "More total momentum, yes. More delta-v, no -- the opposite. The useful figure of merit is mass removed per unit mass launched, and it caps.",
+    "cap_kg_removed_per_kg_launched": 7.173168320296931,
+    "cap_formula": "beta*v_rel/(gamma*dv_req)",
+    "detail": "Once eps saturates, launched mass is a fixed 13.9% of target mass, so the figure of merit caps at 7.17 kg removed per kg launched. Below saturation it is worse by exactly the factor eps: a 1 cm target catches only 11% of the cloud, so it removes 0.8 kg per kg launched against 7.1 at saturation. This is the quantitative form of the ECO-5 result -- and note the cap depends only on beta, v_rel and the required delta-v, NOT on target size."
+  },
+  "Q3_more_drag": {
+    "answer": "More drag FORCE, less drag ACCELERATION. Decay is governed by acceleration, so bigger objects decay SLOWER, in exact proportion to diameter.",
+    "detail": "A/m = 3/(4 rho r), so a 10 cm sphere has one tenth the area-to-mass of a 1 cm sphere and takes ten times as long to decay from the same orbit. At 900 km a 1 cm fragment reaches the 25-yr rule after a 200 km kick; a 10 cm fragment does not. This partly cancels the interception gain: bigger targets are easier to hit and harder to deorbit."
+  },
+  "Q4_ballistic_coefficient_change": {
+    "answer": "A real effect, not previously modelled, and it is slightly FAVOURABLE -- cratering removes more mass than the rhenium adds.",
+    "worked_1cm": {
+      "embedded_Re_g": 0.19708399844950059,
+      "ejecta_lost_g": 0.3693663681354249,
+      "net_mass_change_pct": -12.186484774711182,
+      "A_over_m_change_pct": 13.87768698638961,
+      "lifetime_change_pct": -12.186484774711172
+    },
+    "detail": "At the 1 cm design point the engagement embeds 0.197 g of rhenium and excavates 0.369 g of aluminium, a net mass change of -12.2%. Area-to-mass therefore rises by 13.9% and post-kick lifetime falls by 12.2%. The two effects are individually of order 10-25% and partly cancel; the residual is favourable but small enough that it does not change any gate. Worth carrying, not worth optimising for.",
+    "caveat": "This rests on the energy/strength crater model (ejecta mass = KE/Y * rho), which is an order-of-magnitude estimate. If real ejecta yield were 3x lower the net mass change would flip sign and lifetime would lengthen slightly instead."
+  },
+  "Q5_do_big_objects_need_more_kicks": {
+    "answer": "For REAL derelicts, no -- one kick still suffices, so the 14% law holds. But this depends entirely on using correct geometry.",
+    "detail": "Modelled as SOLID aluminium spheres (the AM-2 convention), large objects have vanishing area-to-mass and need two kicks, pushing the projectile fraction to 28% and halving the figure of merit to 3.5. That is an artefact: AM-2 is right for fragments and wrong for intact derelicts, which are thin-walled shells. A real SL-8 stage is 1,400 kg with ~10 m^2 of tumbling-average area, giving A/m = 0.0071 -- an order of magnitude above a solid sphere of the same diameter and comparable to a 5-10 cm fragment. So it decays like a small fragment despite massing 1.4 t, one kick clears the 25-yr rule, and the projectile fraction stays at 14%.",
+    "caution": "This is the one place where the AM-2 solid-sphere convention, adopted for conservatism on fragments, becomes actively misleading if carried over to intact objects. Any future large-object analysis must use real areas."
+  },
+  "synthesis": "The intuition is right in the direction that matters most -- a bigger target does intercept far more of the cloud, and that is exactly why ECO-5 found the economics improve with target size. But it saturates at a few centimetres, after which the launched mass becomes a fixed fraction of target mass (the 14% law) and the figure of merit goes flat. Meanwhile the drag benefit runs the OTHER way, because area-to-mass falls with size. The net is that the useful window in target size is bounded at both ends: too small and you waste most of the cloud, too large and you cannot deorbit it with a fixed-size kick."
+}

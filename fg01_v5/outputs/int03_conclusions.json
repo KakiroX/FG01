@@ -1,0 +1,26 @@
+{
+  "beta_used": 1.2007,
+  "worked_point": {
+    "target": "1 cm Al-6061 sphere at 900 km",
+    "v_rel_m_s": 619.0,
+    "d_cloud_cm": 5.0,
+    "m_launch_g": 1.7453005682682963,
+    "m_incident_mg": 197.08645688840824,
+    "grains_on_target": 196.6050034117112,
+    "bulk_Es_kJ_kg": 26.7082663104121,
+    "per_grain_Es_J_kg": 135.84733779374997,
+    "consumable_cost_Re_usd": 17.94692574350289,
+    "consumable_cost_W_usd": 5.410431761631719
+  },
+  "vs_plan_expectation": "The plan's worked estimate was m_L ~ 3 g at ~$22-30 for a 5 cm cloud with eps = 0.04 and beta = 1.15. Recomputing with the resolved Gaussian field (eps = 0.1129, 3x the uniform-disc value the plan assumed) and the INT-2 beta (1.201) gives m_L = 1.75 g at $17.95 (rhenium) or $5.41 (tungsten). The two corrections -- a lower beta (worse) and a peaked rather than flat cloud (better) -- very nearly cancel.",
+  "AM16_discharged": "Bulk and per-grain specific energy are now both computed from the resolved swarm rather than asserted. At the design point the bulk figure is 26.7 kJ/kg (0.67x threshold) and the per-grain figure is 136 J/kg (0.340% of threshold). The swarm route is not load-bearing: the bulk figure alone clears the gate, so AM-16 is a reserve rather than a dependency.",
+  "dv_distribution_finding": "With gamma = 2 sizing the median shot delivers roughly twice the required Delta-v and the 5th percentile still clears it, so a single engagement is sufficient in the large majority of shots. The distribution is dominated by aim scatter, not by Poisson lumpiness -- at 300+ grains on target the swarm averaging is effectively deterministic, which is the quantitative form of the PI's 'many grains touching the debris' picture.",
+  "velocity_ceiling_correction": {
+    "altitude_km": 900,
+    "v_max_at_Es_c_40_m_s": 1000.0,
+    "v_max_at_Es_c_30_m_s": 700.0,
+    "v_max_v5_beta_1p5": 1100.0,
+    "statement": "The v6 plan's Part III proposes running at 1,000-1,100 m/s ('upper safe-zone, less launched mass per shot'). Recomputed with the INT-2 beta, the ceiling at 900 km is 1000 m/s against the nominal 40 kJ/kg threshold and only 700 m/s against its 30 kJ/kg lower bound. The proposed operating point is therefore marginal rather than safe: it passes the nominal gate and fails the conservative one. Two effects partly cancel -- a lower beta needs more mass (worse), but beta itself rises with impact speed (better) -- so the ceiling drops less than the raw beta change suggests. The recommendation is still to stay at or below ~619 m/s, where E_s is 0.67x the nominal and 0.89x the worst-case threshold, because the reason to raise v_rel was to save consumable mass and consumables are ~$5 per shot in tungsten. There is nothing to buy and margin to lose."
+  },
+  "INT4_optimum": "The optimal cloud sigma tracks the closed-form sigma* = sigma_miss * sqrt(-ln(1-conf)) closely, confirming the v5 sizing rule now that the cloud is resolved. At the co-orbital aim error of 5.8 mm the optimum is a 4.7 cm cloud, i.e. the cloud should be barely larger than the target -- the opposite of the wide-dispersal picture, and the direct consequence of aiming well."
+}

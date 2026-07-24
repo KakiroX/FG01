@@ -1,0 +1,20 @@
+{
+  "design_point_subcatastrophic": true,
+  "design_Es_kJ_kg": 21.83289212819763,
+  "fraction_of_threshold": 0.5458223032049407,
+  "v_rel_at_which_design_turns_catastrophic_m_s": {
+    "beta=1.0": 800.0,
+    "beta=1.5": 1500.0,
+    "beta=2.5": 2000.0
+  },
+  "sbm_non_catastrophic_N_gt_1cm_at_design": 0.2624881799737519,
+  "sbm_caveat": "The SBM non-catastrophic branch returns 0.262 fragments >1 cm from a 1 cm, 1.41 g target that by construction is not disrupted. This is the model being extrapolated outside its calibration (hypervelocity impacts, large targets). It is reported because it is the mandated model and because it errs conservatively.",
+  "energy_based_ejecta_g": 0.16667383004525077,
+  "energy_based_ejecta_fraction_of_target": 0.1178976174922672,
+  "ejecta_fate": "Cratering ejecta leave the target at a small fraction of the 619 m/s impact speed and have area-to-mass ratios 5-50x the parent, so they decay faster than the parent object on the same lowered orbit (SIM-2).",
+  "missed_mass_contribution": "Zero persistent objects: at v_rel >= dv_direct(h) the missed mass is on an immediate-reentry trajectory (SIM-2).",
+  "net_debris_per_engagement": {
+    "SBM_branch": 0.737511820026248,
+    "physical": 1.0
+  }
+}

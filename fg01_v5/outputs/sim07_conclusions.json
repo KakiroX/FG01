@@ -1,0 +1,19 @@
+{
+  "momentum_finding": "At fixed projectile mass, momentum delivered is identical for all materials: p = mv contains no density term. The concept's founding justification for rhenium -- that it is the fourth-densest stable element -- has no bearing on the momentum budget.",
+  "density_effect_on_missed_grains": {
+    "grain_diameter_1mg_mm": {
+      "Re": 0.44963327308930295,
+      "W": 0.4629387641715062
+    },
+    "A_over_m_1mg": {
+      "Re": 0.15878400973718682,
+      "W": 0.1683204863207565
+    },
+    "finding": "A denser grain of the same mass is smaller and has a LOWER area-to-mass ratio, so it decays SLOWER, not faster. Rhenium's A/m is 5.7% below tungsten's at equal grain mass. The one axis on which density could have favoured rhenium therefore runs slightly against it. In this design it is moot: SIM-2 shows missed mass is on an immediate-reentry trajectory regardless of material, so persistence is zero either way."
+  },
+  "cost_ratio_Re_over_W_material": 72.83,
+  "supply_ratio_W_over_Re": 1037.037037037037,
+  "delivered_cost_ratio_Re_over_W": 2.0116901408450705,
+  "verdict": "Tungsten dominates rhenium on every metric that differentiates them: 73-243x cheaper as raw material, 1037x more available, chemically better behaved on reentry, and marginally better on missed-grain decay. Rhenium's only remaining advantages are a 9% density edge, which buys a 3% smaller grain and nothing else, and a higher melting point that is irrelevant at a 619 m/s impact. The honest recommendation is tungsten. Because launch cost dominates delivered cost at the small per-shot masses v5 needs, the switch changes total cost by a factor of ~1.6, not ~100 -- so the material choice is not what decides viability, but rhenium cannot be defended on physics.",
+  "if_rhenium_retained": "If the programme retains rhenium for non-technical reasons, the supply ceiling is the binding issue: at 1% of world production (0.81 t/yr) and the 2.69 g design shot, rhenium supports ~300,000 engagements per year, which is not limiting; at the 175 g shot it supports ~4,600, which is."
+}

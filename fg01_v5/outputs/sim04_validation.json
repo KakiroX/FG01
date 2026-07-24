@@ -1,0 +1,37 @@
+{
+  "closed_form_vs_numeric": [
+    {
+      "sigma_miss_m": 0.005,
+      "penalty_numeric": 12.491616778364747,
+      "penalty_closed_form": 12.51815043353279,
+      "rel_err": 0.002119614659444136,
+      "sigma_numeric": 0.00705589165621408,
+      "sigma_closed_form": 0.007587135646925733
+    },
+    {
+      "sigma_miss_m": 0.02,
+      "penalty_numeric": 200.42697728236598,
+      "penalty_closed_form": 200.29040693652465,
+      "rel_err": 0.0006818616424530826,
+      "sigma_numeric": 0.030798708320846174,
+      "sigma_closed_form": 0.03034854258770293
+    },
+    {
+      "sigma_miss_m": 0.05,
+      "penalty_numeric": 1253.360104706949,
+      "penalty_closed_form": 1251.8150433532792,
+      "rel_err": 0.0012342568991110477,
+      "sigma_numeric": 0.07771353847335924,
+      "sigma_closed_form": 0.07587135646925733
+    }
+  ],
+  "note": "The closed form uses the small-target limit; the numerical routine uses the exact non-central chi-square fraction and a Rayleigh miss. Agreement confirms the analytic sizing rule used throughout SIM-9 and SIM-12.",
+  "error_term_ranking_at_design_point_m": {
+    "range": 0.005414832917849359,
+    "pointing": 0.002,
+    "muzzle": 0.00016155088852988692,
+    "sigma_pos": 5.4999999999999995e-05,
+    "rel_accel": 1.1091806044729941e-08,
+    "vel_extrap": 4.983213704684029e-09
+  }
+}

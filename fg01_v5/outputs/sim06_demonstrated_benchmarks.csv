@@ -1,0 +1,5 @@
+system,m_p_kg,v_m_s,E_muzzle_J,citation,E_check_J
+US Navy/ONR EMRG 2008 record shot,3.2,2520,1.016e+07,onr2008,1.01606e+07
+US Navy/ONR EMRG 2010 33 MJ shot,10.4,2520,3.3e+07,onr2010,3.30221e+07
+"Coilgun, laboratory (Turman 1996)",0.01,2000,20000,turman1996,20000
+"Light-gas/EM hybrid, 3 g class",0.003,5900,52000,mcnab2003,52215

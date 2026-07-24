@@ -1,0 +1,13 @@
+{
+  "crater_geometry": {
+    "per_grain_crater_diameter_mm": 1.3851982575280544,
+    "per_grain_penetration_mm": 1.4618778997318318,
+    "n_craters": 197.0,
+    "total_excavated_fraction_of_target": 0.2618014455525203
+  },
+  "key_finding": "The 197 craters of a design engagement excavate 370 mg, 26.2% of the target's mass. The largest single crater is 1.39 mm across, so no ejecta fragment can approach 1 cm and the engagement cannot produce a trackable fragment by this route. This is a stronger statement than v5's, which had to argue from the sub-catastrophic regime; here it follows from crater geometry directly.",
+  "ejecta_fate": "Ejecta are sub-millimetre with area-to-mass ratios 10-1000x the parent, so on the same lowered orbit they decay far faster than the object they came from -- 10 um ejecta in months against 18 yr for the parent. They are a transient, untrackable dust contribution, not a persistent debris population.",
+  "rebound_bound": "INT-2 shows 450 um rhenium grains penetrate ~1.5 mm into aluminium at 619 m/s -- three times their own diameter -- so they embed rather than rebound. The rebound branch is therefore bounded at zero for the design grain size. Were grains to rebound instead, each would carry up to 2x its momentum (raising beta, helping the impulse) while becoming a new sub-mm object on a near-target orbit (hurting the ledger); at 450 um that object would decay within months at these altitudes, so even the adverse branch does not produce persistent debris.",
+  "net_per_engagement": 1.0,
+  "interim_hazard_R7": "The target sits on a 900 x 700 km orbit for 18.2 yr before reentry, versus 63.5 yr undisturbed. Time-integrated exposure falls by roughly 3.5x, and the object spends that time in a lower, less populated shell than the one it started in. The interim hazard is therefore a reduction, not merely a deferral -- but this is an argument from the lifetime ratio, not an integrated collision-probability calculation, and is flagged as such."
+}

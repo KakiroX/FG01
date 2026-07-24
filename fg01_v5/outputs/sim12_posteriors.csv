@@ -1,0 +1,7 @@
+quantity,p05,p50,p95
+design dv (m/s),39.9817,51.785,63.6946
+cost per kg (USD),1.7026e+07,1.40618e+08,1.38173e+09
+cost per object (USD),3012.52,24797,243416
+T_decay (yr),6.25325,9.09795,12.7165
+shot mass (g),2.79254,42.7355,310.663
+miss distance (mm),10.8368,39.8489,89.3163

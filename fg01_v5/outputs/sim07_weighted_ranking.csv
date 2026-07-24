@@ -1,0 +1,5 @@
+material,cost_score,supply_score,persistence_score,environmental_score,weighted_total
+Steel,0.260059,0.927875,1,1,0.996051
+Tungsten,0.259655,0.492428,0.549911,0.8,0.756607
+Tantalum,0.258449,0.330103,0.605764,0.9,0.745508
+Rhenium,0.240684,0.190849,0.518755,0.5,0.588421

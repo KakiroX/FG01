@@ -1,0 +1,5 @@
+cluster,dh_band_km,mission_yr,n_in_cone_at_start,n_passing_through_cone,n_total_opportunities,median_rel_nodal_rate_deg_day,remediation_value,T_natural_yr,T_post_kick_yr,useful_opportunities
+Fengyun-1C,100,10,232.456,8685.74,8918.19,0.0223781,True,43.3317,11.4471,8918.19
+Cosmos-2251,100,10,105.93,5642.51,5748.44,0.0325929,False,19.8712,4.45704,0
+Iridium-33,100,10,50.0953,1438.41,1488.51,0.0183029,False,19.2895,4.3301,0
+Cosmos-1408,100,10,174.098,4684.27,4858.36,0.0253659,False,0.251479,0.0264865,0

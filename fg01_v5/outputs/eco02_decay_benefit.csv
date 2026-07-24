@@ -1,0 +1,5 @@
+cluster,h_km,T_natural_yr,T_post_kick_yr,speedup,natural_already_compliant,post_kick_compliant,remediation_value
+Fengyun-1C,865,43.3317,11.4471,3.78538,False,True,True
+Cosmos-2251,789,19.8712,4.45704,4.45837,True,True,False
+Iridium-33,789,19.2895,4.3301,4.45476,True,True,False
+Cosmos-1408,480,0.251479,0.0264865,9.4946,True,True,False

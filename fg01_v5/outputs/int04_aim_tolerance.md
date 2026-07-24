@@ -1,0 +1,10 @@
+**int04_aim_tolerance** — Optimal cloud diameter and launched mass to deliver the design Delta-v on 95% of shots, versus aim error. The interior optimum exists because a wider cloud tolerates more miss but wastes mass as its area.
+
+| sigma_miss_mm | d_cloud_optimal_cm | sigma_cloud_mm | sigma_cloud_over_sigma_miss | eps_centred | eps_at_95pct_miss | m_launch_g | reliability_check_MC | penalty_vs_perfect_aim | cost_Re_usd | cost_W_usd | closed_form_sigma_mm |
+|---------------|--------------------|----------------|-----------------------------|-------------|-------------------|------------|----------------------|------------------------|-------------|------------|----------------------|
+| 2             | 0.5                | 1.021          | 0.5107                      | 1           | 0.4993            | 0.1973     | 0.9483               | 2.003                  | 2.029       | 0.6118     | 3.462                |
+| 5.775         | 4.712              | 9.626          | 1.667                       | 0.1262      | 0.04606           | 2.14       | 0.9474               | 21.71                  | 22          | 6.632      | 9.995                |
+| 10            | 8.356              | 17.07          | 1.707                       | 0.042       | 0.01535           | 6.419      | 0.9468               | 65.14                  | 66.01       | 19.9       | 17.31                |
+| 20            | 17.1               | 34.92          | 1.746                       | 0.0102      | 0.003837          | 25.68      | 0.9479               | 260.7                  | 264.1       | 79.62      | 34.62                |
+| 50            | 42.34              | 86.49          | 1.73                        | 0.001669    | 0.000614          | 160.5      | 0.9473               | 1629                   | 1650        | 497.5      | 86.54                |
+| 100           | 84.59              | 172.8          | 1.728                       | 0.0004185   | 0.0001535         | 642        | 0.947                | 6515                   | 6601        | 1990       | 173.1                |

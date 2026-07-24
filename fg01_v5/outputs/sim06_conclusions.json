@@ -1,0 +1,31 @@
+{
+  "design_shot": {
+    "m_p_g": 2.69,
+    "v_m_s": 619.0,
+    "l_barrel_m": 1.9535774194041797,
+    "n_stages": 7.0,
+    "E_kin_J": 515.351545,
+    "E_elec_J": 1288.3788625,
+    "m_cap_kg": 0.8589192416666667,
+    "m_cu_kg": 1.820189073243802,
+    "l_wire_m": 61.37344469019077,
+    "wire_awg": 12.0,
+    "energy_cost_usd": 3.578830173611111e-05
+  },
+  "large_pattern_shot": {
+    "m_p_g": 175.0,
+    "v_m_s": 619.0,
+    "l_barrel_m": 1.9535774194041797,
+    "n_stages": 7.0,
+    "E_kin_J": 33526.5875,
+    "E_elec_J": 83816.46875,
+    "m_cap_kg": 55.87764583333333,
+    "m_cu_kg": 1.820189073243802,
+    "l_wire_m": 61.37344469019077,
+    "wire_awg": 12.0,
+    "energy_cost_usd": 0.002328235243055556
+  },
+  "gap_statement": "Required muzzle energy at the v5 design point is 515 J for the 2.69 g pattern and 33.5 kJ for a 175 g pattern. The largest demonstrated electromagnetic launch is 33 MJ (US Navy EMRG, 2010), and 2 kJ-class coilguns are routine laboratory hardware. The v5 launcher requirement is 3-5 orders of magnitude inside the demonstrated envelope -- the opposite of v4's position, because the pivot cut both the required velocity and the required mass.",
+  "energy_cost_per_shot_usd": 3.578830173611111e-05,
+  "charge_time_at_5kW_s": 0.2576757725
+}

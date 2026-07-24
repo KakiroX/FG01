@@ -1,0 +1,5 @@
+n_platforms,unit_cost_musd,total_cost_musd,n_engagements,cost_per_object_usd,frac_of_1_2M_population
+1,50,50,24,2.08333e+06,2e-05
+10,29.141,291.41,240,1.21421e+06,0.0002
+100,16.984,1698.4,2400,707666,0.002
+1000,9.89861,9898.61,24000,412442,0.02

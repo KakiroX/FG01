@@ -1,0 +1,21 @@
+{
+  "binding_distinction": "FCC 25.283 and ODMSP bind FG01 and every gram it releases, not the pre-existing debris it engages. Released material reenters within one orbital period at any v_rel >= dv_direct(h), so the disposal rules are satisfied by construction at every altitude tested -- the single largest regulatory improvement over v4, which assumed missed mass stayed on a near-circular orbit.",
+  "target_effectiveness_25yr_single_kick_ceiling_km": {
+    "0.5 cm": 900.0,
+    "1.0 cm": 900.0,
+    "2.0 cm": 800.0,
+    "5.0 cm": 700.0,
+    "10.0 cm": 700.0
+  },
+  "transient_hazard_per_engagement_800km_1mg": 3.9096141623440395e-06,
+  "transient_hazard_note": "Released grains cross the populated shells once on the way down. The conjunction probability per engagement is ~1e-6 for a 2.69 g shot of 1 mg grains, i.e. ~0.01 expected conjunctions per 10,000 engagements. It scales linearly with grain count, so coarse grains are preferable on this axis and fine grains on the delivery-statistics axis (SIM-3); 0.1-1 mg satisfies both.",
+  "liability": "Liability Convention (1972) Article II imposes absolute liability for damage on the surface and fault-based liability in space. Deliberate release of a hypervelocity cloud is a fault-liability exposure even though the material self-disposes; the mitigation is conjunction screening of the release corridor before each shot, which is operationally identical to standard collision-avoidance screening.",
+  "registration": "Released projectile mass is arguably a 'space object' under the Registration Convention. Because it reenters within one orbit and is never catalogued, the practical reading is that it is a component of FG01's operation rather than a separate registrable object -- but this is untested in law and is flagged, not resolved, here.",
+  "environmental": "Re2O7 deposition at 10,000 engagements per year is 27 kg/yr, ~7e-7 of the natural cosmic-dust influx. No NEPA-scale effect.",
+  "casualty": {
+    "expectation_per_event": 0.0,
+    "threshold": 0.0001,
+    "verdict": "PASS"
+  },
+  "remaining_gap": "No regime currently authorises a third party to apply force to another state's registered object, however small. Debris under 10 cm is usually untracked and unattributed, which is a practical but not a legal answer. Explicit authorisation, or an internationally agreed small-debris remediation regime, is a precondition for operations and is not a technical matter."
+}

@@ -1,0 +1,16 @@
+{
+  "reference_platform": {
+    "dry_kg": 602.0,
+    "wet_kg": 632.0,
+    "coilgun_kg": 250.0,
+    "magazine_kg": 30.0,
+    "shots_per_reload": 11152.416356877324
+  },
+  "recoil_propellant_1e4_shots_kg": 5.659798877972261,
+  "plane_access_finding": "RAAN is effectively free in propellant: a 50 km parking offset at 800 km produces ~0.03-0.06 deg/day of differential nodal drift, so any RAAN is reachable in 20-40 days for a two-burn cost of ~50 m/s. Inclination is not: 1 deg costs ~130 m/s. One FG01 therefore serves one inclination band, which is compatible with the way debris actually clusters (breakup families share inclination) but means a fleet, not a single vehicle, for global coverage.",
+  "dv_per_degree_inclination_m_s": 130.12204557273705,
+  "days_per_deg_RAAN_at_800km": 9.843242472438545,
+  "transporter_does_not_burn_up_with_the_grains": "FG01 and the released grains are separate objects with different trajectories: the grains are on immediate-reentry ellipses, FG01 remains in its operating orbit and is disposed of separately at end of life.",
+  "eol_recommendation": "Controlled deorbit is cheaper than returning to a 400 km hub above ~500 km only for the highest operating altitudes; below that, returning to the hub costs less propellant than a direct deorbit and preserves the vehicle. With Isp 300 s and a 600 kg dry mass, direct deorbit from 800 km costs 39 kg of propellant.",
+  "engagement_rate_caveat": "This study does not model target acquisition rate. The number of engagements per year is set by how often FG01 can find, approach and match a tracked object in its own shell, which depends on a detection architecture (R10) that is outside the present scope. All per-object costs are conditional on the assumed engagement count."
+}

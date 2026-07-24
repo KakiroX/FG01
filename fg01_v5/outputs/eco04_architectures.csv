@@ -1,0 +1,39 @@
+architecture,target,dv_budget_m_s,n_engagements,platform_cost_musd,m_shot_g,consumable_total_usd,cost_per_object_usd,cost_per_kg_usd,m_launch_total_kg,Es_kJ_kg,n_shots_per_object,magazine_kg
+A: small-debris tour,1 cm fragment,500,16,20,2.15672,106.973,1.25001e+06,8.84199e+08,,,,
+A: small-debris tour,1 cm fragment,500,16,50,2.15672,106.973,3.12501e+06,2.21049e+09,,,,
+A: small-debris tour,1 cm fragment,500,16,150,2.15672,106.973,9.37501e+06,6.63146e+09,,,,
+A: small-debris tour,1 cm fragment,500,16,500,2.15672,106.973,3.125e+07,2.21049e+10,,,,
+A: small-debris tour,1 cm fragment,1000,12,20,2.15672,80.2298,1.66667e+06,1.17893e+09,,,,
+A: small-debris tour,1 cm fragment,1000,12,50,2.15672,80.2298,4.16667e+06,2.94732e+09,,,,
+A: small-debris tour,1 cm fragment,1000,12,150,2.15672,80.2298,1.25e+07,8.84195e+09,,,,
+A: small-debris tour,1 cm fragment,1000,12,500,2.15672,80.2298,4.16667e+07,2.94731e+10,,,,
+A: small-debris tour,1 cm fragment,2000,24,20,2.15672,160.46,833340,5.89467e+08,,,,
+A: small-debris tour,1 cm fragment,2000,24,50,2.15672,160.46,2.08334e+06,1.47366e+09,,,,
+A: small-debris tour,1 cm fragment,2000,24,150,2.15672,160.46,6.25001e+06,4.42098e+09,,,,
+A: small-debris tour,1 cm fragment,2000,24,500,2.15672,160.46,2.08333e+07,1.47366e+10,,,,
+A: small-debris tour,1 cm fragment,5000,36,20,2.15672,240.69,555562,3.9298e+08,,,,
+A: small-debris tour,1 cm fragment,5000,36,50,2.15672,240.69,1.3889e+06,9.82443e+08,,,,
+A: small-debris tour,1 cm fragment,5000,36,150,2.15672,240.69,4.16667e+06,2.94732e+09,,,,
+A: small-debris tour,1 cm fragment,5000,36,500,2.15672,240.69,1.38889e+07,9.82438e+09,,,,
+A: small-debris tour,1 cm fragment,10000,55,20,2.15672,367.72,363643,2.57225e+08,,,,
+A: small-debris tour,1 cm fragment,10000,55,50,2.15672,367.72,909098,6.43055e+08,,,,
+A: small-debris tour,1 cm fragment,10000,55,150,2.15672,367.72,2.72728e+06,1.92916e+09,,,,
+A: small-debris tour,1 cm fragment,10000,55,500,2.15672,367.72,9.09092e+06,6.43051e+09,,,,
+B: large tracked object,SL-8 upper stage (1.4 t),320.596,3,50,,1.82844e+06,1.72761e+07,12340.1,196.606,26.9042,197,196.606
+B: large tracked object,SL-8 upper stage (1.4 t),534.327,5,50,,3.0474e+06,1.06095e+07,7578.2,196.606,26.9042,197,196.606
+B: large tracked object,SL-8 upper stage (1.4 t),1068.65,10,50,,6.09479e+06,5.60948e+06,4006.77,196.606,26.9042,197,196.606
+B: large tracked object,SL-8 upper stage (1.4 t),320.596,3,150,,1.82844e+06,5.06095e+07,36149.6,196.606,26.9042,197,196.606
+B: large tracked object,SL-8 upper stage (1.4 t),534.327,5,150,,3.0474e+06,3.06095e+07,21863.9,196.606,26.9042,197,196.606
+B: large tracked object,SL-8 upper stage (1.4 t),1068.65,10,150,,6.09479e+06,1.56095e+07,11149.6,196.606,26.9042,197,196.606
+B: large tracked object,SL-16 upper stage (8.3 t),320.596,3,50,,1.084e+07,2.028e+07,2443.37,1165.59,26.9042,1166,1165.59
+B: large tracked object,SL-16 upper stage (8.3 t),534.327,5,50,,1.80667e+07,1.36133e+07,1640.16,1165.59,26.9042,1166,1165.59
+B: large tracked object,SL-16 upper stage (8.3 t),1068.65,10,50,,3.61334e+07,8.61334e+06,1037.75,1165.59,26.9042,1166,1165.59
+B: large tracked object,SL-16 upper stage (8.3 t),320.596,3,150,,1.084e+07,5.36133e+07,6459.44,1165.59,26.9042,1166,1165.59
+B: large tracked object,SL-16 upper stage (8.3 t),534.327,5,150,,1.80667e+07,3.36133e+07,4049.8,1165.59,26.9042,1166,1165.59
+B: large tracked object,SL-16 upper stage (8.3 t),1068.65,10,150,,3.61334e+07,1.86133e+07,2242.57,1165.59,26.9042,1166,1165.59
+B: large tracked object,defunct smallsat (0.9 t),320.596,3,50,,1.17542e+06,1.70585e+07,18953.9,126.39,26.9042,127,126.39
+B: large tracked object,defunct smallsat (0.9 t),534.327,5,50,,1.95904e+06,1.03918e+07,11546.5,126.39,26.9042,127,126.39
+B: large tracked object,defunct smallsat (0.9 t),1068.65,10,50,,3.91808e+06,5.39181e+06,5990.9,126.39,26.9042,127,126.39
+B: large tracked object,defunct smallsat (0.9 t),320.596,3,150,,1.17542e+06,5.03918e+07,55990.9,126.39,26.9042,127,126.39
+B: large tracked object,defunct smallsat (0.9 t),534.327,5,150,,1.95904e+06,3.03918e+07,33768.7,126.39,26.9042,127,126.39
+B: large tracked object,defunct smallsat (0.9 t),1068.65,10,150,,3.91808e+06,1.53918e+07,17102,126.39,26.9042,127,126.39

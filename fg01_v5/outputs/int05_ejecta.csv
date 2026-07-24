@@ -1,0 +1,4 @@
+d_cloud_cm,N_on_target,m_launch_g,crater_volume_per_grain_mm3,crater_diameter_mm,penetration_mm,ejecta_per_grain_mg,ejecta_total_mg,ejecta_frac_of_target,total_crater_volume_frac_of_target,N_gt_1mm_conservative,N_gt_1mm_expected,N_gt_1cm_conservative,N_gt_1cm_expected,l_max_conservative_mm,l_max_expected_mm
+2,82.4,0.374,0.695832,1.3852,1.46188,1.87875,154.809,0.109505,0.109505,7.28843,0,0,0,1.3852,0.27704
+5,197,1.745,0.695832,1.3852,1.46188,1.87875,370.113,0.261801,0.261801,17.425,0,0,0,1.3852,0.27704
+10,182.3,6.678,0.695832,1.3852,1.46188,1.87875,342.495,0.242266,0.242266,16.1248,0,0,0,1.3852,0.27704

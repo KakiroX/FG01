@@ -1,0 +1,6 @@
+{
+  "minimised_platform_musd": 21.2,
+  "fleet_unit_cost_musd": 7.993592427367414,
+  "consumable_finding": "The plan's concern that rhenium supply would force a switch to tungsten at N >= 1e5 is moot: ECO-1 shows a platform achieves tens of engagements, not 1e5, so consumable mass over a whole mission is grams to kilograms and supply is irrelevant. Tungsten remains the right choice on cost and physics (v5 SIM-7), but the supply argument for it evaporates along with the engagement count.",
+  "cost_structure_inversion": "v5 found cost was 99.4% platform amortisation at an assumed 1e4 engagements. With the realised count of ~24, amortisation is essentially 100% and the consumable is a rounding error measured in dollars per mission. Nothing about the projectile, the material, the launcher or the grain size has any material effect on cost per object."
+}

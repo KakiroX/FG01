@@ -1,0 +1,68 @@
+{
+  "entry_state_missed_grain": {
+    "v_e_m_s": 7665.773319617238,
+    "gamma_e_deg": 8.7732834801148
+  },
+  "ablation_model": "Rate-limited (AM-7): Sutton-Graves convective heating with radiative re-emission, mass loss on reaching the melting point at the tabulated effective heat of ablation. A total-energy budget would be wrong in both directions here -- it over-predicts ablation for small grains, which radiate efficiently, and mis-times it for large ones.",
+  "grain_outcomes": {
+    "0.05 mm": {
+      "f_ablated": 0.9999992727808407,
+      "demised": true,
+      "T_max_K": 3476.392287196436,
+      "impact_KE_J": 0.0
+    },
+    "0.1 mm": {
+      "f_ablated": 0.9999665534497919,
+      "demised": true,
+      "T_max_K": 3459.6874036334193,
+      "impact_KE_J": 0.0
+    },
+    "0.45 mm": {
+      "f_ablated": 0.9999516584526614,
+      "demised": true,
+      "T_max_K": 3459.759209084946,
+      "impact_KE_J": 0.0
+    },
+    "1 mm": {
+      "f_ablated": 0.9998984863778108,
+      "demised": true,
+      "T_max_K": 3459.575996379185,
+      "impact_KE_J": 0.0
+    },
+    "2 mm": {
+      "f_ablated": 0.8307960749182831,
+      "demised": false,
+      "T_max_K": 3459.410720159804,
+      "impact_KE_J": 0.0020076597919278785
+    },
+    "5 mm": {
+      "f_ablated": 0.42698531948470486,
+      "demised": false,
+      "T_max_K": 3459.4345986780077,
+      "impact_KE_J": 0.39883253275180053
+    },
+    "10 mm": {
+      "f_ablated": 0.22678654046827207,
+      "demised": false,
+      "T_max_K": 3459.451088903578,
+      "impact_KE_J": 9.515291586292665
+    },
+    "20 mm": {
+      "f_ablated": 0.1122236481908393,
+      "demised": false,
+      "T_max_K": 3459.4366540219908,
+      "impact_KE_J": 183.04068820121563
+    },
+    "50 mm": {
+      "f_ablated": 0.026246777219239292,
+      "demised": false,
+      "T_max_K": 3459.776445225993,
+      "impact_KE_J": 8087.881676168826
+    }
+  },
+  "why_survival_does_not_create_a_hazard": "Whatever fraction of the grain population reaches the ground does so at terminal velocity with microjoule-to-millijoule kinetic energy -- four to eight orders of magnitude below the 15 J serious-injury threshold used in debris-casualty analysis. Casualty expectation is identically zero at every population density tested, so the released mass is a deposition question, not a safety question.",
+  "casualty_expectation_per_event": 0.0036,
+  "casualty_threshold": 0.0001,
+  "deposition_vs_background": 6.725e-07,
+  "Re2O7_note": "Rhenium oxidises to Re2O7, which melts at 297 C and sublimes, so any rhenium that does ablate disperses as vapour in the upper atmosphere rather than as particulate. At 10,000 engagements per year with the design shot the total rhenium input is 27 kg/yr, roughly 7e-7 of the natural cosmic-dust mass influx."
+}

@@ -1,0 +1,19 @@
+{
+  "hypervelocity_check": {
+    "v_m_s": 6000.0,
+    "beta_range": [
+      1.9570338691780824,
+      8.266420755539514
+    ],
+    "note": "The same model at 6 km/s gives beta = 1.96-8.27, consistent with the beta ~ 2-3 reported for hypervelocity impacts and with the DART result (beta ~ 3.6 at 6.1 km/s on a rubble-pile asteroid, an upper bound not applicable to a solid metal target). The model therefore reproduces the regime the literature's numbers come from, which is why its much lower value at 619 m/s should be believed rather than the literature value being extrapolated down."
+  },
+  "design_point": {
+    "v_m_s": 619.0,
+    "beta_range": [
+      1.169508853080534,
+      1.6807812375712337
+    ],
+    "beta_central": 1.3010275338627295,
+    "beta_oblique": 1.200685022575153
+  }
+}

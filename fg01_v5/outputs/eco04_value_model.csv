@@ -1,0 +1,13 @@
+shell_overlap,asset_case,mean_asset_value_usd,p_hit_10yr,implied_losses_per_year,value_per_object_usd
+0.05,Starlink-weighted ($2M),2e+06,0.00365886,4.02475,67.0791
+0.05,mixed fleet ($8.5M),8.5e+06,0.00365886,4.02475,285.086
+0.05,high-value-weighted ($30M),3e+07,0.00365886,4.02475,1006.19
+0.2,Starlink-weighted ($2M),2e+06,0.0146354,16.099,268.316
+0.2,mixed fleet ($8.5M),8.5e+06,0.0146354,16.099,1140.34
+0.2,high-value-weighted ($30M),3e+07,0.0146354,16.099,4024.75
+0.5,Starlink-weighted ($2M),2e+06,0.0365886,40.2475,670.791
+0.5,mixed fleet ($8.5M),8.5e+06,0.0365886,40.2475,2850.86
+0.5,high-value-weighted ($30M),3e+07,0.0365886,40.2475,10061.9
+1,Starlink-weighted ($2M),2e+06,0.0731772,80.4949,1341.58
+1,mixed fleet ($8.5M),8.5e+06,0.0731772,80.4949,5701.72
+1,high-value-weighted ($30M),3e+07,0.0731772,80.4949,20123.7

@@ -1,0 +1,51 @@
+{
+  "propagator": "orbit-averaged Gauss variational equations, 96-node Gauss-Legendre quadrature in eccentric anomaly, vector atmospheric co-rotation, real NRLMSISE-00 density",
+  "nrlmsise_implementation": "nrlmsise00 (Python wrapper of Dominik Brodowski C port of NRLMSISE-00), v0.1.2",
+  "inclination_deg": 85.0,
+  "ceilings_nominal_dh200": {
+    "0.5": {
+      "h_ceiling_25yr_km": 900.0,
+      "h_ceiling_5yr_km": 800.0
+    },
+    "1.0": {
+      "h_ceiling_25yr_km": 900.0,
+      "h_ceiling_5yr_km": 700.0
+    },
+    "2.0": {
+      "h_ceiling_25yr_km": 800.0,
+      "h_ceiling_5yr_km": 700.0
+    },
+    "5.0": {
+      "h_ceiling_25yr_km": 700.0,
+      "h_ceiling_5yr_km": 600.0
+    },
+    "10.0": {
+      "h_ceiling_25yr_km": 700.0,
+      "h_ceiling_5yr_km": 600.0
+    }
+  },
+  "acceleration_factor_1cm_nominal": {
+    "400": 16.71,
+    "500": 8.69,
+    "600": 6.43,
+    "700": 5.27,
+    "800": 4.36,
+    "900": 3.49,
+    "1000": 2.75,
+    "1100": null,
+    "1200": null
+  },
+  "missed_mass_immediate_reentry_at_619": true,
+  "min_v_rel_for_self_disposal_m_s": {
+    "400": 87.4,
+    "500": 115.0,
+    "600": 142.0,
+    "700": 168.2,
+    "800": 193.8,
+    "900": 218.7,
+    "1000": 243.1,
+    "1100": 266.8,
+    "1200": 290.0
+  },
+  "runtime_s": 205.6
+}

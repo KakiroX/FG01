@@ -1,0 +1,29 @@
+{
+  "architecture_A_small_debris": {
+    "best_cost_per_object_usd": 363643.0494564587,
+    "engagements_per_platform_decade": 24,
+    "avoided_collision_value_per_object_usd_range": [
+      67.07909018421857,
+      20123.727055265572
+    ],
+    "avoided_collision_value_credible_usd": [
+      67.07909018421857,
+      67.07909018421857
+    ],
+    "cost_to_value_ratio_best_case": 18.07036283377278,
+    "cost_to_value_ratio_credible": 5421.108850131834,
+    "verdict": "FAILS"
+  },
+  "architecture_B_large_objects": {
+    "best_cost_per_object_usd": 5391808.055415808,
+    "competitor_ADR_tug_usd_per_object": "10M-100M (demonstrated class)",
+    "verdict": "COMPETITIVE"
+  },
+  "headline_two_numbers": {
+    "niche_viability_small_debris": "NOT ACHIEVED. Cost per 1 cm object is $363,643 against the plan's $5,000 niche target -- a shortfall of 73x. The binding condition is ECO-1's Delta-v-per-engagement invariant, not the debris population, the kick physics or the platform cost.",
+    "laser_competitive": "NOT ACHIEVED and not approachable: it would require 1e5 engagements, i.e. ~1e7 km/s of tour Delta-v."
+  },
+  "value_gap": "Removing one randomly-selected >=1 cm fragment avoids between $67 and $20,124 of expected asset loss across the swept assumptions, and at most $67 in the subset consistent with the observed loss record. Against a cost of $363,643 the gap is 2e+01x at the most generous end and 5e+03x at the credible end. This is not a failing of FG01 specifically -- it is why operational ADR targets large objects, whose removal prevents the breakups that create fragments in the first place, rather than the fragments themselves. No small-debris remediation concept, FG01 or otherwise, closes a gap of this size on per-object value alone; the case for small-debris removal has to be made on systemic cascade prevention, which this study does not model.",
+  "the_constructive_result": "The kick physics survives the economics unchanged, and it applies to any target. Against a large tracked object the same launcher, the same 619 m/s intercept and the same sub-catastrophic specific energy (26.9 kJ/kg -- identical, because E_s is mass-independent) deliver the same 200 km orbit shift. The target's cross-section is now square metres rather than square centimetres, so the areal penalty vanishes and essentially all launched mass lands. Cost per object is $5,391,808, against $10M-100M for a demonstrated-class ADR tug. The concept is economically defensible against LARGE debris and indefensible against small debris -- the exact inverse of its founding premise.",
+  "why_that_inversion_happens": "Two independent scalings both favour large targets. (1) The areal mass penalty is pi*e*d_miss^2/A_target, so a 2.6 m rocket body needs no pattern margin at all while a 1 cm fragment needs 22x its mass on target. (2) Cost per object is dominated by the Delta-v to visit it, which is the same ~107 m/s whatever the target masses -- so it should be spent on the most valuable target available."
+}

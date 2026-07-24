@@ -1,0 +1,40 @@
+{
+  "target_class": "1 cm Al-6061 sphere (1.41 g)  [AM-2]",
+  "h_optimal_km": 900.0,
+  "dh_optimal_km": 200.0,
+  "v_rel_optimal_m_s": 619.0,
+  "dv_shift_m_s": 51.80648681399089,
+  "self_disposal_floor_m_s": 218.7485473841789,
+  "self_disposal_satisfied": true,
+  "engagement_range_m": 10.0,
+  "launcher_pointing_urad": 200.0,
+  "platform_target_relative_speed_m_s": 10.0,
+  "control_latency_ms": 10.0,
+  "muzzle_dispersion_frac": 0.001,
+  "miss_distance_mm": 5.774905992118815,
+  "cloud_sigma_mm": 8.762999022089934,
+  "mass_on_target_mg": 135.16541793670743,
+  "shot_mass_g": 2.2575339771698877,
+  "mass_penalty": 16.698981952701786,
+  "grain_mass_mg": 1.0,
+  "grain_diameter_Re_mm": 0.44963327308930295,
+  "grains_per_shot": 2257.5339771698877,
+  "material_recommended": "tungsten (SIM-7); rhenium retained only if mandated for non-technical reasons",
+  "kicks_per_object": 1.0,
+  "T_natural_without_kick_yr": 63.5258,
+  "T_decay_after_kick_yr": 18.184899999999995,
+  "cost_per_object_usd_p05_p50_p95": [
+    2337.070850622598,
+    23576.41892124495,
+    240314.99667155996
+  ],
+  "cost_per_kg_usd_median": 16730740.114152467,
+  "P_viable_at_optimum_nominal": 0.661885,
+  "P_viable_ignoring_remediation_value": 0.661885,
+  "P_viable_solar_min_nom_max": [
+    0.0,
+    0.66645,
+    0.0
+  ],
+  "muzzle_energy_J": 432.49948811319564
+}

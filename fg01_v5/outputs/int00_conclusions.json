@@ -1,0 +1,27 @@
+{
+  "part_A_kinematic_verdict": {
+    "retrograde_efficiency_crossing": "cos(psi) = sin(theta/2)",
+    "useful_dv_per_Es_crossing": "beta / v_orbital  (independent of theta)",
+    "useful_dv_per_Es_coorbital": "2 beta / |w|",
+    "coorbital_advantage_factor": 23.922753327003175,
+    "statement": "A crossing engagement wastes all but sin(theta/2) of its relative velocity on a cross-track impulse that changes inclination rather than altitude, while paying the full |w|^2 in disruption energy. Delivering the same 51.8 m/s retrograde kick from an 8.5 deg crossing needs 0.783 g at 334 kJ/kg (8x the catastrophic threshold) versus 0.103 g at 13.9 kJ/kg co-orbital. The co-orbital architecture is forced by kinematics alone, 24x more efficient in useful delta-v per unit disruption energy -- before any guidance argument is made."
+  },
+  "part_B_guidance_verdict": {
+    "coorbital_miss_no_lead_m": 0.008276315214584419,
+    "coorbital_miss_with_lead_m": 3.0970103752415207e-10,
+    "crossing_8p5deg_miss_no_lead_m": 17.838532521982287,
+    "crossing_8p5deg_miss_with_lead_m": 1.2587872398316463e-07,
+    "statement": "The latency-independent miss is NOT a property of the guidance law -- it is a property of the geometry. Co-orbital, the transverse rate is the drift rate between neighbouring orbits (0.5 m/s at a 1 km altitude offset), so even a non-extrapolating aim law lands inside a 1 cm target at any latency tested. Crossing, the transverse rate is the full relative velocity and a non-extrapolating law misses by metres. An extrapolating law recovers the crossing case on paper, but see Part C."
+  },
+  "part_C_timeline_verdict": {
+    "statement": "The binding constraint on crossing engagements is not the control loop but the engagement window. At 8.5 deg the target crosses at 1097 m/s and is inside a 10 km tracking sphere for 18.2 s, with the aim point slewing at 63 deg/s. Detection, track formation, solution and firing must all fit inside that, on a 1 cm unlit target, with one attempt per conjunction. Co-orbital, the same target is available indefinitely and the shot can be repeated."
+  },
+  "premise_3_verdict": "UPHELD, with the boundary stated: the latency-independent 5.8 mm miss holds for co-orbital engagements, which the plan's own energy gate independently forces. It does NOT hold for crossing engagements -- but crossing engagements are ruled out on kinematics (Part A) before guidance is even considered, so nothing downstream depends on the disputed claim. The correct statement is not 'lag does not matter' but 'the only geometry that transfers momentum efficiently is also the geometry in which lag does not matter'.",
+  "firing_constraint_for_ECO": {
+    "theta_max_subcatastrophic_deg": 5.0,
+    "theta_max_10pct_energy_penalty_deg": 1.5,
+    "v_geom_max_m_s": 193.8331437561704,
+    "plane_match_tolerance_deg": 1.5,
+    "note": "ECO-1 may count a target as engageable only if the platform's orbital plane is within this cone of the target's, so that the launcher rather than the geometry supplies the impact velocity. This is the binding operational constraint the economics must respect, and it is far tighter than the naive 'safe velocity ceiling' reading of the v5 energy gate."
+  }
+}

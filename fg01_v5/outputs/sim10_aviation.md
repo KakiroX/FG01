@@ -1,0 +1,13 @@
+**sim10_aviation** — Reentry timing and footprint for released material, and the resulting aviation hazard.
+
+| h_km | minutes_release_to_reentry | notam_window_min | footprint_downrange_km | footprint_crossrange_km | largest_surviving_fragment_mm | impact_KE_J | aircraft_hazard                                                         |
+|------|----------------------------|------------------|------------------------|-------------------------|-------------------------------|-------------|-------------------------------------------------------------------------|
+| 400  | 45.19                      | 76               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 500  | 46.21                      | 77               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 600  | 47.23                      | 78               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 700  | 48.27                      | 79               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 800  | 49.31                      | 80               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 900  | 50.36                      | 81               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 1000 | 51.42                      | 82               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 1100 | 52.48                      | 83               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |
+| 1200 | 53.55                      | 84               | 2500                   | 100                     | 0.45                          | 0.0001      | none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold) |

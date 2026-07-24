@@ -1,0 +1,10 @@
+h_km,minutes_release_to_reentry,notam_window_min,footprint_downrange_km,footprint_crossrange_km,largest_surviving_fragment_mm,impact_KE_J,aircraft_hazard
+400,45.1873,76,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+500,46.2071,77,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+600,47.2345,78,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+700,48.2695,79,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+800,49.3118,80,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+900,50.3616,81,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+1000,51.4187,82,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+1100,52.4831,83,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"
+1200,53.5547,84,2500,100,0.45,0.0001,"none (fragment KE ~1e-4 J, five orders below the 15 J injury threshold)"

@@ -1,0 +1,61 @@
+{
+  "Es_design_kJ_kg_range_at_619": [
+    12.064096151462406,
+    35.731312237525565
+  ],
+  "Es_design_v4_direct_kJ_kg_range_at_619": [
+    21.642713825085426,
+    179.5077574929945
+  ],
+  "v_max_safe_range_m_s": [
+    1385.8992827023394,
+    4104.741820546349
+  ],
+  "v_design_max_range_m_s": [
+    692.9496413511697,
+    2052.3709102731746
+  ],
+  "fraction_of_threshold_at_619": [
+    0.30160240378656017,
+    0.8932828059381391
+  ],
+  "self_disposal_satisfied_everywhere_beta1_esc30": true,
+  "worst_case_v_design_max_vs_self_disposal": {
+    "400": {
+      "v_design_max_m_s": 519.7,
+      "v_self_disposal_min_m_s": 87.4
+    },
+    "500": {
+      "v_design_max_m_s": 531.4,
+      "v_self_disposal_min_m_s": 115.0
+    },
+    "600": {
+      "v_design_max_m_s": 543.2,
+      "v_self_disposal_min_m_s": 142.0
+    },
+    "700": {
+      "v_design_max_m_s": 555.1,
+      "v_self_disposal_min_m_s": 168.2
+    },
+    "800": {
+      "v_design_max_m_s": 567.0,
+      "v_self_disposal_min_m_s": 193.8
+    },
+    "900": {
+      "v_design_max_m_s": 579.1,
+      "v_self_disposal_min_m_s": 218.7
+    },
+    "1000": {
+      "v_design_max_m_s": 591.2,
+      "v_self_disposal_min_m_s": 243.1
+    },
+    "1100": {
+      "v_design_max_m_s": 603.4,
+      "v_self_disposal_min_m_s": 266.8
+    },
+    "1200": {
+      "v_design_max_m_s": 615.7,
+      "v_self_disposal_min_m_s": 290.0
+    }
+  }
+}

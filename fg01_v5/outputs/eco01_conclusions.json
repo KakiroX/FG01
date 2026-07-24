@@ -1,0 +1,41 @@
+{
+  "THE_INVARIANT": {
+    "formula": "dv_per_engagement = pi * v_orbital / (3.5 * Omega_dot * T_mission)",
+    "fengyun_10yr_m_s": 106.86540012554092,
+    "agreement_with_simulation": 0.011418721006200434,
+    "why_it_cannot_be_tuned": "Widening the altitude band raises the number of cone passes linearly (through the differential nodal rate) and raises the hop cost linearly (through the Hohmann Delta-v). The two cancel exactly, so Delta-v per engagement is independent of the band. Only orbital velocity, nodal regression rate and mission duration enter -- none of which the designer controls once the target cluster is chosen.",
+    "sun_synchronous_penalty": "Omega_dot scales as cos(i), so sun-synchronous orbits near 98 deg have the SLOWEST nodal regression and are the most expensive to tour -- 107 m/s per engagement at Fengyun-1C against 27 m/s for a hypothetical 51.6 deg cluster at the same altitude. The most valuable debris sits in the worst place for this architecture."
+  },
+  "structural_finding": "Flux and cost are driven by the same quantity. A fragment only drifts into the firing cone if its altitude differs from the platform's, and that difference is exactly what must be paid in Delta-v to reach it. At a 10 km offset the relative nodal drift is 0.0047 deg/day -- 209 years to sweep the full circle -- while the hop costs 5.1 m/s. Widening the band buys opportunities as its square and costs Delta-v as its cube.",
+  "tour_results_fengyun": {
+    "500 m/s": {
+      "engagements": 16.006097560975608,
+      "dv_per_engagement": 31.237839337916775,
+      "limited_by": "delta-v"
+    },
+    "1000 m/s": {
+      "engagements": 12.449186991869917,
+      "dv_per_engagement": 80.32611682872708,
+      "limited_by": "delta-v"
+    },
+    "2000 m/s": {
+      "engagements": 24.009146341463424,
+      "dv_per_engagement": 83.30158621078903,
+      "limited_by": "delta-v"
+    },
+    "5000 m/s": {
+      "engagements": 35.56910569105693,
+      "dv_per_engagement": 140.5712661233933,
+      "limited_by": "delta-v"
+    },
+    "10000 m/s": {
+      "engagements": 55.13211382113826,
+      "dv_per_engagement": 181.38245651884696,
+      "limited_by": "delta-v"
+    }
+  },
+  "VERDICT": "The single-platform cluster-tour architecture fails by two to three orders of magnitude. A 10-year tour of Fengyun-1C with a 2,000 m/s budget achieves ~24 engagements, not the 10,000 the niche economics require. Reaching 10,000 would cost ~1,070 km/s of Delta-v, which no propulsion system can deliver. This is NOT a shortfall in the debris population -- Fengyun-1C holds ~35,000 fragments >=1 cm -- it is the cost of visiting them one at a time.",
+  "why_ECO2_overcounted": "ECO-2 counted fragments whose orbital plane sweeps through the firing cone and found ~8,900 per decade. That is an upper bound on opportunity, not on engagement: a fragment in the platform's plane but at a different altitude is still unreachable, because two circular orbits at different altitudes never come close. Charging the hop Delta-v collapses 8,900 opportunities into ~24 engagements. The gap between those two numbers is the central economic finding of v6.",
+  "inclination_filter": "A second, harder filter: the plane angle decomposes as theta^2 ~ (di)^2 + (sin i * dRAAN)^2, so a fragment whose INCLINATION differs from the platform's by more than the firing cone can never be engaged at any RAAN, at any time, for any Delta-v spent on nodal phasing. Since a breakup imparts an isotropic velocity spread, most of a cloud is permanently out of reach of any single platform.",
+  "propellant_note": "Delta-v is affordable in absolute terms -- 2,000 m/s costs 46 kg of xenon on a 600 kg platform at Isp 3,000 s. The problem is not that the tour Delta-v is unaffordable; it is that the Delta-v BUYS so few engagements."
+}

@@ -1,0 +1,17 @@
+{
+  "beta_at_design_point": {
+    "central": 1.3010275338627295,
+    "range": [
+      1.169508853080534,
+      1.6807812375712337
+    ],
+    "oblique_corrected": 1.200685022575153,
+    "recommended_for_downstream": 1.200685022575153
+  },
+  "v_strength_m_s": 319.7221015541813,
+  "headline": "beta at the 619 m/s design point is 1.17-1.68 (central 1.30; 1.20 after the oblique-incidence correction for a curved target), NOT the 1.5 v5 used or the 1.75 centre of its U(1.0, 2.5) envelope. The reason is physical: Al-6061's strength velocity is 320 m/s, so a 619 m/s impact is only 1.9x the speed at which the target can eject anything at all, and almost no mass leaves fast enough to enhance momentum. The v5 envelope was too generous at its upper end for this regime.",
+  "consequence": "Required mass on target rises by 1.25x relative to the v5 nominal. This DARKENS the v5 mass and consumable-cost result. It does not change the viability verdict, because consumables were ~0.6% of cost per object -- the extra mass costs about $20 per engagement -- but it must be carried forward rather than papered over.",
+  "disruption_margin_effect": "A lower beta needs more mass for the same impulse, so E_s = gamma*dv*v_rel/(2*beta) RISES from 21.4 to 26.7 kJ/kg, i.e. from 0.53x to 0.67x the catastrophic threshold. Still sub-catastrophic, but the margin is materially narrower than v5 reported, and at the pessimistic end (0.80x for pure embedding) it is thin enough that the E_s,c = 30 kJ/kg lower bound would be breached. The velocity ceiling must be lowered accordingly -- see INT-3.",
+  "AM4a_status": "beta moves from UNVALIDATED toward DERIVED: it is now computed from a sourced scaling law rather than assumed, and the model is validated against the hypervelocity regime where data exists. It is NOT yet SOURCED, because no direct measurement at Al-on-Al, sub-km/s, cm-scale exists. A hydrocode run or a light-gas-gun shot at 0.6 km/s would close this.",
+  "embedding_finding": "Design-range grains (0.1-1 mm Re at 619 m/s) penetrate 0.3-3 mm into aluminium -- comparable to their own diameter and well short of perforating a 1 cm target. They embed. An embedded grain transfers exactly its own momentum, which is the physical floor beta = 1 and the reason the answer sits so close to it."
+}

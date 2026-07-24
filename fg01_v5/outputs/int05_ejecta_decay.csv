@@ -1,0 +1,6 @@
+d_fragment_um,A_over_m,T_decay_yr,T_decay_parent_1cm_yr,faster_than_parent,speedup,complies_25yr
+10,55.5556,0.0175982,17.5982,True,1000,True
+50,11.1111,0.0879912,17.5982,True,200,True
+100,5.55556,0.175982,17.5982,True,100,True
+500,1.11111,0.879912,17.5982,True,20,True
+1000,0.555556,1.75982,17.5982,True,10,True

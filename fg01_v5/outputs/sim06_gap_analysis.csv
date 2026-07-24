@@ -1,0 +1,4 @@
+case,m_p_g,v_m_s,E_muzzle_J,demonstrated_max_J,margin_x,inside_envelope
+"SIM-4 design (10 m range, 200 µrad)",2.69,619,515.352,3.3e+07,64034,True
+10 cm miss tolerance,175,619,33526.6,3.3e+07,984.293,True
+mass on target only (no pattern),0.242,619,46.3625,3.3e+07,711782,True
