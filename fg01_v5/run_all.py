@@ -28,6 +28,7 @@ MODULES = [
     ("sim11_platform", "SIM-11 platform, mass budget, end of life"),
     ("sim12_uq", "SIM-12 global uncertainty quantification"),
     ("sim13_operating_point", "SIM-13 operating-point selection"),
+    ("sim14_laser_vs_fg01", "SIM-14 terminal-accuracy comparison vs laser ablation"),
     # --- v6: interaction model -------------------------------------------
     ("int00_geometry", "INT-0  engagement geometry / co-orbital premise"),
     ("int01_cloud", "INT-1  cloud areal-density field"),
