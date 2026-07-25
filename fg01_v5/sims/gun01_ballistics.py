@@ -660,5 +660,8 @@ def main():
     return base, s1, s2, summary
 
 
+run = main          # run_all.py calls .run()
+
+
 if __name__ == "__main__":
     main()

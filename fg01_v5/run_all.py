@@ -47,6 +47,10 @@ MODULES = [
     ("las02_accuracy", "LAS-2  accuracy head-to-head"),
     ("las03_verdict", "LAS-3  readiness, corrected economics, verdict"),
     ("las04_spaceborne", "LAS-4  the space-based laser"),
+    # --- launcher trade studies -------------------------------------------
+    ("gun01_ballistics", "GUN-01 chemical-propellant internal ballistics"),
+    ("coil01_design", "COIL-01 multistage induction coilgun"),
+    ("chk01_velocity", "CHK-01 is 400 m/s consistent with the gates?"),
 ]
 
 

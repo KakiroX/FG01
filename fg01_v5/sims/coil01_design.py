@@ -584,5 +584,8 @@ def main():
     return df, da, best
 
 
+run = main          # run_all.py calls .run()
+
+
 if __name__ == "__main__":
     main()
