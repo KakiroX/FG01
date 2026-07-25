@@ -1,0 +1,8 @@
+metric,coilgun,chemical
+length_m,1.364,0.6
+prime_mass_kg,43.785272089060484,5.4
+consumable_g_per_shot,0.0,12.0
+recoil_Ns,40.73447495463774,43.4
+heat_per_shot_kJ,8.275147633956744,10.7
+cadence_s,9.391023979778684,150.0
+erosion,no,yes

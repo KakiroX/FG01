@@ -1,0 +1,14 @@
+{
+  "beta_400": 1.0629176167239704,
+  "beta_619": 1.200685022575153,
+  "mass_penalty_400_vs_619": 1.7480753382955454,
+  "disruption_gate_400_pass_40": true,
+  "disruption_gate_400_pass_30": true,
+  "disruption_gate_619_pass_30": true,
+  "self_disposal_400_ok_all_altitudes": true,
+  "self_disposal_tightest_margin_400": 1.3793275759108232,
+  "firing_cone_deg_400": 0.9788498750917306,
+  "firing_cone_deg_619": 1.5147958769814287,
+  "matched_target_kg_400": 0.8206830318684482,
+  "matched_diameter_cm_400": 8.342016078587179
+}
