@@ -1,0 +1,5 @@
+material,chamber_wall_mm,muzzle_wall_mm,mass_tapered_kg,mass_constant_kg,saving_pct,note
+4340 steel,5.34847,1.5,1.679,4.66251,63.9894,"baseline, cheap, tough"
+Ti-6Al-4V,2.97137,1.5,0.723595,1.36348,46.9302,best metal strength/weight
+Inconel 718,2.59635,1.5,1.2943,2.17753,40.5613,"hot section, erosion resistant"
+AerMet 100,1.55479,1.5,1.17268,1.21608,3.56929,ultra-high-strength steel

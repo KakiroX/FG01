@@ -1,0 +1,20 @@
+{
+  "formula": "m_powder = clamp[ gamma*m_t*dv(h)/(beta*v_rel) * P(m_t), 50 g, 100 g ];  P = max(K/A_t, 1); K = -2*pi*e*sigma_miss^2*ln(1-conf)",
+  "dosing_verdict": "Charge metering is NOT required. Because delivered momentum is set by cloud width times charge, dispersion control alone can size any shot, and the magazine already provides 300-600 shots against an ECO-1 demand of ~48 per decade. A CONSTANT 81 g charge is recommended: it keeps total accelerated mass at exactly the 100 g the coilgun is sized for (42 kJ, 28 kg of capacitors), removes the metering mechanism, and still covers single-shot targets to 581 g. A constant 100 g charge would push total mass to 119 g and require 50 kJ / 34 kg of capacitors -- paying 6 kg permanently to avoid a mechanism it does not need. Dispersion control remains mandatory either way.",
+  "constants": {
+    "gamma": 2.0,
+    "beta": 1.200685022575153,
+    "v_rel": 619.0,
+    "sigma_miss_mm": 5.7749999999999995,
+    "conf": 0.95,
+    "K_m2": 0.0017064018982565004
+  },
+  "scaling": "m_powder ~ m_t^(1/3) below 143 g debris (areal penalty dominates), ~m_t above it (penalty floors at 1)",
+  "envelope_900km_g": [
+    358.6539421417128,
+    717.3078842834256
+  ],
+  "Es_over_threshold_when_correctly_sized": 0.6677066577603027,
+  "small_target_warning": "Below ~240 g debris the 50 g cartridge floor delivers more momentum than the target can absorb sub-catastrophically if the cloud is normally focused. Defocus per cart01_small_target_hazard.",
+  "canister_note": "50-100 g of powder plus the 19 g aluminium canister gives 69-119 g accelerated. The COIL-01 design was sized for 100 g TOTAL, so a full 100 g powder charge is 19% over that and needs ~50 kJ rather than 42 kJ."
+}

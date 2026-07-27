@@ -1,0 +1,12 @@
+{
+  "headline": "Wall thickness is not a cost or mass driver for a coilgun. There is no chamber pressure; the only structural load is magnetic pressure of 34 MPa on the coil, which S-glass banding carries at 0.93 mm and 0.33 kg over all 31 stages. Total structure is 1.7 kg against 28 kg of capacitors.",
+  "magnetic_pressure_MPa": 34.18785494137219,
+  "B_peak_T": 9.269490338775196,
+  "recommended": {
+    "bore_tube": "G10/FR4 or PEEK, 1.5 mm wall, MUST be insulating",
+    "coil_banding": "S-glass/epoxy, 0.93 mm at SF 2",
+    "outer_case": "Ti-6Al-4V or Al, 0.8 mm minimum gauge (not strength-limited)"
+  },
+  "for_cost_model": "Model launcher mass as: capacitors (E_stored/1500 J/kg) + copper (~4 kg) + 1.3x integration factor. Treat all walls as a fixed ~1.5 kg. Do not optimise wall thickness -- it is 4% of the mass and its cost is negligible against the capacitor bank.",
+  "trap": "The bore tube must be electrically insulating. A metal tube is a shorted turn around the armature: it carries induced current, shields the armature and destroys the coupling. This is the one structural choice that can break the launcher."
+}

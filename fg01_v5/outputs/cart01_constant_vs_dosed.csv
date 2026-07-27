@@ -1,0 +1,5 @@
+scheme,charge_g,total_accel_g,within_100g_total,cap_energy_kJ,cap_mass_kg,shots_per_30kg,shots_needed_decade,margin_x,max_single_shot_target_g,min_safe_target_no_defocus_g
+constant 100 g,100,119,False,48.5714,32.381,300,48,6.25,717.308,478.951
+constant 81 g (fits 100 g total),81,100,True,40.8163,27.2109,370.37,48,7.71605,581.019,387.951
+constant 50 g (floor),50,69,True,28.1633,18.7755,600,48,12.5,358.654,239.476
+"dosed 50-100 g, envelope avg",75,94,True,38.3673,25.5782,400,48,8.33333,537.981,359.213

@@ -1,0 +1,9 @@
+layer,thickness_mm,r_inner_mm,r_outer_mm,mass_per_stage_g,note
+running clearance,0.5,15,15.5,0,
+bore tube (G10),1.5,15.5,17,11.3333,
+former / ground insulation,0.5,17,17.5,3.03478,
+WINDING,5.176,17.5,22.676,234.142,"2 layers x 15 turns, AWG 10 round"
+ground insulation,0.5,22.676,23.176,4.03335,
+banding (S-glass),0.93,23.176,24.106,11.0514,
+thermal gap,1,24.106,25.106,0,
+outer case (Ti),0.8,25.106,25.906,22.7183,

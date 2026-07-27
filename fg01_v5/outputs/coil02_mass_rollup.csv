@@ -1,0 +1,6 @@
+item,mass_kg,driver,share_pct
+capacitor bank,28.2,stored energy,82.7359
+coil copper,4.17,turns x stages,12.2344
+"outer case (Ti, min gauge)",1.00535,minimum gauge,2.94958
+"bore tube (G10, 1.5 mm)",0.374574,coupling gap,1.09896
+"coil banding (S-glass, SF2)",0.334432,magnetic pressure,0.981191

@@ -1,0 +1,11 @@
+{
+  "total_radial_wall_mm": 10.906000000000002,
+  "outer_diameter_mm": 51.812000000000005,
+  "bore_mm": 30.0,
+  "winding_build_mm": 5.176,
+  "winding_share_of_wall_pct": 47.460113698881344,
+  "n_layers": 2,
+  "headline": "For a 30 mm bore the full radial build is 10.9 mm, giving a 52 mm outer diameter. The WINDING dominates at 5.2 mm (47% of the wall) because 22 turns of AWG 10 need 2 layers in a 40 mm coil. The structural walls COIL-02 sized are only 5.7 mm of it.",
+  "for_cost_model": "Envelope: 52 mm OD x 1364 mm. Use this for stowage and for the outer-case area; the mass model in COIL-02 is unchanged, since copper mass depends on turns and mean radius, not on layer count.",
+  "lever": "To shrink the tube, use finer wire -- but check the cost. AWG 12 gives 49.7 mm OD (from 51.8) and AWG 14 at 22 turns fits a SINGLE layer for 44.7 mm OD. However conductor area falls from 5.26 mm^2 (AWG 10) to 3.31 (AWG 12) to 2.08 (AWG 14), so coil resistance rises 1.6x and 2.5x respectively and ohmic loss rises with it. COIL-01's 19.6% efficiency was computed at AWG 10; going finer requires re-running it. Rectangular conductor is the better lever: 3x2 mm at 22 turns gives 49.5 mm OD at 6.0 mm^2 area, i.e. a smaller tube AND lower resistance than AWG 10."
+}

@@ -1,0 +1,4 @@
+case_type,wall_mm,case_mass_g,round_mass_g,rounds_per_10kg
+brass,1.5,139.108,266.318,37.5491
+steel,1.2,111.014,238.223,41.9774
+combustible,0,6.80236,134.012,74.6203
