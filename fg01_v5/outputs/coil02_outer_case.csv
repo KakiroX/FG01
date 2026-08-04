@@ -1,0 +1,5 @@
+material,safety_factor,wall_mm,mass_kg,gauge_limited
+4340 steel,2,0.937202,2.08701,False
+Ti-6Al-4V,2,0.8,1.00535,True
+S-glass/epoxy,2,0.8,0.453881,True
+Carbon fibre T1000,2,0.8,0.363105,True

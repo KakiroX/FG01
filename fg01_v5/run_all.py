@@ -51,6 +51,11 @@ MODULES = [
     ("gun01_ballistics", "GUN-01 chemical-propellant internal ballistics"),
     ("coil01_design", "COIL-01 multistage induction coilgun"),
     ("chk01_velocity", "CHK-01 is 400 m/s consistent with the gates?"),
+    ("gun02_barrel", "GUN-02 chemical-gun barrel sizing at 619 m/s"),
+    ("coil02_structure", "COIL-02 coilgun structural walls (bore tube, banding, case)"),
+    ("coil03_stackup", "COIL-03 coilgun radial envelope and wire trade"),
+    # --- cartridge charge sizing -------------------------------------------
+    ("cart01_charge_law", "CART-01 cartridge charge law and minimum-charge hazard"),
 ]
 
 

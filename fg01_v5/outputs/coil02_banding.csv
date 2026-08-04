@@ -1,0 +1,11 @@
+material,safety_factor,wall_mm,mass_all_stages_kg,conductive,note
+4340 steel,1.5,2.36922,3.34725,True,"cheap, conductive - banding only"
+4340 steel,2,3.15896,4.463,True,"cheap, conductive - banding only"
+Ti-6Al-4V,1.5,1.31623,1.04942,True,light metal
+Ti-6Al-4V,2,1.75498,1.39923,True,light metal
+S-glass/epoxy,1.5,0.696829,0.250824,False,"insulating, good for banding"
+S-glass/epoxy,2,0.929105,0.334432,False,"insulating, good for banding"
+Carbon fibre T1000,1.5,0.39487,0.113707,True,conductive! insulate from coil
+Carbon fibre T1000,2,0.526493,0.151609,True,conductive! insulate from coil
+Zylon/PBO,1.5,0.204243,0.0573436,False,highest specific strength
+Zylon/PBO,2,0.272324,0.0764582,False,highest specific strength

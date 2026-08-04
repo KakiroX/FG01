@@ -196,6 +196,18 @@ are therefore lower bounds on the laser's difficulty.
 
 ---
 
+## v8 additions — launcher structural detail (COIL-02, COIL-03, GUN-02)
+
+| Quantity | Value | Source | Status |
+|---|---|---|---|
+| Coilgun structural wall mass share | 5% of launcher mass (1.7 kg of 34.1 kg, 31-stage COIL-01 design point) | **DERIVED** in COIL-02 from magnetic-pressure sizing (34.2 MPa) and standard laminate/gauge design rules | — |
+| Coil banding thickness | 0.93 mm S-glass/epoxy, SF 2 | **DERIVED** in COIL-02 | — |
+| Bore-tube insulation requirement | must be non-conductive (G10/FR4/PEEK); a metal tube shorts the armature coupling | standard induction-coilgun design constraint | **P** |
+| Radial envelope, 30 mm bore | 52 mm OD, winding is 47% of wall thickness (2 layers, AWG 10) | **DERIVED** in COIL-03 | — |
+| Chemical-gun barrel, 100 g @ 619 m/s, 30 mm bore | 89.1 MPa peak pressure; tapered Ti-6Al-4V barrel 0.72 kg, 47% lighter than constant-wall | **DERIVED** in GUN-02, standard interior-ballistics/thin-wall-pressure-vessel sizing | — |
+
+These are structural-sizing refinements of the launcher case already reported in Section 3.8 (GUN-01/COIL-01/CHK-01); they do not change any cost, mass-crossover, or feasibility figure reported elsewhere, and are not a re-derivation of the 400 m/s mass-crossover shot count.
+
 ## Summary for a reviewer
 
 - **Verified in-session (V):** the 40 J/g threshold and its regime definitions;

@@ -1,0 +1,8 @@
+**cart01_constant_vs_dosed** — Constant charge vs dosed. Magazine 30 kg (SIM-11), engagement demand 24 per decade x2 shots (ECO-1). Shows that shot count is not the binding constraint, so metering buys little.
+
+| scheme                           | charge_g | total_accel_g | within_100g_total | cap_energy_kJ | cap_mass_kg | shots_per_30kg | shots_needed_decade | margin_x | max_single_shot_target_g | min_safe_target_no_defocus_g |
+|----------------------------------|----------|---------------|-------------------|---------------|-------------|----------------|---------------------|----------|--------------------------|------------------------------|
+| constant 100 g                   | 100      | 119           | no                | 48.57         | 32.38       | 300            | 48                  | 6.25     | 717.3                    | 479                          |
+| constant 81 g (fits 100 g total) | 81       | 100           | yes               | 40.82         | 27.21       | 370.4          | 48                  | 7.716    | 581                      | 388                          |
+| constant 50 g (floor)            | 50       | 69            | yes               | 28.16         | 18.78       | 600            | 48                  | 12.5     | 358.7                    | 239.5                        |
+| dosed 50-100 g, envelope avg     | 75       | 94            | yes               | 38.37         | 25.58       | 400            | 48                  | 8.333    | 538                      | 359.2                        |

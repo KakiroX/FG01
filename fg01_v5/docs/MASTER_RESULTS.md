@@ -58,13 +58,18 @@ per-object criterion the concept reaches P(viable) → 0.997 inside a well-defin
 envelope. **The concept is not physics-limited; it is limited by the cost of
 keeping hardware in orbit and by how many objects one platform can service.**
 Against ground-based laser ablation — the only competitor that genuinely
-addresses this size class — FG01 remains 3–4 orders of magnitude more expensive
-per object, and no part of the v5 pivot addresses that gap. On the single
-dimension of terminal-pointing tolerance, the comparison runs the other way
-(SIM-14): a space-based laser's binary point-hit requirement over hundreds of
-km of stand-off range makes it far more sensitive to aiming/prediction error
-than FG01's short-range areal-capture engagement — but that is a geometry
-consequence, not a cost offset, and it does not change the SIM-9 verdict above.
+addresses this size class — FG01 remains more expensive per object, and no part
+of the v5 pivot addresses that gap. **This "3–4 orders of magnitude" figure is
+a naive extrapolation of a published $/kg number and has been superseded:**
+`docs/LASER_COMPARISON.md` (LAS-1..4) rebuilds the laser's engagement from the
+same physics used everywhere else in this study and finds the true gap is
+**2–4 orders of magnitude**, not 5–6 as the naive number implied, with FG01's
+own cost also revised upward to $0.9M–4.2M/object in that treatment. That
+document is the authoritative laser comparison; SIM-14 below is a narrower,
+single-dimension cross-check (pointing/prediction-error tolerance only) done
+before LAS-1..4 existed, and its numbers should be read as superseded wherever
+they differ. See `docs/LASER_COMPARISON.md` for the full picture, including the
+space-based-laser case (LAS-4).
 
 **Rhenium is not justified.** Momentum is density-independent, so the founding
 rationale is void. Tungsten is 73–243× cheaper, 1,037× more available, and its
@@ -680,6 +685,22 @@ Stated in the same place as the successes:
 ---
 
 ## 16. SIM-14 — Terminal-accuracy comparison against space-based laser ablation
+
+**Superseded.** This section was written before `docs/LASER_COMPARISON.md`
+(LAS-1..4) existed. LAS-1..4 rebuilds both sides of this comparison from the
+same physics used elsewhere in this study — the laser's engagement geometry,
+optics, and cost are derived rather than assumed — and its numbers differ from
+SIM-14's throughout (e.g. FG01 pointing requirement 876 µrad vs. SIM-14's
+200 µrad design point; laser range 1,186 km vs. SIM-14's fixed 500 km; a
+corrected laser cost of $381–$5,702/object against a naive $0.14–0.71
+extrapolation). **Treat `docs/LASER_COMPARISON.md` as authoritative and this
+section as a narrower, single-dimension cross-check done with simpler
+assumptions.** It is kept here for its own validity as a sanity check (it
+reuses SIM-4's already-validated M3 error budget unchanged) and because its
+qualitative conclusion — FG01 tolerates terminal error far better than a
+point-hit laser, for reasons of engagement geometry rather than sensor
+quality — agrees with LAS-2's independent, more detailed derivation of the
+same asymmetry.
 
 **Scope, stated up front.** This section compares exactly one dimension:
 tolerance of the terminal engagement to pointing and orbit-prediction error.

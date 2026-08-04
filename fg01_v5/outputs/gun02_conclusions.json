@@ -1,0 +1,21 @@
+{
+  "design": {
+    "bore_mm": 30.0,
+    "length_m": 1.0,
+    "charge_g": 27.2094259912528,
+    "propellant": "Retumbo",
+    "P_max_MPa": 89.14118063343531,
+    "v_muzzle": 619.0000000000009,
+    "chamber_volume_cm3": 45.34904331875467,
+    "chamber_length_cm": 6.415577252149596
+  },
+  "wall": {
+    "material": "Ti-6Al-4V",
+    "chamber_wall_mm": 2.971372687781177,
+    "muzzle_wall_mm": 1.5,
+    "barrel_mass_kg": 0.7235947484993727,
+    "taper_saving_pct": 46.93017544229298,
+    "liner": "1 mm Inconel 718 over the first ~15 cm for erosion"
+  },
+  "note_on_taper": "Peak pressure occurs within the first few cm of travel, so the chamber end needs the full wall and the muzzle end reaches the 1.5 mm practical minimum. Tapering saves a large fraction of the barrel mass at no performance cost."
+}
