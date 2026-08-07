@@ -1,0 +1,54 @@
+{
+  "requirement_points": {
+    "R1 small-debris design": {
+      "m_p_g": 2.14,
+      "v_m_s": 619.0,
+      "E_muzzle_J": 409.98226999999997
+    },
+    "R2 upper-velocity": {
+      "m_p_g": 2.14,
+      "v_m_s": 700.0,
+      "E_muzzle_J": 524.3
+    },
+    "R3 large-object shot": {
+      "m_p_g": 1000.0,
+      "v_m_s": 619.0,
+      "E_muzzle_J": 191580.5
+    }
+  },
+  "R1_totals_kg": {
+    "chemical (smokeless)": 0.0890323982710412,
+    "railgun": 3.4916248041824125,
+    "coilgun": 1.0307822957927664
+  },
+  "R3_totals_kg": {
+    "chemical (smokeless)": 22.36781047482682,
+    "railgun": 296.95436768733504,
+    "coilgun": 321.99726878973644
+  },
+  "muzzle_repeatability": {
+    "chemical (smokeless)": 0.00624803288798831,
+    "railgun": 0.001,
+    "coilgun": 0.0007
+  },
+  "launched_mass_penalty_R1": {
+    "chemical (smokeless)": 19.94276591687882,
+    "railgun": 19.29603611765454,
+    "coilgun": 19.28736497472071
+  },
+  "weighted_scores": {
+    "chemical (smokeless)": 0.5367839763941245,
+    "railgun": 0.5962448897400818,
+    "coilgun": 0.7699026269061857
+  },
+  "winner": "coilgun",
+  "headline": "The coilgun wins the weighted trade (0.77 vs 0.60 railgun, 0.54 chemical). The FG01 requirement is tiny -- 410 J, 2.14 g, 619 m/s -- so all three are technically trivial to build; the choice is decided by the SECONDARY metrics, and there the coilgun dominates: no consumable, clean in vacuum next to the sensor, best muzzle repeatability, and 1e5-1e7 shot life with no sliding contact.",
+  "why_not_chemical": "A gunpowder gun is the most compact and the lightest launcher hardware, but at these energies its charge is a fraction of a gram and hard to meter precisely, giving ~0.5-1% muzzle-velocity spread against the EM launchers' ~0.1%. It also vents hot, reactive, particulate combustion products metres from the terminal optics and in vacuum, and it consumes a magazine that must be resupplied -- fatal for a platform whose entire economic case is amortising hardware over many shots without resupply.",
+  "why_not_railgun": "A railgun works but is the worst EM option here: it is the least efficient (20-35%), its sliding armature erodes the rails and caps life at a few hundred to a couple of thousand full-power shots, and it needs mega-ampere pulses whose switchgear is heavy. Railguns earn their place at multi-MJ muzzle energies; the FG01 shot is 410 J, four to five orders of magnitude below where a railgun's compactness advantage appears.",
+  "energy_crossover": {
+    "chemical_over_coilgun_at_410J": 0.08766360224387602,
+    "chemical_over_coilgun_at_192kJ": 0.06957865053322307,
+    "finding": "The verdict is energy-dependent. At the small-debris shot (410 J) the energy store is under 1 kg for every option, so system mass is not a discriminator and the coilgun wins on the secondary metrics. At the large-object shot (192 kJ) capacitor mass dominates -- the coilgun needs 319 kg of capacitors against 0.13 kg of propellant -- so the chemical gun is 0.07x the coilgun's mass, i.e. roughly 14x LIGHTER. Pulsed-capacitor storage at ~1.5 kJ/kg cannot compete with propellant's ~4 MJ/kg of available work once per-shot energy exceeds a few kilojoules."
+  },
+  "recommendation": "REGIME-DEPENDENT. (1) Small-debris mission (the baseline, ~400-520 J per shot): COILGUN -- capacitor-driven, solar-recharged, clean, long-lived; energy-store mass is negligible at this energy so its drawbacks do not bite. (2) Large-object variant (~100+ kJ per shot): the coilgun's capacitor mass (300+ kg) becomes prohibitive and a CHEMICAL gun (~22 kg) or a rechargeable inductive/rotating energy store is preferable despite the contamination penalty, because at high energy propellant is three orders of magnitude more mass-efficient than capacitors. The baseline FG01 mission is small-debris, so the primary recommendation is the coilgun; the chemical option is held in reserve for the large-object architecture."
+}

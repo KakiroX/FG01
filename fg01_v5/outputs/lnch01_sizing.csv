@@ -1,0 +1,10 @@
+requirement,launcher,m_p_g,v_m_s,E_muzzle_J,E_store_J,efficiency,m_launcher_kg,m_energy_store_kg,m_total_kg,barrel_or_rail_m,sigma_v_frac,miss_from_muzzle_mm,total_miss_mm,launched_mass_penalty,recoil_impulse_Ns,consumable,clean_vacuum,shot_life
+R1 small-debris design,chemical (smokeless),2.14,619,409.982,1171.38,0.35,0.0887455,0.000286868,0.0890324,0.161341,0.00624803,1.00938,5.53285,19.9428,1.72206,True,False,magazine-limited
+R1 small-debris design,railgun,2.14,619,409.982,1490.84,0.275,2.99468,0.496948,3.49162,3.83161,0.001,0.161551,5.4424,19.296,1.32466,False,True,rail-erosion limited (200-2000 full-power shots)
+R1 small-debris design,coilgun,2.14,619,409.982,1024.96,0.4,0.347479,0.683304,1.03078,1.95358,0.0007,0.113086,5.44118,19.2874,1.32466,False,True,1e5-1e7 shots (no sliding contact)
+R2 upper-velocity,chemical (smokeless),2.14,700,524.3,1498,0.35,0.113491,0.000366857,0.113858,0.206329,0.00615285,0.993999,5.53007,19.9227,1.9474,True,False,magazine-limited
+R2 upper-velocity,railgun,2.14,700,524.3,1906.55,0.275,3.8297,0.635515,4.46521,4.9,0.001,0.161551,5.4424,19.296,1.498,False,True,rail-erosion limited (200-2000 full-power shots)
+R2 upper-velocity,coilgun,2.14,700,524.3,1310.75,0.4,0.444368,0.873833,1.3182,2.4983,0.0007,0.113086,5.44118,19.2874,1.498,False,True,1e5-1e7 shots (no sliding contact)
+R3 large-object shot,chemical (smokeless),1000,619,191580,547373,0.35,22.2338,0.13405,22.3678,1.25201,0.006,0.969306,5.52568,19.8911,804.7,True,False,magazine-limited
+R3 large-object shot,railgun,1000,619,191580,696656,0.275,64.7356,232.219,296.954,3.83161,0.001,0.161551,5.4424,19.296,619,False,True,rail-erosion limited (200-2000 full-power shots)
+R3 large-object shot,coilgun,1000,619,191580,478951,0.4,2.69644,319.301,321.997,1.95358,0.0007,0.113086,5.44118,19.2874,619,False,True,1e5-1e7 shots (no sliding contact)

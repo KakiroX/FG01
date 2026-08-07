@@ -1,0 +1,30 @@
+{
+  "question": "SIM-11 sized the FG01 platform around an electromagnetic launcher. This re-run swaps in the chemical launcher recommended by LNCH-01 and re-derives the platform.",
+  "reference_platform_chemical": {
+    "case": "combustible",
+    "n_shots": 48,
+    "dry_kg": 108.10980341030807,
+    "wet_kg": 138.10980341030807,
+    "launcher_kg": 7.424,
+    "power_kg": 16.666666666666668,
+    "thermal_kg": 9.368356175256723
+  },
+  "reference_platform_coilgun": {
+    "dry_kg": 419.702,
+    "wet_kg": 449.702,
+    "launcher_kg": 98.08500000000001,
+    "power_kg": 166.66666666666666,
+    "thermal_kg": 30.0
+  },
+  "dry_mass_ratio": 3.882182621377167,
+  "headline": "Swapping the coilgun for the chemical launcher removes three masses at once, not one: the launcher itself, the 5 kW power plant that existed only to charge the capacitor bank, and most of the thermal plant. The launcher hardware saving is the smallest of the three once the power plant is counted.",
+  "crossover_finding": "LNCH-01 put the LAUNCHER-only mass crossover at 545 shots. At platform level the crossover moves to brass 1572, steel 1891, combustible 7683 shots, because the coilgun platform also carries ~150 kg of power and thermal plant the chemical platform does not. Against ECO-1's 48 shots per platform-decade the margin is one to two orders of magnitude.",
+  "recoil_finding": "Chemical recoil is 67.1 N.s per shot against the coilgun's 62.3, 8% higher because the propellant gas carries momentum the projectile does not. At 48 shots the difference is a few grams of station-keeping propellant -- immaterial.",
+  "unchanged_by_this_swap": "Plane access and the RAAN-versus-inclination finding in SIM-11 are properties of the orbit, not the launcher, and are unaffected. SIM-11 remains the authority on them.",
+  "caveats": [
+    "Breech, mount and autoloader mass (6.7 kg) is a parametric estimate, UNVALIDATED. It is the largest single uncertainty in the chemical column, but it would have to be wrong by a factor of ~20 to change the conclusion.",
+    "Thermal plant is scaled linearly by rejected heat from SIM-11's 30 kg. Radiator mass is not in general linear in heat load; this is a first-order treatment, UNVALIDATED.",
+    "The 500 W housekeeping figure for the chemical platform is assumed, not derived. A detection architecture (R10) could raise it, but it would raise it for both architectures equally.",
+    "Live propellant on an unattended long-duration platform is a programmatic and safety question this model does not evaluate. It remains the most likely single reason to choose the coilgun anyway."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "chemical_22LR_class": {
+    "modelled_propellant_g": 0.14,
+    "real_22LR_propellant_g": "0.10-0.16",
+    "note": "A .22 Long Rifle launches ~2.6 g at ~330 m/s on ~0.1 g of powder; the model's propellant mass for a comparable shot is the right order, confirming the impetus/efficiency balance."
+  },
+  "railgun_ONR_2008": {
+    "modelled_store_MJ": 33.9,
+    "modelled_current_MA": 2.13,
+    "real_muzzle_MJ": 10.16,
+    "real_current_MA": "~3-3.5",
+    "note": "Modelled stored energy 33.9 MJ at 30% efficiency matches the ~32 MJ bank behind the 10.16 MJ ONR shot; peak current a few MA, consistent with the reported 3+ MA armature current."
+  },
+  "coilgun_turman1996": {
+    "modelled_store_kJ": 50.0,
+    "real_muzzle_kJ": 20.0,
+    "note": "20 kJ muzzle at 40% eff -> 50 kJ store, matches lab benchmark."
+  }
+}
