@@ -412,17 +412,17 @@ This study set out to answer two distinct questions about targeted, momentum-tra
 
 ## References
 
-[1] National Aeronautics and Space Administration Orbital Debris Program Office, Frequently Asked Questions, NASA, Houston, TX, 2019.
+[1] National Aeronautics and Space Administration Orbital Debris Program Office, Frequently Asked Questions, NASA, Houston, TX, 2019. Available: https://orbitaldebris.jsc.nasa.gov/faq/ (accessed 2026-08-09).
 
 [2] European Space Agency Space Debris Office, ESA Space Environment Report 2025, ESA, Darmstadt, 2025 (MASTER model estimates as of August 2024: 54,000 objects >10 cm, 1.2 million objects 1–10 cm, 130 million objects 1 mm–1 cm; ~40,000 objects tracked).
 
-[3] Japan Aerospace Exploration Agency, Commercial Removal of Debris Demonstration (CRD2) program overview, JAXA, Tokyo, 2023–2024.
+[3] Japan Aerospace Exploration Agency, Commercial Removal of Debris Demonstration (CRD2) program overview, JAXA, Tokyo, 2023–2024. Available: https://www.kenkai.jaxa.jp/eng/crd2/ (accessed 2026-08-09).
 
-[4] European Space Agency, ClearSpace-1 mission overview, ESA, Paris, 2021–2024.
+[4] European Space Agency, ClearSpace-1 mission overview, ESA, Paris, 2021–2024. Available: https://www.esa.int/Space_Safety/ClearSpace-1 (accessed 2026-08-09).
 
 [5] G. Ganguli, C. Crabtree, L. Rudakov, S. Chappie, A concept for elimination of small orbital debris, Trans. Jpn. Soc. Aeronaut. Space Sci. Aerosp. Technol. Jpn. 10 (ists28) (2012) Pr_2_7–Pr_2_13 (also arXiv:1104.1401, 2011; US Patent 8,469,314 B2).
 
-[6] J. Locke, T.J. Colvin, L. Ratliff, A. Abdul-Hamid, C. Samples, Cost and Benefit Analysis of Mitigating, Tracking, and Remediating Orbital Debris, Phase 2, NASA Office of Technology, Policy, and Strategy, Washington, DC, May 2024, NTRS 20240005687.
+[6] J. Locke, T.J. Colvin, L. Ratliff, A. Abdul-Hamid, C. Samples, Cost and Benefit Analysis of Mitigating, Tracking, and Remediating Orbital Debris, Phase 2, NASA Office of Technology, Policy, and Strategy, Washington, DC, May 2024, NTRS 20240003484.
 
 [7] J.-C. Liou, N.L. Johnson, Risks in space from orbiting debris, Science 311 (5759) (2006) 340–341.
 
@@ -450,19 +450,19 @@ This study set out to answer two distinct questions about targeted, momentum-tra
 
 [19] J.A. Fay, F.R. Riddell, Theory of stagnation point heat transfer in dissociated air, J. Aeronaut. Sci. 25 (2) (1958) 73–85.
 
-[20] National Aeronautics and Space Administration, NASA Procedural Requirements for Limiting Orbital Debris and Evaluating the Meteoroid and Orbital Debris Environments, NPR 8715.6B, NASA, Washington, DC, 2019.
+[20] National Aeronautics and Space Administration, NASA Procedural Requirements for Limiting Orbital Debris and Evaluating the Meteoroid and Orbital Debris Environments, NPR 8715.6E, NASA, Washington, DC, 2024 (effective April 18, 2024; supersedes the NPR 8715.6B revision cited in earlier iterations of this study).
 
 [21] I.R. McNab, Launch to space with an electromagnetic railgun, IEEE Trans. Magn. 39 (1) (2003) 295–304.
 
 [22] D.A. Vallado, D. Finkleman, A critical assessment of satellite drag and atmospheric density modeling, Acta Astronaut. 95 (2014) 141–165.
 
-[23] S. Flegel, et al., The MASTER-2009 space debris environment model, in: Proceedings of the 5th European Conference on Space Debris, ESA SP-672, 2011.
+[23] S. Flegel, et al., The MASTER-2009 space debris environment model, in: Proceedings of the 5th European Conference on Space Debris, ESA SP-672, 2011. Superseded by MASTER-8: V. Braun, A. Horstmann, S. Lemmens, C. Wiedemann, L. Böttcher, Recent developments in space debris environment modelling, verification and validation with MASTER, in: Proceedings of the 8th European Conference on Space Debris, ESA Space Debris Office, Darmstadt, 2021 — not re-verified against this study's population inputs before publication.
 
-[24] U.S. Geological Survey, Mineral Commodity Summaries 2025, USGS, Reston, VA, 2025.
+[24] U.S. Geological Survey, Mineral Commodity Summaries 2025, USGS, Reston, VA, 2025. A 2026 edition (released February 2026) exists at the time of this reconciliation and gives more current rhenium/tungsten pricing; the material-price figures in this study are dated to the 2025 edition and have not been re-checked against the 2026 release before publication.
 
 [25] C.R. Phipps, et al., Removing orbital debris with lasers, Adv. Space Res. 49 (9) (2012) 1283–1300.
 
-[26] J.L. Forshaw, et al., RemoveDEBRIS: an in-orbit active debris removal demonstration mission, Acta Astronaut. 127 (2016) 448–463.
+[26] J.L. Forshaw, et al., RemoveDEBRIS: an in-orbit active debris removal demonstration mission, Acta Astronaut. 127 (2016) 448–463. This entry is the pre-flight mission overview, cited here only to establish RemoveDEBRIS as an example of the rendezvous-and-capture architecture (Section 2.11); it is superseded for post-flight results by J.L. Forshaw, et al., RemoveDEBRIS: an in-orbit demonstration of technologies for the removal of space debris, Aeronaut. J. 124 (1271) (2020) 1–23, which reports the completed net and harpoon capture demonstrations.
 
 [27] A. Saltelli, et al., Global Sensitivity Analysis: The Primer, John Wiley & Sons, Chichester, 2008.
 
@@ -486,7 +486,7 @@ This study set out to answer two distinct questions about targeted, momentum-tra
 >
 > **Style.** All in-text citations are numbered in order of first appearance (Vancouver/Elsevier numbered convention) and the list above is ordered accordingly. Sections 1–5 use a single consistent numbered style; the previous split between numbered citation in Sections 1–2 and informal author-year citation in Sections 3–5 has been resolved, and the formerly orphaned Discussion sources are now entries [30] (Bearden), [31] (SpaDE, added during this pass), [32] (Ritter et al.), and [33] (Wertz and Larson, added for the mass-fraction convention previously credited only by author name in prose), with [34] (He et al.) appearing later in Section 4.4 where it is first cited.
 >
-> **Confirmed against primary sources during reconciliation.** [2] ESA Space Environment Report 2025 — issuing office, location and the MASTER population figures quoted in Section 1 confirmed. [6] NASA OTPS Phase 2 — authorship, May 2024 issue date and NTRS accession number confirmed; this entry is load-bearing, as it is the source of the $100–500/kg laser benchmark this study corrects, and a page or table reference should be added for the specific figure cited. [30] Bearden — confirmed as The Aerospace Corporation's published account of its Small Satellite Cost Model. [34] He et al. — confirmed; the source reports maximum muzzle-velocity deviations of 0.92% (10.50 g armatures, 2373 m/s) and 3.8% (8.47 g armatures, 1913 m/s), consistent with the repeatability figures quoted in Section 4.4. Volume, issue and page fields for [30] and [34] should still be checked against the article of record. [31] SpaDE — authorship, award number and 2012 date located by search and cross-confirmed across two independent sources; the primary PDF itself could not be parsed for direct verification during this reconciliation, so this entry carries the same weight as this study's other search-located (not fully read) sources and should be independently checked before submission.
+> **Confirmed against primary sources during reconciliation.** [2] ESA Space Environment Report 2025 — issuing office, location and the MASTER population figures quoted in Section 1 confirmed. [6] NASA OTPS Phase 2 — **the NTRS accession number previously given here (20240005687) was itself wrong: that number resolves to a different, unrelated document** ("Exploring the Use of a Ground-Based Laser System to Deorbit Small Orbital Debris," Colvin & Locke, Directed Energy S&T Symposium slide deck, May 2024 — a 2-author conference presentation, not the 5-author Phase 2 report this citation's title and author list describe). The correct accession number for the actual "Cost and Benefit Analysis of Mitigating, Tracking, and Remediating Orbital Debris, Phase 2" report (Locke, Colvin, Ratliff, Abdul-Hamid, Samples, May 2024) is **NTRS 20240003484**; the reference list has been corrected to this number, confirmed by matching title, author list and issue date against the document itself. Having now read the correct document directly, it does **not** contain a $/kg cost figure for ground-based laser ablation anywhere — its cost figures for debris removal are reported in different units (per-object / mission-level), not dollars-per-kilogram. The 2023 Phase 1 precursor (Colvin/Karcz/Wusk, NTRS 20230002817) was also checked and reports ground-based laser removal costs as $300–$6,000 per object, not $/kg, either. **The $100–500/kg figure quoted in Section 1's Introduction and attributed to [6] could not be located in the corrected source, or in the Phase 1 precursor, or in a search of the wider laser-debris-removal literature (Phipps et al.) during this reconciliation pass.** This is now flagged as an open citation-integrity issue rather than silently fixed or left uncorrected: the reference-list entry's identity (title/authors/NTRS number) is now internally consistent and verified, but the specific $/kg figure attributed to it in the running text is unverified and should be re-derived from a primary source, replaced with the confirmed $/object figures, or removed before submission. [30] Bearden — confirmed as The Aerospace Corporation's published account of its Small Satellite Cost Model. [34] He et al. — confirmed; the source reports maximum muzzle-velocity deviations of 0.92% (10.50 g armatures, 2373 m/s) and 3.8% (8.47 g armatures, 1913 m/s), consistent with the repeatability figures quoted in Section 4.4. Volume, issue and page fields for [30] and [34] should still be checked against the article of record. [31] SpaDE — authorship, award number and 2012 date located by search and cross-confirmed across two independent sources; the primary PDF itself could not be parsed for direct verification during this reconciliation, so this entry carries the same weight as this study's other search-located (not fully read) sources and should be independently checked before submission.
 >
 > **[32] located and confirmed.** Ritter et al. (2015), "A Space weather information service based upon remote and in-situ measurements of coronal mass ejections heading for Earth" (the CARETAKER mission concept, ESA Alpbach Summer School 2013), arXiv:1502.01846, submitted to Journal of Space Weather and Space Climate. The full text was read directly rather than taken on trust: Table 5 of that paper gives the mission's costed dry-mass budget with the line item "Structure (20% of dry mass) 66.01 kg" against a 396.05 kg pre-margin dry mass, matching the mass-fraction convention this study applies and confirming the Section 4.4 sentence it supports. This resolves the "author action required" flag raised during the earlier reconciliation pass.
 >
