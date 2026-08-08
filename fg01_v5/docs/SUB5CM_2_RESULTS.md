@@ -1,7 +1,7 @@
 # FG01 / KIDR — Results
 ## Momentum-transfer remediation of sub-5 cm LEO debris
 
-**Document 2 of 3** · [Methodology](SUB5CM_1_METHODOLOGY.md) · [Viability](SUB5CM_3_VIABILITY.md — not present in this repository)
+**Document 2 of 3** · [Methodology](SUB5CM_1_METHODOLOGY.md) · [Viability](SUB5CM_3_VIABILITY.md)
 
 All values regenerate from `python run_all.py`, seed `20260723`.
 Tags: `DERIVED` · `SOURCED` · `UNVALIDATED`.
@@ -19,9 +19,9 @@ Tags: `DERIVED` · `SOURCED` · `UNVALIDATED`.
 > should not be cited as current without re-deriving them under the corrected
 > cadence. Sections 1–7 (validation, disruption gate, decay gate, interaction,
 > terminal guidance, net debris, reentry) do not depend on engagement count and
-> are not affected by this notice. `SUB5CM_3_VIABILITY.md`, referenced above as
-> the concluding document in this series, was not provided alongside Documents
-> 1 and 2 and is not present in this repository.
+> are not affected by this notice. [SUB5CM_3_VIABILITY.md](SUB5CM_3_VIABILITY.md),
+> the concluding document in this series, is now present in this repository and
+> carries its own superseded-economics notice on the same point.
 
 ---
 

@@ -5,6 +5,30 @@
 
 ---
 
+> **Superseded-economics notice.** The P(viable) figures in Sections 1 and 2 —
+> the headline P(viable) = 0.662 / 0.582, the per-gate probabilities such as the
+> cost gate "binds at P = 0.663", and the altitude×size probability table in §2 —
+> are outputs of the original SIM-12/13 joint uncertainty quantification, which
+> samples *engagements per platform lifetime* as a free parameter (the same
+> sampled/assumed convention, spanning up to the 10⁴-per-lifetime case, used in
+> the companion Documents 1 and 2). That convention is superseded by ECO-1, which
+> derives achievable engagement rate in closed form from orbital mechanics
+> (Δv per engagement = π·v_orbital/(3.5·Ω̇·T_mission)) and fixes it at
+> approximately 24–55 per platform-*decade* — not a sampled quantity — at the best
+> debris cluster examined. Two things follow. First, the specific P(viable)
+> probabilities above should not be cited as current without re-deriving them
+> under the fixed cadence, and the Sobol total-effect term "engagements per
+> platform lifetime (0.519)" in §3 is a sensitivity to that superseded sampled
+> parameter. Second — and unlike the companion documents — the *verdict itself
+> does not rest on the old numbers*: §3 already presents the ECO-1
+> Δv-per-engagement invariant as the binding constraint and derives the same
+> "73× short" shortfall from it directly, so the physics findings (§5), the
+> viable-envelope geometry (§2), the value comparison (§4) and the recommendation
+> not to deploy (§8) stand under the corrected cadence. It is the sampled
+> P(viable) values, not the conclusion, that are superseded.
+
+---
+
 ## 1. Verdict
 
 > **The physics works. The economics do not.**

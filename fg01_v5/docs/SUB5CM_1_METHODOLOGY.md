@@ -1,7 +1,7 @@
 # FG01 / KIDR — Methodology
 ## Momentum-transfer remediation of sub-5 cm LEO debris
 
-**Document 1 of 3** · [Results](SUB5CM_2_RESULTS.md) · [Viability](SUB5CM_3_VIABILITY.md — not present in this repository)
+**Document 1 of 3** · [Results](SUB5CM_2_RESULTS.md) · [Viability](SUB5CM_3_VIABILITY.md)
 
 ---
 
@@ -17,8 +17,9 @@
 > platform-*decade* — not a free, sampled quantity — at the best debris cluster
 > examined. Sections 1–6 of this document (scope, definitions, disruption gate,
 > decay gate, interaction geometry, terminal guidance) do not depend on
-> engagement count and are unaffected. `SUB5CM_3_VIABILITY.md` was not provided
-> alongside this document and is not present in this repository.
+> engagement count and are unaffected. The companion viability assessment,
+> [SUB5CM_3_VIABILITY.md](SUB5CM_3_VIABILITY.md), is now present in this
+> repository and carries its own superseded-economics notice on the same point.
 
 ---
 
