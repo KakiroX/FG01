@@ -1,0 +1,5 @@
+item,coilgun_kg,chemical_kg,why,delta_kg
+launcher hardware,98.085,7.424,63.6 kg of capacitors vs a 0.72 kg barrel,90.661
+power plant,166.667,16.6667,5 kW exists only to charge the bank in 21 s,150
+thermal,30,9.36836,76 kJ/shot rejected internally vs 23.7 kJ into the barrel,20.6316
+consumable (48 shots),0,1.63248,propellant + combustible case,-1.63248

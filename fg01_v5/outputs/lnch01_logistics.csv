@@ -1,0 +1,13 @@
+n_shots,launcher,consumable_mass_kg,recharge_from_solar,charge_time_s_per_shot
+24,chemical (smokeless),0.00860604,False,
+24,railgun,0,True,0.204991
+24,coilgun,0,True,0.204991
+100,chemical (smokeless),0.0358585,False,
+100,railgun,0,True,0.204991
+100,coilgun,0,True,0.204991
+1000,chemical (smokeless),0.358585,False,
+1000,railgun,0,True,0.204991
+1000,coilgun,0,True,0.204991
+10000,chemical (smokeless),3.58585,False,
+10000,railgun,0,True,0.204991
+10000,coilgun,0,True,0.204991

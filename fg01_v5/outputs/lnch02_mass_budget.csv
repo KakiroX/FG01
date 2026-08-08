@@ -1,0 +1,5 @@
+architecture,round_g,launcher_kg,power_kg,thermal_kg,consumable_kg,avionics_kg,structure_kg,dry_kg,wet_kg,launch_cost_low_MUSD,launch_cost_high_MUSD
+chemical (brass case),166.31,7.424,16.6667,9.36836,7.98288,50,24.2884,115.73,145.73,0.437191,1.02011
+chemical (steel case),138.21,7.424,16.6667,9.36836,6.63408,50,24.0186,114.112,144.112,0.432335,1.00878
+chemical (combustible case),34.01,7.424,16.6667,9.36836,1.63248,50,23.0183,108.11,138.11,0.414329,0.966769
+coilgun,0,98.085,166.667,30,0,50,74.9503,419.702,449.702,1.34911,3.14791

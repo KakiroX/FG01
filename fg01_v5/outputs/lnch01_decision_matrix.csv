@@ -1,0 +1,8 @@
+criterion,weight,chemical (smokeless),railgun,coilgun
+launched mass (R1),0.15,1,0.025,0.086
+launched mass (R3),0.1,1,0.075,0.069
+muzzle repeatability,0.25,0.967,1,1
+consumable independence,0.2,0,1,1
+vacuum/optical cleanliness,0.15,0,0.7,1
+reusable shot life,0.15,0.3,0.2,1
+WEIGHTED TOTAL,1,0.537,0.596,0.77

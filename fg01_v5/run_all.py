@@ -56,6 +56,12 @@ MODULES = [
     ("coil03_stackup", "COIL-03 coilgun radial envelope and wire trade"),
     # --- cartridge charge sizing -------------------------------------------
     ("cart01_charge_law", "CART-01 cartridge charge law and minimum-charge hazard"),
+    # --- launcher chemical-vs-EM trade -------------------------------------
+    ("lnch01_trade", "LNCH-01 chemical vs. electromagnetic launcher trade study"),
+    # NOTE: lnch02_platform_chem is intentionally NOT registered here; its own
+    # module docstring declares it "STANDALONE AND ADDITIVE ... Not registered
+    # in run_all.py" (it re-runs the SIM-11 platform model with a swapped
+    # launcher and writes only lnch02_* outputs). Run it directly if needed.
 ]
 
 
