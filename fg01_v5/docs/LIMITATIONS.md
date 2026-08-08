@@ -30,11 +30,43 @@ conventional ADR partly evaporates. `UNVALIDATED`
 
 ### L3. Launcher pointing (200 µrad) and muzzle-speed repeatability (0.1%)
 These two engineering estimates set the 5.775 mm miss distance, and launched mass
-scales as the **square** of that number. They are plausible for spacecraft-grade
-hardware but are not sourced to a built coilgun. A 1 mrad pointing error would
-raise the mass penalty from 16.7× to ~400×, moving the shot from 2.3 g to ~54 g —
-still affordable, but a 5 mrad error would not be. `UNVALIDATED` (E in the
-citation log)
+scales as the **square** of that number. A 1 mrad pointing error would raise the
+mass penalty from 16.7× to ~400×, moving the shot from 2.3 g to ~54 g — still
+affordable, but a 5 mrad error would not be. The two terms now have different
+evidentiary status, checked against real hardware in this revision rather than
+asserted as a pair:
+
+- **Pointing (200 µrad)** is bracketed by demonstrated flight hardware, not
+  unsourced — though the specific sources below were located by web search in
+  this revision and are not independently read in full, so they carry the same
+  weight as this study's other **P**-tier citations, not a verified (**V**)
+  one. NASA's Lunar Laser Communication Demonstration (LLCD) mission
+  documentation states a telescope line-of-sight stability of 2.5 µrad in
+  normal operation against a 4.2 µrad RMS requirement — 48–80× tighter than
+  assumed here — achieved with a multi-stage gimbal plus inertial reference
+  unit. At the opposite, cheap end, NASA/Aerospace Corporation's OCSD 1.5U
+  CubeSat laser-terminal program is reported to have demonstrated only ~500
+  µrad pointing in orbit — worse than the 200 µrad assumed here by a factor of
+  2.5. So 200 µrad sits inside the demonstrated range, but on the side reachable
+  only by LLCD-class actively-stabilized hardware, not CubeSat-string hardware;
+  the platform-cost implication of needing the more capable class is not
+  separately budgeted. `UNVALIDATED → bracketed by precedent, not sourced to
+  identical hardware; source authorship not independently confirmed`
+- **Muzzle-speed repeatability (0.1%)** is not supported by the closest
+  available data, and this is a real, unflattering finding rather than a
+  reassuring one. The only quantitative shot-to-shot repeatability data found
+  in the EM-launcher literature is for **railguns**, not coilguns: He et al.
+  (2015) report 0.92–5.6% muzzle-velocity deviation across different armature
+  masses and shot bursts — 9–56× worse than the 0.1% assumed here — and
+  identify sliding-contact resistance and armature friction as the dominant
+  noise source. A coilgun has no sliding electrical contact (it is a staged,
+  contactless induction launcher), so this specific noise mechanism does not
+  apply, and no coilgun-specific shot-to-shot repeatability measurement was
+  found in the literature search performed for this revision — the gap is not
+  closed, but the reason the closest available analog doesn't transfer is now
+  stated rather than left implicit. If a real coilgun's repeatability turns out
+  closer to the railgun figures than to the assumed 0.1%, the mass-penalty
+  sensitivity above applies here too. `UNVALIDATED` (E in the citation log)
 
 ### L4. The co-orbital engagement geometry is a requirement, not a free choice
 The whole guidance result depends on the platform–target relative speed u being
@@ -93,7 +125,43 @@ mechanism is designed here. `UNVALIDATED`
 $50M–$500M is a parametric range, not an estimate from a costed design. The mass
 budget uses conventional fractions (20% structure, 30 W/kg power) rather than a
 vehicle study. Since cost per object is 99.4% platform amortisation, this range
-propagates directly into the headline. `UNVALIDATED`
+propagates directly into the headline.
+
+The 20% structure fraction specifically is no longer bare convention: it matches,
+figure-for-figure, the mass budget of a real, published small-satellite concept
+study. Ritter et al. (2015), the CARETAKER space-weather mission concept (ESA
+Alpbach Summer School, submitted to *Journal of Space Weather and Space Climate*),
+give a costed dry-mass budget in their Table 5 with the line item "Structure (20%
+of dry mass) 66.01 kg" against a 396 kg pre-margin dry mass — the same 20%-of-dry-
+mass convention used here, applied by an independent design team to an unrelated
+mission, and itself traceable to Wertz & Larson's *Space Mission Analysis and
+Design* margin philosophy. This confirms the fraction is a real, used engineering
+convention, not an invented number — but it does not substitute for a vehicle-level
+costed design of *this* platform, and the dominant remaining uncertainty is the
+$50k/kg build-cost figure itself, which this precedent does not address. `P` for
+the structure fraction (sourced to a verified, fully-read primary source).
+
+**The $50k/kg build-cost figure was checked against real benchmarks in this
+revision, and the result is not favorable.** Bearden (2000), The Aerospace
+Corporation's own account of its Small Satellite Cost Model — the industry-
+standard parametric tool for exactly this kind of estimate — gives bus-cost-only
+figures of roughly $100,000/kg for modern (post-1990) small satellites and
+$150,000/kg for traditional small satellites (FY97 dollars, not inflation-adjusted
+to the present), rising to $500,000/kg for DOD large satellites; total mission
+cost (not bus-only) runs $120,000–900,000/kg across NASA's traditional and
+faster-better-cheaper programs. **This study's $50k/kg figure sits below every
+one of these real benchmarks, including the cheapest demonstrated category, in
+uninflated 1997 dollars.** Adjusting for roughly three decades of inflation would
+widen the gap further, not close it. This does not change the qualitative
+conclusion of Section 3.11 — the concept is already found not economically
+competitive at $21.2M, and a more realistic (higher) platform cost only widens
+that gap, strengthening the "not competitive" finding — but it does mean the
+$21.2M figure should be read as an optimistic anchor relative to real
+small-satellite cost history, not a conservative or neutral one, and the
+platform-cost sensitivity check (Section 3.11) currently treats $21.2M as the
+realistic center and $500k as the extreme low end, when the real center may sit
+above $21.2M rather than at or below it. `UNVALIDATED → checked against
+real-world data and found optimistic, not merely unsourced`.
 
 ### L10. Fixed F10.7 per case
 Solar drivers are held constant for the entire multi-decade decay, per the plan's
@@ -303,3 +371,10 @@ record, with that resolution noted.)*
 5. **A demonstrated launcher pointing figure** (L3) — sets launched mass
    quadratically, though at realised engagement counts the consumable cost is
    negligible either way.
+6. **A vehicle-level costed design at a realistic $/kg** (L9) — not an
+   uncertain-direction item like 2–5 above: checked against real small-satellite
+   cost history (Bearden 2000) and found that this study's $50k/kg assumption is
+   already below the cheapest demonstrated benchmark, in uninflated 1990s
+   dollars. Resolving this would not change the verdict's direction — it would
+   only confirm the reported $0.9–4.2M/object figures are a lower bound, not a
+   realistic center.

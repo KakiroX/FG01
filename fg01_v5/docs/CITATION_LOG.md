@@ -41,7 +41,7 @@ entries as equally solid.
 | Ap pairing | 4 / 15 / 45 | **assumed pairing**, not sourced | **E** |
 | Drag coefficient, free-molecular sphere | 2.2 (2.0–2.4) | King-Hele DG, *Satellite Orbits in an Atmosphere*, 1987 | **P** |
 | **Starshine 1** validation target | 48 cm diameter hollow Al sphere; 387 km, i = 51.6°; deployed from STS-96; reentered **18 Feb 2000** on its 4,212th orbit | [eoPortal](https://www.eoportal.org/satellite-missions/starshine); [Gunter's Space Page](https://space.skyrocket.de/doc_sdat/starshine-1.htm); [satobs.org decay report](http://www.satobs.org/starshinedecay.html) | **V** for diameter, orbit, inclination, reentry date |
-| Starshine 1 mass | 39.5 kg (used) | commonly cited; **not confirmed** by the sources reached in this session | **P — weakest link in the validation chain.** The model input is A/m = 4.58×10⁻³ m²/kg; a reviewer should confirm the mass, since the validation error scales with it |
+| Starshine 1 mass | 39.5 kg (used); **39 kg confirmed** in this revision | eoPortal STARSHINE mission page: "the S/C mass is 39 kg" | **V** (confirmed against an independent mission-database source in this session, resolving the prior weakest-link status). The 1.3% discrepancy (39.5 vs. 39 kg) implies the model's A/m = 4.58×10⁻³ m²/kg understates the true value by ~1.3%, i.e., true decay is marginally *faster* than modelled — negligible against the model's own stated 9.8% validation error, and conservative in direction (it would not weaken the decay-gate conclusion) |
 | Observed lifetime | 258 days (deployment 5 Jun 1999 → 18 Feb 2000); cross-check 4,212 orbits × 90 min ≈ 263 d | as above | **V** (consistent to 2%) |
 | μ (Earth GM) | 3.986004418×10¹⁴ m³/s² | WGS-84 / EGM96 | **P** |
 | J2 | 1.08262668×10⁻³ | EGM96 | **P** |
@@ -139,7 +139,7 @@ entries as equally solid.
 | Per-cluster ≥1 cm counts other than FY-1C | scaled from tracked counts | **E** — this study's scaling, not a published figure |
 | SBM ejection-velocity distribution | log₁₀(Δv) ~ N(0.9χ+2.9, 0.4) | Johnson et al. 2001 (as above) | **P** |
 | SL-8 / SL-16 upper-stage masses | 1.4 t / 8.3 t | standard launch-vehicle data | **P** |
-| Satellite build cost | $50k–400k per kg dry | smallsat-to-exquisite benchmark range | **E** |
+| Satellite build cost | $50k–400k per kg dry | smallsat-to-exquisite benchmark range | **E** — see v9 addition below: the $50k/kg figure used as this study's primary (not sensitivity-only) platform cost is below every real benchmark located in this revision's literature search |
 | Fleet learning curve | 85% | standard aerospace convention | **E** |
 | Active LEO fleet / mean asset value | 11,000 / $2M–30M swept | **E** — parametric; see R12 |
 
@@ -208,16 +208,50 @@ are therefore lower bounds on the laser's difficulty.
 
 These are structural-sizing refinements of the launcher case already reported in Section 3.8 (GUN-01/COIL-01/CHK-01); they do not change any cost, mass-crossover, or feasibility figure reported elsewhere, and are not a re-derivation of the 400 m/s mass-crossover shot count.
 
+## v9 additions — engineering-assumption precedent search (platform cost, pointing, muzzle-speed repeatability)
+
+Located and checked in response to a direct request to justify L3 and L9 of `LIMITATIONS.md` more thoroughly. Findings cut both ways — one assumption gained real support, one did not — and both are reported regardless of which direction they point.
+
+| Quantity | Value | Source | Status |
+|---|---|---|---|
+| Structure mass fraction, 20% of dry mass | Matches this study's own convention exactly | Ritter B, Meskers AJH, Miles O, et al. A space weather information service based upon remote and in-situ measurements of coronal mass ejections heading for Earth. Submitted to *Journal of Space Weather and Space Climate*; arXiv:1502.01846 (2015). Table 5: "Structure (20% of dry mass) 66.01 kg." | **V** — full PDF read directly in this session; figure quoted verbatim from the table |
+| Demonstrated deep-space laser-terminal pointing stability | 2.5 µrad achieved (4.2 µrad RMS requirement) | NASA/MIT Lincoln Laboratory Lunar Laser Communication Demonstration (LLCD) mission documentation, located via web search | **P** — located by search summary in this session, not independently read in full; specific authorship not confirmed |
+| Demonstrated CubeSat-scale laser-terminal pointing | ~500 µrad (0.5 mrad) in orbit | NASA/Aerospace Corporation OCSD (Optical Communications and Sensor Demonstration) 1.5U CubeSat program, located via web search | **P** — same caveat as above |
+| Railgun shot-to-shot muzzle-velocity deviation | 0.92%–5.6%, depending on armature mass and burst | He Y, Song S, Guan Y, Cheng C, Dai W, Qiu X, Li Y. An investigation into muzzle velocity repeatability of a railgun. *IEEE Transactions on Plasma Science* 2015;43:1647–1651. | **P** — bibliographic details and figures confirmed via search-engine summary of the paper, not independently read in full text |
+
+**Honest result, stated plainly.** The pointing assumption (200 µrad) is now bracketed by real demonstrated hardware, sitting inside the achievable range but on the side that requires LLCD-class actively-stabilized optics rather than CubeSat-cheap hardware — a real strengthening, with a real caveat (which class of hardware, and its cost, is not separately budgeted). The muzzle-speed repeatability assumption (0.1%) is **not** strengthened by this search — the closest available literature data (railguns) is 9–56× worse than assumed — though a stated, technically grounded reason exists for why that specific data may not transfer (railguns have a sliding-contact/friction noise source a contactless coilgun does not share). No coilgun-specific repeatability measurement was found. This is reported as an open question, not resolved in either direction. See `LIMITATIONS.md` L3 and L9 for the full discussion.
+
+## v9 addition — real-world platform build-cost benchmark (checked against, not confirmed)
+
+| Quantity | Value | Source | Status |
+|---|---|---|---|
+| Modern (post-1990) small-satellite bus cost | ~$100,000/kg dry mass (FY97 dollars) | Bearden DA. Small-satellite costs. *Crosslink* (The Aerospace Corporation) 2000/2001;Winter:33–44. Fig. "Dollars-per-kilogram comparison" — 100 (modern small sats), 150 (traditional small sats), 500 (DOD large sats), thousand FY97 dollars/kg, bus cost only | **V** — full article read in this session |
+| Traditional NASA mission cost | ~$900,000/kg launch mass (FY98 dollars); faster-better-cheaper NASA missions ~$120,000/kg | same, Fig. "dollars-per-kilogram ratio" (total mission cost, not bus-only) | **V** |
+| General spacecraft cost anchor | "often cost more than $200 thousand per kilogram and could reach $1 million per kilogram with delivery-to-space costs included" | same, quoted directly | **V** |
+
+**This is an uncomfortable finding, reported without softening.** This study's headline $21.2M costed platform — the figure behind the primary $0.9–4.2M/object result, not the acknowledged $500k lower-bound sensitivity case — rests on $50k/kg build cost. Every real benchmark located in this search, for the cheapest demonstrated category (modern, post-1990, faster-better-cheaper small satellites), sits at $100,000–120,000/kg or above, in late-1990s dollars not adjusted for inflation to the present. This study's primary platform-cost assumption is therefore below the cheapest real-world benchmark found, not merely unvalidated in the neutral sense the earlier entry implied. This does not change this study's qualitative conclusion — the concept is already found not economically competitive at $21.2M, and a more realistic (higher) platform cost only widens that gap — but it does mean the "$21.2M costed design" should not be read as a conservative or even neutral estimate relative to demonstrated small-satellite cost history; it is optimistic. The bus-cost-only comparison (Bearden's modern-smallsat figure) is the fairer read-across, since FG01's $50k/kg is also described as covering the bus-equivalent subsystems (structure, avionics, power, propulsion, thermal) rather than a full mission cost; even on that narrower comparison, the gap is real. This is not a re-derivation of Section 3.11's figures — it is a flag that they should be revisited against this benchmark before being called a costed, realistic baseline.
+
 ## Summary for a reviewer
 
 - **Verified in-session (V):** the 40 J/g threshold and its regime definitions;
-  the Ganguli/NRL tungsten prior art in full; Starshine 1's geometry, orbit and
-  reentry date; the NRLMSISE-00 implementation version and the table's fidelity
-  to it.
-- **Highest-priority unverified entries (P):** Starshine 1's **mass** (the
-  validation error scales with it), the **2026 rhenium spot price**, the
-  **SBM non-catastrophic effective-mass convention**, and the **coilgun
-  benchmarks**.
+  the Ganguli/NRL tungsten prior art in full; Starshine 1's geometry, orbit,
+  reentry date, **and now mass** (confirmed 39 kg against eoPortal, resolving
+  the prior weakest-link status — see v9 addition); the NRLMSISE-00
+  implementation version and the table's fidelity to it; the 20%-of-dry-mass
+  structure fraction (Ritter et al. 2015) and the real small-satellite $/kg
+  cost benchmarks (Bearden 2000) added in this revision.
+- **Highest-priority unverified/unfavorable entries:** the **2026 rhenium spot
+  price** and the **SBM non-catastrophic effective-mass convention** remain
+  unverified (P). More consequential than either: this study's **$50k/kg
+  platform build-cost figure**, used as the primary (not sensitivity-only)
+  cost basis, is now checked against real small-satellite cost history and
+  found to sit *below* every real benchmark located — not merely unsourced,
+  but optimistic. This does not change the study's verdict (a higher real cost
+  only strengthens "not competitive") but means the headline $21.2M / $0.9–4.2M
+  figures should be read as a lower bound, not a conservative center. Muzzle-
+  speed repeatability (0.1%) also remains unresolved: the closest analog data
+  (railguns, not coilguns) is 9–56× worse than assumed, with a stated but
+  unconfirmed reason it may not transfer.
 - **No number in this study is presented as sourced when it is an estimate.**
   All **E** entries are tagged UNVALIDATED in the outputs and are listed in
   `LIMITATIONS.md`.
